@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linLayConnectionLost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animConnectionLost"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/no_connection" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvConnectionErrorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:textSize="14sp"
+        android:padding="20dp"
+        android:text="@string/connection_error_title" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animConnectionError"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/connection_error" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/cardReConnectView"
+            app:cardElevation="4dp"
+            android:layout_marginStart="20dp"
+            app:cardBackgroundColor="@android:color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tvConnectionError"
+                android:text="@string/connection_try_again"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:textColor="@color/colorDarkBlue"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

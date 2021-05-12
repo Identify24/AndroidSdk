@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:id="@+id/relLayCallWaiting"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_background_270"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgCallingLogo"
+            android:src="@drawable/identify_icon"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/imgIllustration"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_customer_representative_illustration"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:id="@+id/tvTitle"
+            android:text="@string/receiving_a_call"
+            android:layout_below="@+id/imgIllustration"
+            android:layout_marginTop="-160dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:id="@+id/tvDesc"
+            android:text="@string/calling_description"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@+id/tvDesc">
+         <ImageButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/ibAcceptCallView"
+             android:src="@drawable/ic_call_btn"
+             android:layout_centerVertical="true"
+             android:background="@android:color/transparent"
+             android:layout_centerHorizontal="true"/>
+     </RelativeLayout>
+
+
+
+    </RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_background"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/imgTanLogo"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/identify_icon" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/img_code_verification" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enter_pin_description"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/white" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/etPin1"
+        android:layout_width="42dp"
+        android:layout_height="60dp"
+        android:background="@drawable/all_grey_border_white_bg"
+        android:inputType="number"
+        android:alpha="0.5"
+        android:maxLength="1"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etPin2"
+        android:layout_width="42dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/all_grey_border_white_bg"
+        android:inputType="number"
+        android:alpha="0.5"
+        android:maxLength="1"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etPin3"
+        android:layout_width="42dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/all_grey_border_white_bg"
+        android:inputType="number"
+        android:alpha="0.5"
+        android:maxLength="1"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etPin4"
+        android:layout_width="42dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/all_grey_border_white_bg"
+        android:inputType="number"
+        android:alpha="0.5"
+        android:maxLength="1"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etPin5"
+        android:layout_width="42dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/all_grey_border_white_bg"
+        android:inputType="number"
+        android:alpha="0.5"
+        android:maxLength="1"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etPin6"
+        android:layout_width="42dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/all_grey_border_white_bg"
+        android:inputType="number"
+        android:alpha="0.5"
+        android:maxLength="1"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+</LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSendBtnView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="2dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:textColor="@color/colorDarkBlue"
+                android:gravity="center"
+                android:text="@string/confirm" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+        <ProgressBar
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/progressCircularView"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>

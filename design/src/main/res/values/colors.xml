@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="primaryColor">#ff3db1e0</color>
+	<color name="primaryLightColor">#ff3db1e0</color>
+	<color name="primaryDarkColor">#ff3db1e0</color>
+	<color name="secondaryColor">#757575</color>
+	<color name="secondaryLightColor">#a4a4a4</color>
+	<color name="secondaryDarkColor">#494949</color>
+	<color name="primaryTextColor">#000000</color>
+	<color name="secondaryTextColor">#686868</color>
+	<color name="inputTextHintColor">#ffc7c1c1</color>
+	<color name="textColor">#242424</color>
+	<color name="barColor">#ff89cfec</color>
+	<color name="formInputStrokeColor">#ffcbc9c9</color>
+	<color name="formDescriptionTextColor">#ffa29f9f</color>
+	<color name="formInputDescriptionTextColor">#ffdedddd</color>
+	<color name="softBlue">#3db1e0</color>
+	<color name="colorGreen">#568631</color>
+	<color name="colorRed">#ab0003</color>
+	<color name="transparent_grey">#4DCCCCCC</color>
+	<color name="transparent_black">#4D000000</color>
+	<color name="darker_red">#BD1D13</color>
+	<color name="red">#EA362A</color>
+	<color name="colorTextGrey4">#ffd0cece</color>
+	<color name="colorTextGrey">#707070</color>
+	<color name="successGreen">#ff70f570</color>
+	<color name="successGreenText">#ff379b1d</color>
+	<color name="colorStarterBlue">#27FFE1</color>
+	<color name="colorEndBlue">#4F2ED9</color>
+	<color name="color270EndBlue">#4F2ED9</color>
+	<color name="colorDarkBlue">#3227C9</color>
+	<color name="colorDarkYellow">#EFCD18</color>
+	<color name="colorSoftGrey">#B7B9BE</color>
+	<color name="notFoundBackground">#DD222222</color>
+
+
+
+
+
+
+
+</resources>

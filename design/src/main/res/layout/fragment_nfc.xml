@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/new_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/band_redirect_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/directCallWaitingView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+     <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/linLayReadNfcView"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nfcAnimationView"
+                android:layout_width="256dp"
+                android:layout_height="256dp"
+                android:layout_marginTop="150dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/nfc" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvNfcStatusView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:text="@string/nfc_description" />
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/cardNextView"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:visibility="gone"
+             android:layout_gravity="center_horizontal"
+             android:elevation="2dp"
+             android:layout_marginEnd="32dp"
+             android:layout_marginStart="32dp"
+             android:layout_marginTop="50dp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/relLayIdentId">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:fontFamily="@font/nexa_slab_bold"
+                 android:gravity="center"
+                 android:text="@string/go_on"
+                 android:textColor="@color/colorDarkBlue" />
+
+         </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:id="@+id/relLayDefaultNfcView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/identify_icon"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:id="@+id/imgIllustration"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_nfc_illustration"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:id="@+id/tvDesc"
+            android:layout_below="@+id/imgIllustration"
+            android:layout_marginTop="-120dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nfc_description"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

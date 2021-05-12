@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linLaySignature"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/band_redirect_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/directCallWaitingView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="11dp"
+            android:id="@+id/relLaySignaturePad"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/all_black_border_transparent_bg">
+            <com.identify.sdk.signature.pad.SignaturePad
+                android:id="@+id/signaturePadView"
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_height="match_parent"
+                app:penColor="@android:color/black"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/pls_sign_desc"
+            android:layout_below="@+id/relLaySignaturePad"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardConfirmBtnView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/successGreen"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:text="@string/confirm"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardClearBtnView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/red"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:text="@string/clean"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</FrameLayout>

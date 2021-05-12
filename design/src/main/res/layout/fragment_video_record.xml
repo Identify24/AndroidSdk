@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:keepScreenOn="true">
+
+    <include
+        layout="@layout/band_redirect_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/directCallWaitingView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/videoPreviewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animVideoRecordingView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        app:lottie_autoPlay="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_loop="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tvSecondView"
+        android:text="0:0"
+        android:background="@android:color/black"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/directCallWaitingView"
+        android:layout_marginStart="30dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecordVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBackground"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:text="@string/record_video"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:id="@+id/frameVideoView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directCallWaitingView">
+
+        <VideoView
+            android:id="@+id/videoPlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <ImageView
+            android:id="@+id/imgCloseView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/black"
+            android:layout_marginEnd="30dp"
+            android:padding="5dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_close_img" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardVideoConfirmView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="visible"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgBackground"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:text="@string/confirm"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

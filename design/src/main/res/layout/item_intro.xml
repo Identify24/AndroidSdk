@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/new_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgViewPagerLogo"
+        android:src="@drawable/identify_icon"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:id="@+id/imgIllustration"
+        tools:src="@drawable/ic_ocr_illustration"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:id="@+id/tvDesc"
+        android:layout_below="@+id/imgIllustration"
+        android:layout_marginTop="-130dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        tools:text="Kimliğinizin arkasını okutun."
+       />
+
+
+</RelativeLayout>

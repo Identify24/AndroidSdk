@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relLayWelcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/imgBackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_kimlik_basit_icon"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-200dp"
+        android:id="@+id/imgThanksLogo"
+        android:layout_below="@id/imgBackground"
+        android:src="@drawable/identify_icon"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:id="@+id/tvWelcome"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/finish_process"
+        android:layout_below="@+id/imgBackground"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFinishView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBackground"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:text="@string/finish"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

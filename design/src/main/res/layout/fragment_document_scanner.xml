@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:keepScreenOn="true">
+
+    <include
+        layout="@layout/band_redirect_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/directCallWaitingView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/documentPreviewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.identify.sdk.util.ViewFinderBackground
+        android:id="@+id/finderBackgroundView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundColor="@color/notFoundBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/viewFinderWindowView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,200:126"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTakePictureView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBackground"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:text="@string/take_photo"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/relLayPictureConfirmView"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/directCallWaitingView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgCapturedImageView"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgCloseView"
+            android:src="@drawable/ic_close_img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/cardPictureConfirmView"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_marginEnd="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="32dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:layout_gravity="center"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/confirm"
+                android:layout_below="@+id/imgBackground"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

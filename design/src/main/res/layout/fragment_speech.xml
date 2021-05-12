@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/band_redirect_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/directCallWaitingView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/berlin_logo"
+        android:id="@+id/imgBursa"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/directCallWaitingView"/>
+
+    <TextView
+        android:id="@+id/tvVoiceNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:gravity="center"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:text="@string/speech_desc"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibMicrophoneView"
+        android:layout_marginTop="40dp"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_rings"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBursa"
+        app:layout_constraintBottom_toTopOf="@+id/relLayBottom"/>
+
+
+    <ImageButton
+        android:id="@+id/ibMicrophoneView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/circle_style"
+        android:src="@drawable/ic_search_microphone"
+        app:layout_constraintBottom_toTopOf="@+id/relLayBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBursa" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayBottom"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Söylediğiniz Kelime : "
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvSpeechView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/tvTextTitle"
+            android:ellipsize="end"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnConfirmView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/warningColor"
+        android:visibility="visible"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

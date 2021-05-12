@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardDirectCallWaiting"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/colorGreen"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/direct_call_wait"/>
+</androidx.cardview.widget.CardView>
