@@ -32,7 +32,7 @@
 	<color name="colorDarkYellow">#EFCD18</color>
 	<color name="colorSoftGrey">#B7B9BE</color>
 	<color name="notFoundBackground">#DD222222</color>
-
+	<color name="warningColor">#FFA900</color>
 
 
 
