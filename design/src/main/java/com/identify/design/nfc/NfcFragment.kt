@@ -59,7 +59,7 @@ class NfcFragment : BaseNfcFragment() {
 
     override fun setNfcReadingFinishedAnimationRepeatCount(): Int = 0
 
-    override fun errorNfcReadText(): String = getString(R.string.toast_message)
+    override fun errorNfcReadText(): String = getString(R.string.nfc_toast_message)
 
 
     companion object {
