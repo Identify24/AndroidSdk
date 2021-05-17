@@ -12,13 +12,20 @@ Add it in your root build.gradle at the end of repositories:
  <pre>allprojects {
 repositories {
 ...
-maven { url 'https://jitpack.io' }
+   maven {
+            url 'https://gitlab.com/api/v4/projects/26590072/packages/maven'
+            name "GitLab"
+            credentials(HttpHeaderCredentials) {
+                name = 'Private-Token'
+                value = 'EpsJkjBq_gczsMkBQmU9'
+            }
+            authentication {
+                header(HttpHeaderAuthentication)
+            }
+        }
 }
 }</pre>
 
-Step 2. Add the dependency
-
-<pre>implementation 'com.github.Identify24:androidSDK:2.4.3'</pre>
 
 # Usage
 
