@@ -3,7 +3,14 @@
 # Gradle
 To get a Git project into your build:
 
-Step 1. Add the Gitlab repository to your build file
+Step 1. You must manually include "design lib" in your project in order to you need to change the design completely. For this you can download the project from
+github. Then include design lib in your project with this code ;
+app build gradle -> 
+<pre>implementation project(path: ':design')</pre> 
+and settings.gradle -> 
+<pre>include ':design'</pre>
+
+Step 2. Add the Gitlab repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
 
@@ -50,19 +57,14 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
                 .setOpenIntroPage(true) //Default true
                 .build()
 
-        val identityDesign = IdentityDesign.Builder()
-                .setLogo(R.drawable.identify_icon) //Default identify icon
-                .setThemeResourceId(R.style.AppTheme) //Default sdk app theme
-                .build()
 
         val identifyObject = IdentifySdk.Builder()
                 .api("api url")
                 .socket("socket url","socket port")
                 .stun("stun url","stun port")
                 .turn("turn url","turn port","turn username","turn password")
-.lifeCycle(this.lifecycle)
+                .lifeCycle(this.lifecycle)
                 .options(identityOptions)
-                .design(identityDesign)
                 .build()
 
  identifyObject.startIdentification(this,"xxxx-xxxx-xxxx-xxxx-xxxxxxx","tr")
@@ -93,20 +95,13 @@ ArrayList<IdentifyModuleTypes> moduleList = new ArrayList<IdentifyModuleTypes>()
                 .build();
 
 
-        IdentityDesign identityDesign = new IdentityDesign.Builder()
-                .setLogo(R.drawable.identify_icon)
-                .setThemeResourceId(R.style.AppTheme)
-                .build();
-
-
         IdentifySdk identifyObject = new IdentifySdk.Builder()
                 .api("api url")
                 .socket("socket url","socket port")
                 .stun("stun url","stun port")
                 .turn("turn url","turn port","turn username","turn password")
-.lifeCycle(this.getLifecycle())
+                .lifeCycle(this.getLifecycle())
                 .options(options)
-                .design(identityDesign)
                 .build();
 
         identifyObject.startIdentification(this,"xxxx-xxxx-xxxx-xxxx-xxxxxxx","language");
@@ -125,15 +120,6 @@ CallConnectionTimeOut -> This number indicates the timeout when connecting to th
 VideoRecordTime -> This number indicates the duration of the video to be recorded.This is optional(can be null, default value = 5000ms)
 
 OpenIntroPage -> If true, the intro pages of the selected modules are shown. This is optional(can be null, default value = true)
-
-- Identify Design
-
-Logo -> The logo provided will be replaced with the logos in the application design.
-
-ThemeResourceId -> This theme will be replaced by the sdk theme.
-
-Note : If you want to change the design completely, you can manually include SDK in your project. For this you can download the project from github.
-Then include sdk in your project with this code -> implementation project(path: ':sdk')
 
 
 
