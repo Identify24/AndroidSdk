@@ -26,7 +26,6 @@
     <string name="nfc_reading">NFC-Karte wird gelesen. Bitte bewegen Sie die Karte nicht.</string>
     <string name="nfc_try_again">NFC-Daten konnten nicht gelesen werden. Bitte versuchen Sie es erneut mit der NFC-Karte.</string>
     <string name="nfc_success">NFC-Daten erfolgreich gelesen. Sie werden zur Vitalitätsprüfung weitergeleitet.</string>
-    <string name="app_name">Identify</string>
     <string name="pls_wait">Warten Sie mal...</string>
     <string name="pls_wait_for_calling">Bitte warten Sie auf diesem Bildschirm, bis unser Kundenvertreter Sie anruft.</string>
     <string name="wait_with_id">Stellen Sie sicher, dass Sie Ihren Ausweis bei sich haben und bereit sind.</string>

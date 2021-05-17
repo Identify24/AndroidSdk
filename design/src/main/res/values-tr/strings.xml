@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Identify</string>
     <string name="support_error">Destek hatası</string>
     <string name="support_error_desc"> Maalesef NFC, cihazınız tarafından desteklenmiyor. Formu doldurmak için lütfen butona tıklayınız.</string>
     <string name="nfc_off">NFC kapalı</string>
