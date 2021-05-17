@@ -5,9 +5,13 @@ To get a Git project into your build:
 
 Step 1. You must manually include "design lib" in your project in order to you need to change the design completely. For this you can download the project from
 github. Then include design lib in your project with this code ;
+
 app build gradle -> 
+
 <pre>implementation project(path: ':design')</pre> 
+
 and settings.gradle -> 
+
 <pre>include ':design'</pre>
 
 Step 2. Add the Gitlab repository to your build file
