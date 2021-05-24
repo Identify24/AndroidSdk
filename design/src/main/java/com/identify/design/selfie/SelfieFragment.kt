@@ -1,28 +1,28 @@
 package com.identify.design.selfie
 
 import com.identify.design.R
+import com.identify.design.databinding.FragmentSelfieBinding
 import com.identify.design.util.hideProgressDialog
 import com.identify.design.util.showInformationDialog
 import com.identify.design.util.showProgressDialog
 import com.identify.sdk.selfie.BaseSelfieFragment
-import kotlinx.android.synthetic.main.fragment_selfie.*
 
-class SelfieFragment : BaseSelfieFragment() {
+class SelfieFragment : BaseSelfieFragment<FragmentSelfieBinding>() {
 
 
 
     override fun getLayoutRes(): Int = R.layout.fragment_selfie
 
     override fun initViews() {
-        cardTakePicture = this.cardTakePictureView
-        cardPictureConfirm = this.cardPictureConfirmView
-        imgClose = this.imgCloseView
-        relLayPictureConfirm = this.relLayPictureConfirmView
-        directCallWaiting = this.directCallWaitingView
-        selfiePreview = this.selfiePreviewView
-        viewFinderWindow = this.viewFinderWindowView
-        viewFinderBackground = this.viewFinderBackgroundView
-        imgCapturedImage = this.imgCapturedImageView
+        cardTakePicture = binding.cardTakePictureView
+        cardPictureConfirm = binding.cardPictureConfirmView
+        imgClose = binding.imgCloseView
+        relLayPictureConfirm = binding.relLayPictureConfirmView
+        directCallWaiting = binding.directCallWaitingView
+        selfiePreview = binding.selfiePreviewView
+        viewFinderWindow = binding.viewFinderWindowView
+        viewFinderBackground = binding.viewFinderBackgroundView
+        imgCapturedImage = binding.imgCapturedImageView
     }
 
     override fun showSelfieInformation() {
@@ -43,5 +43,10 @@ class SelfieFragment : BaseSelfieFragment() {
         @JvmStatic
         fun newInstance() =
             SelfieFragment()
+    }
+
+
+    override fun takeSelfieModuleFinished() {
+        finish()
     }
 }

@@ -3,25 +3,25 @@ package com.identify.design.nfc
 import android.os.Bundle
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
+import com.identify.design.databinding.FragmentNfcBinding
 import com.identify.design.util.alert
 import com.identify.design.util.showInformationDialog
 import com.identify.sdk.mrz.BaseNfcFragment
-import kotlinx.android.synthetic.main.fragment_nfc.*
 import org.jmrtd.lds.icao.MRZInfo
 
-class NfcFragment : BaseNfcFragment() {
+class NfcFragment : BaseNfcFragment<FragmentNfcBinding>() {
 
 
 
     override fun getLayoutRes(): Int = R.layout.fragment_nfc
 
     override fun initViews() {
-        directCallWaiting = this.directCallWaitingView
-        relLayDefaultNfc = this.relLayDefaultNfcView
-        linLayReadNfc = this.linLayReadNfcView
-        tvNfcStatus = this.tvNfcStatusView
-        nfcAnimation = this.nfcAnimationView
-        cardNext = this.cardNextView
+        directCallWaiting = binding.directCallWaitingView
+        relLayDefaultNfc = binding.relLayDefaultNfcView
+        linLayReadNfc = binding.linLayReadNfcView
+        tvNfcStatus = binding.tvNfcStatusView
+        nfcAnimation = binding.nfcAnimationView
+        cardNext = binding.cardNextView
     }
 
     override fun showNfcForPassportInformation() {
@@ -65,7 +65,7 @@ class NfcFragment : BaseNfcFragment() {
     companion object {
 
         @JvmStatic
-        fun newInstance(mrzInfo: MRZInfo, scannedText: String) =
+        fun newInstance(mrzInfo: MRZInfo, scannedText: String?) =
             NfcFragment().apply {
                 arguments = Bundle().apply {
                     putSerializable("mrzInfo",mrzInfo)

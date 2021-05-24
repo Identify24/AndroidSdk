@@ -2,17 +2,17 @@ package com.identify.design.dialogs
 
 import android.os.Bundle
 import com.identify.design.R
+import com.identify.design.databinding.DialogNoInternetBinding
 import com.identify.sdk.unavaible_internet.ui.BaseNoInternetDialogFragment
-import kotlinx.android.synthetic.main.dialog_no_internet.*
 
-class NoInternetDialogFragment  : BaseNoInternetDialogFragment() {
+class NoInternetDialogFragment  : BaseNoInternetDialogFragment<DialogNoInternetBinding>() {
 
 
 
     override fun getLayoutRes(): Int = R.layout.dialog_no_internet
 
     override fun initViews() {
-        cardTryAgain = this.cardTryAgainView
+        cardTryAgain = binding.cardTryAgainView
     }
 
     companion object {

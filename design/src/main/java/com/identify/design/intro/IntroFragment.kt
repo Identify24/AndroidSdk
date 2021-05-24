@@ -5,27 +5,26 @@ import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.identify.design.R
+import com.identify.design.databinding.FragmentIntroBinding
 import com.identify.sdk.intro.BaseIntroFragment
-import kotlinx.android.synthetic.main.fragment_intro.*
 
-class IntroFragment : BaseIntroFragment() {
+class IntroFragment : BaseIntroFragment<FragmentIntroBinding>() {
 
 
     override fun initViews() {
-        cardStart = this.cardStartView
-        relLayWelcome = this.relLayWelcomeView
-        relLaySlider = this.relLaySliderView
-        imgIntroLogo = this.imgIntroLogoView
-        relLayNext = this.relLayNextView
-        relLayPermission = this.relLayPermissionView
-        viewpager = this.viewpagerView
-        relLayBack = this.relLayBackView
-        cardPermission = this.cardPermissionView
-        tabLayout = this.tabLayoutView
-        tvNext = this.tvNextView
-        imgRightArrow = this.imgRightArrowView
-        tvSkipBack = this.tvSkipBackView
-        imgLeftArrow = this.imgLeftArrowView
+        cardStart = binding.cardStartView
+        relLayWelcome = binding.relLayWelcomeView
+        relLaySlider = binding.relLaySliderView
+        relLayNext = binding.relLayNextView
+        relLayPermission = binding.relLayPermissionView
+        viewpager = binding.viewpagerView
+        relLayBack = binding.relLayBackView
+        cardPermission = binding.cardPermissionView
+        tabLayout =  binding.tabLayoutView
+        tvNext = binding.tvNextView
+        imgRightArrow = binding.imgRightArrowView
+        tvSkipBack = binding.tvSkipBackView
+        imgLeftArrow = binding.imgLeftArrowView
     }
 
 

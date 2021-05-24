@@ -2,16 +2,16 @@ package com.identify.design.webrtc.calling
 
 
 import com.identify.design.R
+import com.identify.design.databinding.FragmentCallingBinding
 import com.identify.sdk.webrtc.calling.BaseCallingFragment
-import kotlinx.android.synthetic.main.fragment_calling.*
 
-class CallingFragment : BaseCallingFragment() {
+class CallingFragment : BaseCallingFragment<FragmentCallingBinding>() {
 
 
     override fun getLayoutRes(): Int = R.layout.fragment_calling
 
     override fun initViews() {
-       ibAcceptCall = this.ibAcceptCallView
+       ibAcceptCall = binding.ibAcceptCallView
     }
 
     override fun getRingMedia(): Int = R.raw.call_ring

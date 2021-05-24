@@ -2,13 +2,13 @@ package com.identify.design.document
 
 
 import com.identify.design.R
+import com.identify.design.databinding.FragmentDocumentScannerBinding
 import com.identify.design.util.hideProgressDialog
 import com.identify.design.util.showInformationDialog
 import com.identify.design.util.showProgressDialog
 import com.identify.sdk.document.BaseDocumentScanFragment
-import kotlinx.android.synthetic.main.fragment_document_scanner.*
 
-class DocumentScanFragment : BaseDocumentScanFragment() {
+class DocumentScanFragment : BaseDocumentScanFragment<FragmentDocumentScannerBinding>() {
 
 
 
@@ -33,19 +33,26 @@ class DocumentScanFragment : BaseDocumentScanFragment() {
 
 
     override fun initViews() {
-        cardPictureConfirm = this.cardPictureConfirmView
-        cardTakePicture = this.cardTakePictureView
-        imgClose = this.imgCloseView
-        relLayPictureConfirm = this.relLayPictureConfirmView
-        directCallWaiting  = this.directCallWaitingView
-        documentPreview  = this.documentPreviewView
-        finderBackground = this.finderBackgroundView
-        viewFinderWindow = this.viewFinderWindowView
-        imgCapturedImage  = this.imgCapturedImageView
+        cardPictureConfirm = binding.cardPictureConfirmView
+        cardTakePicture = binding.cardTakePictureView
+        imgClose = binding.imgCloseView
+        relLayPictureConfirm = binding.relLayPictureConfirmView
+        directCallWaiting  = binding.directCallWaitingView
+        documentPreview  = binding.documentPreviewView
+        finderBackground = binding.finderBackgroundView
+        viewFinderWindow = binding.viewFinderWindowView
+        imgCapturedImage  = binding.imgCapturedImageView
     }
+
+
 
     companion object {
         @JvmStatic
         fun  newInstance() = DocumentScanFragment()
+    }
+
+    override fun takeCardPhotoModuleFinished() {
+        finish()
+        // or (activity as BaseIdentifyActivity).showFragment(FlowBreakFragment.newInstance(),FlowBreakFragment::class.java.toString())
     }
 }

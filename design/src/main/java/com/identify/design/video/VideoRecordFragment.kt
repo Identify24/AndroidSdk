@@ -2,25 +2,25 @@ package com.identify.design.video
 
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
+import com.identify.design.databinding.FragmentVideoRecordBinding
 import com.identify.design.util.showInformationDialog
 import com.identify.sdk.video.BaseVideoRecordFragment
-import kotlinx.android.synthetic.main.fragment_video_record.*
 
-class VideoRecordFragment : BaseVideoRecordFragment() {
+class VideoRecordFragment : BaseVideoRecordFragment<FragmentVideoRecordBinding>() {
 
 
     override fun getLayoutRes(): Int = R.layout.fragment_video_record
 
     override fun initViews() {
-        cardRecordVideo = this.cardRecordVideoView
-        imgClose = this.imgCloseView
-        cardVideoConfirm = this.cardVideoConfirmView
-        frameVideo = this.frameVideoView
-        directCallWaiting = this.directCallWaitingView
-        animVideoRecording = this.animVideoRecordingView
-        videoPreview = this.videoPreviewView
-        videoPlayer = this.videoPlayerView
-        tvSecond = this.tvSecondView
+        cardRecordVideo = binding.cardRecordVideoView
+        imgClose = binding.imgCloseView
+        cardVideoConfirm = binding.cardVideoConfirmView
+        frameVideo = binding.frameVideoView
+        directCallWaiting = binding.directCallWaitingView
+        animVideoRecording = binding.animVideoRecordingView
+        videoPreview = binding.videoPreviewView
+        videoPlayer = binding.videoPlayerView
+        tvSecond = binding.tvSecondView
     }
 
     override fun showVideoRecordInformation() {
@@ -31,9 +31,16 @@ class VideoRecordFragment : BaseVideoRecordFragment() {
 
     override fun setVideoRecordingAnimationRepeatCount(): Int = LottieDrawable.INFINITE
 
+
+
     companion object{
         @JvmStatic
         fun newInstance() =
             VideoRecordFragment()
+    }
+
+    override fun videoRecordModuleFinished() {
+        finish()
+        // or  (activity as BaseIdentifyActivity).showFragment( FlowBreakFragment.newInstance(), FlowBreakFragment::class.java.toString())
     }
 }

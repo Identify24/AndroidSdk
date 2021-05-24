@@ -3,13 +3,14 @@ package com.identify.design.webrtc
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.identify.design.R
+import com.identify.design.databinding.FragmentCallModuleBinding
 import com.identify.design.thanks.ThankYouFragment
 import com.identify.design.webrtc.calling.CallingFragment
 import com.identify.design.webrtc.started.StartedCallFragment
 import com.identify.design.webrtc.wait.CallWaitingFragment
 import com.identify.sdk.webrtc.BaseCallModuleFragment
 
-class CallModuleFragment : BaseCallModuleFragment() {
+class CallModuleFragment : BaseCallModuleFragment<FragmentCallModuleBinding>() {
 
 
     override fun getLayoutRes(): Int = R.layout.fragment_call_module
@@ -34,5 +35,9 @@ class CallModuleFragment : BaseCallModuleFragment() {
                     putBoolean("isRedirect",isRedirect)
                 }
             }
+    }
+
+    override fun callModuleFinished(withRedirect: Boolean) {
+        finish(withRedirect)
     }
 }

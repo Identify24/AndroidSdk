@@ -3,22 +3,22 @@ package com.identify.design.webrtc.started
 import android.os.Bundle
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.identify.design.R
+import com.identify.design.databinding.FragmentStartedCallBinding
 import com.identify.design.dialogs.TanBottomDialogFragment
 import com.identify.sdk.webrtc.started.BaseStartedCallFragment
-import kotlinx.android.synthetic.main.fragment_started_call.*
 
-class StartedCallFragment : BaseStartedCallFragment() {
+class StartedCallFragment : BaseStartedCallFragment<FragmentStartedCallBinding>() {
 
 
     override fun getLayoutRes(): Int  = R.layout.fragment_started_call
 
     override fun initViews() {
-        surfaceViewRendererLocal = this.surfaceViewRendererLocalView
-        surfaceViewRendererRemote = this.surfaceViewRendererRemoteView
-        relLayCallWaiting = this.relLayCallWaitingView
-        imgIdCard = this.imgIdCardView
-        idLoadingAnimation = this.idLoadingAnimationView
-        faceLoadingAnimation = this.faceLoadingAnimationView
+        surfaceViewRendererLocal = binding.surfaceViewRendererLocalView
+        surfaceViewRendererRemote = binding.surfaceViewRendererRemoteView
+        relLayCallWaiting = binding.relLayCallWaitingView
+        imgIdCard = binding.imgIdCardView
+        idLoadingAnimation = binding.idLoadingAnimationView
+        faceLoadingAnimation = binding.faceLoadingAnimationView
     }
 
     override fun getConnectionErrorMessage(): String = getString(R.string.connection_error_when_calling)

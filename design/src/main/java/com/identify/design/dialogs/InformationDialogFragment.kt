@@ -5,10 +5,10 @@ import android.view.View
 import androidx.annotation.DrawableRes
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
+import com.identify.design.databinding.DialogInformationBinding
 import com.identify.sdk.information.BaseInformationDialogFragment
-import kotlinx.android.synthetic.main.dialog_information.*
 
-class InformationDialogFragment : BaseInformationDialogFragment() {
+class InformationDialogFragment : BaseInformationDialogFragment<DialogInformationBinding>() {
 
 
 
@@ -19,15 +19,20 @@ class InformationDialogFragment : BaseInformationDialogFragment() {
 
     override fun setCancelable(): Boolean  = false
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        //setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
+    }
+
 
     override fun initViews() {
-        animDetectionStatus = this.animDetectionStatusView
-        imgFrame = this.imgFrameView
-        imgInfo = this.imgInfoView
-        tvInfoContent = this.tvInfoContentView
-        tvInfoTitle = this.tvInfoTitleView
-        cardContinueBtn = this.cardContinueBtnView
-        imgCloseBtn = this.imgCloseBtnView
+        animDetectionStatus = binding.animDetectionStatusView
+        imgFrame = binding.imgFrameView
+        imgInfo = binding.imgInfoView
+        tvInfoContent = binding.tvInfoContentView
+        tvInfoTitle = binding.tvInfoTitleView
+        cardContinueBtn = binding.cardContinueBtnView
+        imgCloseBtn = binding.imgCloseBtnView
     }
 
 

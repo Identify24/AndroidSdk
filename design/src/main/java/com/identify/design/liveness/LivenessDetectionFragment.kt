@@ -2,21 +2,21 @@ package com.identify.design.liveness
 
 import android.os.Bundle
 import com.identify.design.R
+import com.identify.design.databinding.FragmentLivenessDetectionBinding
 import com.identify.design.util.showInformationDialog
 import com.identify.sdk.face.BaseLivenessDetectionFragment
-import kotlinx.android.synthetic.main.fragment_liveness_detection.*
 
-class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
+class LivenessDetectionFragment : BaseLivenessDetectionFragment<FragmentLivenessDetectionBinding>() {
 
 
     override fun getLayoutRes(): Int = R.layout.fragment_liveness_detection
 
     override fun initViews() {
-        directCallWaiting = this.directCallWaitingView
-        livenessPreview = this.livenessPreviewView
-        smileRating = this.smileRatingView
-        tvFaceStatus = this.tvFaceStatusView
-        successStatusAnimation = this.successStatusAnimationView
+        directCallWaiting = binding.directCallWaitingView
+        livenessPreview = binding.livenessPreviewView
+        smileRating = binding.smileRatingView
+        tvFaceStatus = binding.tvFaceStatusView
+        successStatusAnimation = binding.successStatusAnimationView
     }
 
     override fun showLivenessFinishedInformation() {
@@ -28,6 +28,10 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
     override fun getSuccessAnimationId(): Int = R.raw.smile
 
     override fun getSuccessAnimationRepeatCount(): Int = 0
+
+    override fun livenessDetectionModuleFinished() {
+        finish()
+    }
 
 
     override fun showSmileInformation() {
@@ -65,4 +69,5 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
                 }
             }
     }
+
 }

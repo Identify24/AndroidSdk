@@ -4,23 +4,23 @@ import android.os.Bundle
 import android.widget.EditText
 import androidx.core.content.ContextCompat
 import com.identify.design.R
+import com.identify.design.databinding.FragmentBottomTanBinding
 import com.identify.sdk.webrtc.started.BaseTanBottomDialogFragment
-import kotlinx.android.synthetic.main.fragment_bottom_tan.*
 
-class TanBottomDialogFragment : BaseTanBottomDialogFragment() {
+class TanBottomDialogFragment : BaseTanBottomDialogFragment<FragmentBottomTanBinding>() {
 
 
     override fun getLayoutRes(): Int = R.layout.fragment_bottom_tan
 
     override fun initViews() {
-        pin1 = this.etPin1
-        pin2 = this.etPin2
-        pin3 = this.etPin3
-        pin4 = this.etPin4
-        pin5 = this.etPin5
-        pin6 = this.etPin6
-        cardSendBtn = this.cardSendBtnView
-        progressCircular = this.progressCircularView
+        pin1 = binding.etPin1
+        pin2 = binding.etPin2
+        pin3 = binding.etPin3
+        pin4 = binding.etPin4
+        pin5 = binding.etPin5
+        pin6 = binding.etPin6
+        cardSendBtn = binding.cardSendBtnView
+        progressCircular = binding.progressCircularView
     }
 
     override fun errorTanLength(): String = getString(R.string.enter_pin)

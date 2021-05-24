@@ -3,12 +3,12 @@ package com.identify.design.nfc
 import android.app.AlertDialog
 import android.content.DialogInterface
 import com.identify.design.R
+import com.identify.design.databinding.FragmentMrzBinding
 import com.identify.design.util.showInformationDialog
 import com.identify.sdk.mrz.BaseOcrFragment
 import com.identify.sdk.repository.model.mrz.DocType
-import kotlinx.android.synthetic.main.fragment_mrz.*
 
-class OcrFragment : BaseOcrFragment() {
+class OcrFragment : BaseOcrFragment<FragmentMrzBinding>() {
 
 
     companion object {
@@ -21,9 +21,9 @@ class OcrFragment : BaseOcrFragment() {
     override fun getLayoutRes(): Int = R.layout.fragment_mrz
 
     override fun initViews() {
-        directCallWaiting = this.directCallWaitingView
-        graphicsOverlay = this.graphicsOverlayView
-        cameraSourcePreview = this.cameraSourcePreviewView
+        directCallWaiting = binding.directCallWaitingView
+        graphicsOverlay = binding.graphicsOverlayView
+        cameraSourcePreview = binding.cameraSourcePreviewView
     }
 
     override fun showOcrForPassportInformation() {
@@ -33,6 +33,8 @@ class OcrFragment : BaseOcrFragment() {
     override fun showOcrForIdInformation() {
         this.showInformationDialog(null, R.drawable.img_id_card, getString(R.string.mrz_info_title), getString(R.string.ocr_info_desc_id))
     }
+
+
 
     override fun showChoosePassportOrIDCardDialog(selectedOcrItem: (docType: DocType) -> Unit) {
         val items = arrayOf(getString(R.string.with_id_card),getString(R.string.with_passport))

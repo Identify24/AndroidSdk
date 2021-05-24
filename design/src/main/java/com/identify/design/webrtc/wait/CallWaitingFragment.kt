@@ -1,10 +1,11 @@
 package com.identify.design.webrtc.wait
 
 import com.identify.design.R
+import com.identify.design.databinding.FragmentWaitingCallBinding
 import com.identify.design.util.showInformationDialog
 import com.identify.sdk.webrtc.wait.BaseCallWaitingFragment
 
-class CallWaitingFragment : BaseCallWaitingFragment() {
+class CallWaitingFragment : BaseCallWaitingFragment<FragmentWaitingCallBinding>() {
 
 
 
