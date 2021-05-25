@@ -1,11 +1,11 @@
 package com.identify.design
 
 import android.content.Intent
-import android.os.Bundle
 import android.provider.Settings
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.identify.design.connectionlost.ConnectionLostFragment
+import com.identify.design.databinding.ActivityIdentifyBinding
 import com.identify.design.dialogs.NoInternetDialogFragment
 import com.identify.design.document.DocumentScanFragment
 import com.identify.design.intro.IntroFragment
@@ -22,7 +22,7 @@ import com.identify.sdk.BaseIdentifyActivity
 import kotlinx.android.synthetic.main.activity_identify.*
 import permissions.dispatcher.PermissionRequest
 
-class IdentifyActivity : BaseIdentifyActivity() {
+class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
 
 
@@ -84,11 +84,10 @@ class IdentifyActivity : BaseIdentifyActivity() {
     override fun getUiViewErrorMessage(): String = getString(R.string.reason_generic)
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        setContentView(R.layout.activity_identify)
-        fragmentContainer = this.fragmentContainerView
-        super.onCreate(savedInstanceState)
+    override fun getLayoutId(): Int = R.layout.activity_identify
 
+    override fun initViews() {
+        fragmentContainer = this.fragmentContainerView
     }
 
 }

@@ -32,12 +32,12 @@ class FlowBreakFragment : BaseFragment<FragmentExampleFlowBreakBinding>() {
 
     override fun onResume() {
         super.onResume()
-        (activity as BaseIdentifyActivity).changeStatusBarColor(ContextCompat.getColor(requireContext(),R.color.red))
+        (activity as BaseIdentifyActivity<*>).changeStatusBarColor(ContextCompat.getColor(requireContext(),R.color.red))
     }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        if (activity is BaseIdentifyActivity) {
+        if (activity is BaseIdentifyActivity<*>) {
             identifyResultListener = activity as IdentifyResultListener
         } else {
             throw RuntimeException("$context must implement OnFragmentInteractionListener")
