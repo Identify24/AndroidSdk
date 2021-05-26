@@ -3,14 +3,16 @@ package com.identify.design.dialogs
 import android.os.Bundle
 import android.widget.EditText
 import androidx.core.content.ContextCompat
+import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentBottomTanBinding
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.webrtc.started.BaseTanBottomDialogFragment
 
-class TanBottomDialogFragment : BaseTanBottomDialogFragment<FragmentBottomTanBinding>() {
+class TanBottomDialogFragment : BaseTanBottomDialogFragment() {
 
+    val binding by viewBinding(FragmentBottomTanBinding::bind)
 
-    override fun getLayoutRes(): Int = R.layout.fragment_bottom_tan
 
     override fun initViews() {
         pin1 = binding.etPin1
@@ -35,7 +37,7 @@ class TanBottomDialogFragment : BaseTanBottomDialogFragment<FragmentBottomTanBin
         edt.background = ContextCompat.getDrawable(requireContext(), R.drawable.all_grey_border_white_bg)
     }
 
-
+    override fun getLayoutRes(): Int = R.layout.fragment_bottom_tan
 
 
     companion object {

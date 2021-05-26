@@ -1,15 +1,18 @@
 package com.identify.design.document
 
 
+import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentDocumentScannerBinding
 import com.identify.design.util.hideProgressDialog
 import com.identify.design.util.showInformationDialog
 import com.identify.design.util.showProgressDialog
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.document.BaseDocumentScanFragment
 
-class DocumentScanFragment : BaseDocumentScanFragment<FragmentDocumentScannerBinding>() {
+class DocumentScanFragment : BaseDocumentScanFragment() {
 
+    val binding by viewBinding(FragmentDocumentScannerBinding::bind)
 
 
     override fun showProgress() {
@@ -20,8 +23,6 @@ class DocumentScanFragment : BaseDocumentScanFragment<FragmentDocumentScannerBin
         this.hideProgressDialog()
     }
 
-
-    override fun getLayoutRes(): Int  = R.layout.fragment_document_scanner
 
     override fun showIDFrontInformation() {
         this.showInformationDialog(null,R.drawable.kimlikon,getString(R.string.take_photo),getString(R.string.id_card_front_side))
@@ -37,7 +38,7 @@ class DocumentScanFragment : BaseDocumentScanFragment<FragmentDocumentScannerBin
         cardTakePicture = binding.cardTakePictureView
         imgClose = binding.imgCloseView
         relLayPictureConfirm = binding.relLayPictureConfirmView
-        directCallWaiting  = binding.directCallWaitingView
+        directCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
         documentPreview  = binding.documentPreviewView
         finderBackground = binding.finderBackgroundView
         viewFinderWindow = binding.viewFinderWindowView
@@ -55,4 +56,6 @@ class DocumentScanFragment : BaseDocumentScanFragment<FragmentDocumentScannerBin
         finish()
         // or (activity as BaseIdentifyActivity).showFragment(FlowBreakFragment.newInstance(),FlowBreakFragment::class.java.toString())
     }
+
+    override fun getLayoutRes(): Int = R.layout.fragment_document_scanner
 }

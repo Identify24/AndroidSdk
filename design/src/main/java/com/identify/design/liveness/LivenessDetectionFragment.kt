@@ -1,18 +1,21 @@
 package com.identify.design.liveness
 
 import android.os.Bundle
+import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentLivenessDetectionBinding
 import com.identify.design.util.showInformationDialog
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.face.BaseLivenessDetectionFragment
 
-class LivenessDetectionFragment : BaseLivenessDetectionFragment<FragmentLivenessDetectionBinding>() {
+class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
 
 
-    override fun getLayoutRes(): Int = R.layout.fragment_liveness_detection
+    val binding by viewBinding(FragmentLivenessDetectionBinding::bind)
+
 
     override fun initViews() {
-        directCallWaiting = binding.directCallWaitingView
+        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         livenessPreview = binding.livenessPreviewView
         smileRating = binding.smileRatingView
         tvFaceStatus = binding.tvFaceStatusView
@@ -32,6 +35,8 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment<FragmentLiveness
     override fun livenessDetectionModuleFinished() {
         finish()
     }
+
+    override fun getLayoutRes(): Int = R.layout.fragment_liveness_detection
 
 
     override fun showSmileInformation() {

@@ -1,24 +1,27 @@
 package com.identify.design.selfie
 
+import androidx.viewbinding.ViewBinding
 import com.identify.design.R
+import com.identify.design.databinding.FragmentNfcModuleBinding
 import com.identify.design.databinding.FragmentSelfieBinding
 import com.identify.design.util.hideProgressDialog
 import com.identify.design.util.showInformationDialog
 import com.identify.design.util.showProgressDialog
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.selfie.BaseSelfieFragment
 
-class SelfieFragment : BaseSelfieFragment<FragmentSelfieBinding>() {
+class SelfieFragment : BaseSelfieFragment() {
 
 
+    val binding by viewBinding(FragmentSelfieBinding::bind)
 
-    override fun getLayoutRes(): Int = R.layout.fragment_selfie
 
     override fun initViews() {
         cardTakePicture = binding.cardTakePictureView
         cardPictureConfirm = binding.cardPictureConfirmView
         imgClose = binding.imgCloseView
         relLayPictureConfirm = binding.relLayPictureConfirmView
-        directCallWaiting = binding.directCallWaitingView
+        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         selfiePreview = binding.selfiePreviewView
         viewFinderWindow = binding.viewFinderWindowView
         viewFinderBackground = binding.viewFinderBackgroundView
@@ -49,4 +52,6 @@ class SelfieFragment : BaseSelfieFragment<FragmentSelfieBinding>() {
     override fun takeSelfieModuleFinished() {
         finish()
     }
+
+    override fun getLayoutRes(): Int = R.layout.fragment_selfie
 }

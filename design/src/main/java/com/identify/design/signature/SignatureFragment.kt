@@ -1,22 +1,25 @@
 package com.identify.design.signature
 
+import androidx.viewbinding.ViewBinding
 import com.identify.design.R
+import com.identify.design.databinding.FragmentSelfieBinding
 import com.identify.design.databinding.FragmentSignatureBinding
 import com.identify.design.util.hideProgressDialog
 import com.identify.design.util.showInformationDialog
 import com.identify.design.util.showProgressDialog
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.signature.BaseSignatureFragment
 
-class SignatureFragment : BaseSignatureFragment<FragmentSignatureBinding>() {
+class SignatureFragment : BaseSignatureFragment() {
 
+    val binding by viewBinding(FragmentSignatureBinding::bind)
 
-    override fun getLayoutRes(): Int = R.layout.fragment_signature
 
     override fun initViews() {
         cardClearBtn = binding.cardClearBtnView
         signaturePad = binding.signaturePadView
         cardConfirmBtn = binding.cardConfirmBtnView
-        directCallWaiting = binding.directCallWaitingView
+        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
     }
 
     override fun showSignatureInformation() {
@@ -43,5 +46,7 @@ class SignatureFragment : BaseSignatureFragment<FragmentSignatureBinding>() {
     override fun signatureModuleFinished() {
         finish()
     }
+
+    override fun getLayoutRes(): Int = R.layout.fragment_signature
 
 }

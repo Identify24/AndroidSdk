@@ -3,18 +3,18 @@ package com.identify.design.dialogs
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.DrawableRes
+import androidx.viewbinding.ViewBinding
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.DialogInformationBinding
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.information.BaseInformationDialogFragment
 
-class InformationDialogFragment : BaseInformationDialogFragment<DialogInformationBinding>() {
+class InformationDialogFragment : BaseInformationDialogFragment() {
 
 
+    val binding by viewBinding(DialogInformationBinding::bind)
 
-
-
-    override fun getLayoutRes(): Int  = R.layout.dialog_information
 
 
     override fun setCancelable(): Boolean  = false
@@ -23,6 +23,8 @@ class InformationDialogFragment : BaseInformationDialogFragment<DialogInformatio
         super.onCreate(savedInstanceState)
         //setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
     }
+
+    override fun getLayoutRes(): Int = R.layout.dialog_information
 
 
     override fun initViews() {

@@ -1,22 +1,23 @@
 package com.identify.design.nfc
 
 import android.os.Bundle
+import androidx.viewbinding.ViewBinding
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.FragmentNfcBinding
 import com.identify.design.util.alert
 import com.identify.design.util.showInformationDialog
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.mrz.BaseNfcFragment
 import org.jmrtd.lds.icao.MRZInfo
 
-class NfcFragment : BaseNfcFragment<FragmentNfcBinding>() {
+class NfcFragment : BaseNfcFragment() {
 
+    val binding by viewBinding(FragmentNfcBinding::bind)
 
-
-    override fun getLayoutRes(): Int = R.layout.fragment_nfc
 
     override fun initViews() {
-        directCallWaiting = binding.directCallWaitingView
+        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         relLayDefaultNfc = binding.relLayDefaultNfcView
         linLayReadNfc = binding.linLayReadNfcView
         tvNfcStatus = binding.tvNfcStatusView
@@ -60,6 +61,8 @@ class NfcFragment : BaseNfcFragment<FragmentNfcBinding>() {
     override fun setNfcReadingFinishedAnimationRepeatCount(): Int = 0
 
     override fun errorNfcReadText(): String = getString(R.string.nfc_toast_message)
+
+    override fun getLayoutRes(): Int = R.layout.fragment_nfc
 
 
     companion object {

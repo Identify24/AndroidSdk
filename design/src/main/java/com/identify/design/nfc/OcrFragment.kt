@@ -2,14 +2,17 @@ package com.identify.design.nfc
 
 import android.app.AlertDialog
 import android.content.DialogInterface
+import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentMrzBinding
 import com.identify.design.util.showInformationDialog
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.mrz.BaseOcrFragment
 import com.identify.sdk.repository.model.mrz.DocType
 
-class OcrFragment : BaseOcrFragment<FragmentMrzBinding>() {
+class OcrFragment : BaseOcrFragment() {
 
+    val binding by viewBinding(FragmentMrzBinding::bind)
 
     companion object {
 
@@ -18,10 +21,9 @@ class OcrFragment : BaseOcrFragment<FragmentMrzBinding>() {
             OcrFragment()
     }
 
-    override fun getLayoutRes(): Int = R.layout.fragment_mrz
 
     override fun initViews() {
-        directCallWaiting = binding.directCallWaitingView
+        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         graphicsOverlay = binding.graphicsOverlayView
         cameraSourcePreview = binding.cameraSourcePreviewView
     }
@@ -46,11 +48,13 @@ class OcrFragment : BaseOcrFragment<FragmentMrzBinding>() {
                 DialogInterface.OnClickListener { dialog, _ ->
                     val selectedPosition: Int =
                         (dialog as AlertDialog).listView.checkedItemPosition
-                    if (selectedPosition == 0) selectedOcrItem(DocType.ID_CARD) else selectedOcrItem(DocType.ID_CARD)
+                    if (selectedPosition == 0) selectedOcrItem(DocType.ID_CARD) else selectedOcrItem(DocType.PASSPORT)
                     dialog.dismiss()
                 })
             .show()
     }
+
+    override fun getLayoutRes(): Int = R.layout.fragment_mrz
 
 
 }

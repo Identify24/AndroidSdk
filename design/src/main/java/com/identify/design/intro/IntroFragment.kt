@@ -4,12 +4,15 @@ package com.identify.design.intro
 import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentIntroBinding
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.intro.BaseIntroFragment
 
-class IntroFragment : BaseIntroFragment<FragmentIntroBinding>() {
+class IntroFragment : BaseIntroFragment() {
 
+    val binding by viewBinding(FragmentIntroBinding::bind)
 
     override fun initViews() {
         cardStart = binding.cardStartView
@@ -79,8 +82,8 @@ class IntroFragment : BaseIntroFragment<FragmentIntroBinding>() {
         return IntroAdapter(items)
     }
 
-
     override fun getLayoutRes(): Int = R.layout.fragment_intro
+
 
     companion object {
 

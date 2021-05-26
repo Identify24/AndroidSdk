@@ -1,22 +1,24 @@
 package com.identify.design.video
 
+import androidx.viewbinding.ViewBinding
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.FragmentVideoRecordBinding
 import com.identify.design.util.showInformationDialog
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.video.BaseVideoRecordFragment
 
-class VideoRecordFragment : BaseVideoRecordFragment<FragmentVideoRecordBinding>() {
+class VideoRecordFragment : BaseVideoRecordFragment() {
 
+    val binding by viewBinding(FragmentVideoRecordBinding::bind)
 
-    override fun getLayoutRes(): Int = R.layout.fragment_video_record
 
     override fun initViews() {
         cardRecordVideo = binding.cardRecordVideoView
         imgClose = binding.imgCloseView
         cardVideoConfirm = binding.cardVideoConfirmView
         frameVideo = binding.frameVideoView
-        directCallWaiting = binding.directCallWaitingView
+        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         animVideoRecording = binding.animVideoRecordingView
         videoPreview = binding.videoPreviewView
         videoPlayer = binding.videoPlayerView
@@ -43,4 +45,6 @@ class VideoRecordFragment : BaseVideoRecordFragment<FragmentVideoRecordBinding>(
         finish()
         // or  (activity as BaseIdentifyActivity).showFragment( FlowBreakFragment.newInstance(), FlowBreakFragment::class.java.toString())
     }
+
+    override fun getLayoutRes(): Int = R.layout.fragment_video_record
 }

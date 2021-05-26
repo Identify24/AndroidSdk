@@ -21,7 +21,7 @@ android {
 
 
     buildFeatures {
-        dataBinding true
+        viewBinding true
     }
 
     buildTypes {
@@ -58,7 +58,7 @@ dependencies {
     implementation 'org.permissionsdispatcher:permissionsdispatcher:4.7.0'
     kapt 'org.permissionsdispatcher:permissionsdispatcher-processor:4.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    api 'com.identify.sdk:android:1.0.2'
+    api 'com.identify.sdk:android:1.0.3'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

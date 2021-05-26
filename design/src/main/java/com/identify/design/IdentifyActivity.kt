@@ -4,8 +4,10 @@ import android.content.Intent
 import android.provider.Settings
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
+import androidx.viewbinding.ViewBinding
 import com.identify.design.connectionlost.ConnectionLostFragment
 import com.identify.design.databinding.ActivityIdentifyBinding
+import com.identify.design.databinding.FragmentCallModuleBinding
 import com.identify.design.dialogs.NoInternetDialogFragment
 import com.identify.design.document.DocumentScanFragment
 import com.identify.design.intro.IntroFragment
@@ -19,12 +21,10 @@ import com.identify.design.util.alert
 import com.identify.design.video.VideoRecordFragment
 import com.identify.design.webrtc.CallModuleFragment
 import com.identify.sdk.BaseIdentifyActivity
-import kotlinx.android.synthetic.main.activity_identify.*
+import com.identify.sdk.base.viewBinding.viewBinding
 import permissions.dispatcher.PermissionRequest
 
 class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
-
-
 
 
     override fun getConnectionLostFragmentInstance(): Fragment = ConnectionLostFragment.newInstance()
@@ -87,7 +87,10 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     override fun getLayoutId(): Int = R.layout.activity_identify
 
     override fun initViews() {
-        fragmentContainer = this.fragmentContainerView
+        fragmentContainer = binding.fragmentContainerView
     }
+
+
+    override fun getViewBinding(): ActivityIdentifyBinding = ActivityIdentifyBinding.inflate(layoutInflater)
 
 }

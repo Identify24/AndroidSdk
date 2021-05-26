@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
 <LinearLayout
     android:id="@+id/linLayConnectionLost"
     android:layout_width="match_parent"
@@ -66,4 +65,3 @@
 
     </LinearLayout>
 </LinearLayout>
-</layout>

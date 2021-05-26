@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/bgLayout"
         android:layout_width="match_parent"
@@ -144,4 +143,3 @@
             android:layout_height="wrap_content"
             app:layout_behavior="@string/bottom_sheet_behavior" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-</layout>

@@ -6,13 +6,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.identify.design.R
+import com.identify.design.databinding.ItemIntroBinding
 
-class IntroViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class IntroViewHolder(val binding: ItemIntroBinding) : RecyclerView.ViewHolder(binding.root) {
 
     fun bind(item: Pair<Drawable?, String>) {
-        val imgView = itemView.findViewById<ImageView>(R.id.imgIllustration)
-        val tvDesc = itemView.findViewById<TextView>(R.id.tvDesc)
-        imgView.setImageDrawable(item.first)
-        tvDesc.text = item.second
+        binding.imgIllustration.setImageDrawable(item.first)
+        binding.tvDesc.text = item.second
+
     }
 }

@@ -2,18 +2,20 @@ package com.identify.design.speech
 
 
 import androidx.core.content.ContextCompat
+import androidx.viewbinding.ViewBinding
 import com.identify.design.R
+import com.identify.design.databinding.FragmentSignatureBinding
 import com.identify.design.databinding.FragmentSpeechBinding
 import com.identify.design.util.showInformationDialog
+import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.speech.BaseSpeechFragment
 
-class SpeechFragment : BaseSpeechFragment<FragmentSpeechBinding>() {
+class SpeechFragment : BaseSpeechFragment() {
 
-
-    override fun getLayoutRes(): Int = R.layout.fragment_speech
+    val binding by viewBinding(FragmentSpeechBinding::bind)
 
     override fun initViews() {
-        directCallWaiting = binding.directCallWaitingView
+        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         btnConfirm = binding.btnConfirmView
         tvSpeech = binding.tvSpeechView
         ibMicrophone = binding.ibMicrophoneView
@@ -44,4 +46,6 @@ class SpeechFragment : BaseSpeechFragment<FragmentSpeechBinding>() {
     override fun speechModuleFinished() {
         finish()
     }
+
+    override fun getLayoutRes(): Int = R.layout.fragment_speech
 }

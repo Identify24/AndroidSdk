@@ -5,10 +5,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.identify.design.R
+import com.identify.design.databinding.ItemIntroBinding
 
 class IntroAdapter(val items : List<Pair<Drawable?,String>>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return IntroViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_intro,parent,false))
+        return IntroViewHolder(ItemIntroBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
 
     override fun getItemCount(): Int  = items.size

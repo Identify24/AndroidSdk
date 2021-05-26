@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
 <RelativeLayout
     android:id="@+id/relLayWelcome"
     android:layout_width="match_parent"
@@ -64,4 +63,3 @@
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
-</layout>
