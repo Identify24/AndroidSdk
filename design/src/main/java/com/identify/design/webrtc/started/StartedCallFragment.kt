@@ -19,8 +19,8 @@ class StartedCallFragment : BaseStartedCallFragment() {
         surfaceViewRendererRemote = binding.surfaceViewRendererRemoteView
         relLayCallWaiting = binding.relLayCallWaitingView
         imgIdCard = binding.imgIdCardView
-        idLoadingAnimation = binding.idLoadingAnimationView
-        faceLoadingAnimation = binding.faceLoadingAnimationView
+        animIdLoading = binding.idLoadingAnimationView
+        animFaceLoading = binding.faceLoadingAnimationView
     }
 
     override fun getConnectionErrorMessage(): String = getString(R.string.connection_error_when_calling)

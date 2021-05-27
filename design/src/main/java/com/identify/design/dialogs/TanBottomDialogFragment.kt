@@ -21,7 +21,7 @@ class TanBottomDialogFragment : BaseTanBottomDialogFragment() {
         pin4 = binding.etPin4
         pin5 = binding.etPin5
         pin6 = binding.etPin6
-        cardSendBtn = binding.cardSendBtnView
+        btnSend = binding.cardSendBtnView
         progressCircular = binding.progressCircularView
     }
 

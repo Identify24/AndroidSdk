@@ -15,14 +15,14 @@ class IntroFragment : BaseIntroFragment() {
     val binding by viewBinding(FragmentIntroBinding::bind)
 
     override fun initViews() {
-        cardStart = binding.cardStartView
+        btnStart = binding.cardStartView
         relLayWelcome = binding.relLayWelcomeView
         relLaySlider = binding.relLaySliderView
-        relLayNext = binding.relLayNextView
+        btnNext = binding.relLayNextView
         relLayPermission = binding.relLayPermissionView
         viewpager = binding.viewpagerView
-        relLayBack = binding.relLayBackView
-        cardPermission = binding.cardPermissionView
+        btnBack = binding.relLayBackView
+        btnGivePermission = binding.cardPermissionView
         tabLayout =  binding.tabLayoutView
         tvNext = binding.tvNextView
         imgRightArrow = binding.imgRightArrowView

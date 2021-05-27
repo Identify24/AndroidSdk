@@ -3,7 +3,6 @@ package com.identify.design.dialogs
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.DrawableRes
-import androidx.viewbinding.ViewBinding
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.DialogInformationBinding
@@ -33,8 +32,8 @@ class InformationDialogFragment : BaseInformationDialogFragment() {
         imgInfo = binding.imgInfoView
         tvInfoContent = binding.tvInfoContentView
         tvInfoTitle = binding.tvInfoTitleView
-        cardContinueBtn = binding.cardContinueBtnView
-        imgCloseBtn = binding.imgCloseBtnView
+        btnContinue = binding.cardContinueBtnView
+        btnClose = binding.imgCloseBtnView
     }
 
 

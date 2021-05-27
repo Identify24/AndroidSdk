@@ -13,7 +13,7 @@ class CallingFragment : BaseCallingFragment() {
 
 
     override fun initViews() {
-       ibAcceptCall = binding.ibAcceptCallView
+        btnAcceptCall = binding.ibAcceptCallView
     }
 
     override fun getRingMedia(): Int = R.raw.call_ring

@@ -15,7 +15,7 @@ class SpeechFragment : BaseSpeechFragment() {
     val binding by viewBinding(FragmentSpeechBinding::bind)
 
     override fun initViews() {
-        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
+        btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         btnConfirm = binding.btnConfirmView
         tvSpeech = binding.tvSpeechView
         ibMicrophone = binding.ibMicrophoneView

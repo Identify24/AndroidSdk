@@ -1,7 +1,7 @@
 package com.identify.design.nfc
 
 import android.os.Bundle
-import androidx.viewbinding.ViewBinding
+import android.view.View
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.FragmentNfcBinding
@@ -17,20 +17,20 @@ class NfcFragment : BaseNfcFragment() {
 
 
     override fun initViews() {
-        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
+        btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         relLayDefaultNfc = binding.relLayDefaultNfcView
         linLayReadNfc = binding.linLayReadNfcView
         tvNfcStatus = binding.tvNfcStatusView
-        nfcAnimation = binding.nfcAnimationView
-        cardNext = binding.cardNextView
+        animNfc = binding.nfcAnimationView
+        btnNext = binding.cardNextView
     }
 
     override fun showNfcForPassportInformation() {
-        this.showInformationDialog(R.raw.nfc,R.drawable.img_passport,getString(R.string.mrz_info_title),getString(R.string.nfc_info_desc_passport))
+        this.showInformationDialog(R.raw.nfc,R.drawable.img_passport,getString(R.string.mrz_info_title),getString(R.string.nfc_info_desc_passport),isImgFrameVisible = View.VISIBLE)
     }
 
     override fun showNfcForIdInformation() {
-        this.showInformationDialog(R.raw.nfc,null,getString(R.string.mrz_info_title),getString(R.string.nfc_info_desc_id))
+        this.showInformationDialog(R.raw.nfc,null,getString(R.string.mrz_info_title),getString(R.string.nfc_info_desc_id),isImgFrameVisible = View.VISIBLE)
     }
 
     override fun getNfcFailToastMessage(): String = getString(R.string.nfc_toast_message)

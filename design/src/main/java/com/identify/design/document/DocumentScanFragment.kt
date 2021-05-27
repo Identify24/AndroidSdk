@@ -34,11 +34,11 @@ class DocumentScanFragment : BaseDocumentScanFragment() {
 
 
     override fun initViews() {
-        cardPictureConfirm = binding.cardPictureConfirmView
-        cardTakePicture = binding.cardTakePictureView
-        imgClose = binding.imgCloseView
+        btnPictureConfirm = binding.cardPictureConfirmView
+        btnTakePicture = binding.cardTakePictureView
+        btnClose = binding.imgCloseView
         relLayPictureConfirm = binding.relLayPictureConfirmView
-        directCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
+        btnDirectCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
         documentPreview  = binding.documentPreviewView
         finderBackground = binding.finderBackgroundView
         viewFinderWindow = binding.viewFinderWindowView

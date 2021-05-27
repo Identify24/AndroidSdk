@@ -13,7 +13,7 @@ class ConnectionLostFragment : BaseConnectionLostFragment() {
 
 
     override fun initViews() {
-        cardReConnect = binding.cardReConnectView
+        btnReConnect = binding.cardReConnectView
     }
 
     override fun plsWaitForConnectionText(): String = getString(R.string.pls_wait)

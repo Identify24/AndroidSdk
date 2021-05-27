@@ -23,7 +23,7 @@ class OcrFragment : BaseOcrFragment() {
 
 
     override fun initViews() {
-        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
+        btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         graphicsOverlay = binding.graphicsOverlayView
         cameraSourcePreview = binding.cameraSourcePreviewView
     }

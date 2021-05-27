@@ -15,11 +15,11 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
 
 
     override fun initViews() {
-        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
+        btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         livenessPreview = binding.livenessPreviewView
         smileRating = binding.smileRatingView
         tvFaceStatus = binding.tvFaceStatusView
-        successStatusAnimation = binding.successStatusAnimationView
+        animSuccessStatus = binding.successStatusAnimationView
     }
 
     override fun showLivenessFinishedInformation() {

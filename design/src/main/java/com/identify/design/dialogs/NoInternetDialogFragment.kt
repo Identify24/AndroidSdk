@@ -13,7 +13,7 @@ class NoInternetDialogFragment  : BaseNoInternetDialogFragment() {
 
 
     override fun initViews() {
-        cardTryAgain = binding.cardTryAgainView
+        btnTryAgain = binding.cardTryAgainView
     }
 
     override fun getLayoutRes(): Int = R.layout.dialog_no_internet

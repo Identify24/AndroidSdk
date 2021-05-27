@@ -1,6 +1,5 @@
 package com.identify.design.video
 
-import androidx.viewbinding.ViewBinding
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.FragmentVideoRecordBinding
@@ -14,11 +13,11 @@ class VideoRecordFragment : BaseVideoRecordFragment() {
 
 
     override fun initViews() {
-        cardRecordVideo = binding.cardRecordVideoView
-        imgClose = binding.imgCloseView
-        cardVideoConfirm = binding.cardVideoConfirmView
+        btnRecordVideo = binding.cardRecordVideoView
+        btnClose = binding.imgCloseView
+        btnVideoConfirm = binding.cardVideoConfirmView
         frameVideo = binding.frameVideoView
-        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
+        btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         animVideoRecording = binding.animVideoRecordingView
         videoPreview = binding.videoPreviewView
         videoPlayer = binding.videoPlayerView

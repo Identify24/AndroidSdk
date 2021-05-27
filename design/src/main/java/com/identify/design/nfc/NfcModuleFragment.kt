@@ -16,7 +16,7 @@ class NfcModuleFragment : BaseNfcModuleFragment() {
     override fun getFragmentContainer(): Int = R.id.frameFragmentContainer
 
     override fun initViews() {
-        cardContinueBtn = binding.cardcontinueBtnView
+        btnContinue = binding.cardcontinueBtnView
         relLayNotAvailableNfc = binding.relLayNotAvailableNfcView
     }
 

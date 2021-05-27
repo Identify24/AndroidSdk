@@ -13,7 +13,7 @@ class ThankYouFragment : BaseThankYouFragment() {
 
 
     override fun initViews() {
-        cardFinish = binding.cardFinishView
+        btnFinish = binding.cardFinishView
     }
 
     override fun getLayoutRes(): Int = R.layout.fragment_thank_you

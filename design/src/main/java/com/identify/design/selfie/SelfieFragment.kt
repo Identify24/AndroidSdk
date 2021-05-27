@@ -17,11 +17,11 @@ class SelfieFragment : BaseSelfieFragment() {
 
 
     override fun initViews() {
-        cardTakePicture = binding.cardTakePictureView
-        cardPictureConfirm = binding.cardPictureConfirmView
-        imgClose = binding.imgCloseView
+        btnTakePicture = binding.cardTakePictureView
+        btnPictureConfirm = binding.cardPictureConfirmView
+        btnClose = binding.imgCloseView
         relLayPictureConfirm = binding.relLayPictureConfirmView
-        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
+        btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         selfiePreview = binding.selfiePreviewView
         viewFinderWindow = binding.viewFinderWindowView
         viewFinderBackground = binding.viewFinderBackgroundView

@@ -1,8 +1,6 @@
 package com.identify.design.signature
 
-import androidx.viewbinding.ViewBinding
 import com.identify.design.R
-import com.identify.design.databinding.FragmentSelfieBinding
 import com.identify.design.databinding.FragmentSignatureBinding
 import com.identify.design.util.hideProgressDialog
 import com.identify.design.util.showInformationDialog
@@ -16,10 +14,10 @@ class SignatureFragment : BaseSignatureFragment() {
 
 
     override fun initViews() {
-        cardClearBtn = binding.cardClearBtnView
+        btnClear = binding.cardClearBtnView
         signaturePad = binding.signaturePadView
-        cardConfirmBtn = binding.cardConfirmBtnView
-        directCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
+        btnConfirm = binding.cardConfirmBtnView
+        btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
     }
 
     override fun showSignatureInformation() {
