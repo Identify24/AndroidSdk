@@ -28,7 +28,7 @@ repositories {
             name "GitLab"
             credentials(HttpHeaderCredentials) {
                 name = 'Private-Token'
-                value = 'EpsJkjBq_gczsMkBQmU9'
+                value = 'xxxxxxxxxxxxxxx'
             }
             authentication {
                 header(HttpHeaderAuthentication)
