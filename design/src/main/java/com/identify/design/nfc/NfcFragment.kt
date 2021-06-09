@@ -65,6 +65,7 @@ class NfcFragment : BaseNfcFragment() {
     override fun getLayoutRes(): Int = R.layout.fragment_nfc
 
 
+
     companion object {
 
         @JvmStatic

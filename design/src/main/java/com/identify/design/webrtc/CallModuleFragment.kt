@@ -24,8 +24,6 @@ class CallModuleFragment : BaseCallModuleFragment() {
 
     override fun getCallingFragmentInstance() : Fragment = CallingFragment.newInstance()
 
-    override fun getThankYouFragmentInstance() : Fragment = ThankYouFragment.newInstance()
-
     override fun getFragmentContainer(): Int = R.id.callFragmentContainer
 
 

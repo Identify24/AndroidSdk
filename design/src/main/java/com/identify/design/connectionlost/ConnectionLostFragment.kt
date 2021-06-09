@@ -1,7 +1,6 @@
 package com.identify.design.connectionlost
 
 
-import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentConnectionLostBinding
 import com.identify.sdk.base.viewBinding.viewBinding
@@ -16,7 +15,7 @@ class ConnectionLostFragment : BaseConnectionLostFragment() {
         btnReConnect = binding.cardReConnectView
     }
 
-    override fun plsWaitForConnectionText(): String = getString(R.string.pls_wait)
+    override fun plsWaitForConnectionText(): String? = getString(R.string.pls_wait)
 
     override fun getLayoutRes(): Int = R.layout.fragment_connection_lost
 

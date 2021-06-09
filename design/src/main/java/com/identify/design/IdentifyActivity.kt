@@ -4,15 +4,14 @@ import android.content.Intent
 import android.provider.Settings
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
-import androidx.viewbinding.ViewBinding
 import com.identify.design.connectionlost.ConnectionLostFragment
 import com.identify.design.databinding.ActivityIdentifyBinding
-import com.identify.design.databinding.FragmentCallModuleBinding
 import com.identify.design.dialogs.NoInternetDialogFragment
 import com.identify.design.document.DocumentScanFragment
 import com.identify.design.intro.IntroFragment
 import com.identify.design.liveness.LivenessDetectionFragment
 import com.identify.design.nfc.NfcModuleFragment
+import com.identify.design.permission.PermissionFragment
 import com.identify.design.selfie.SelfieFragment
 import com.identify.design.signature.SignatureFragment
 import com.identify.design.speech.SpeechFragment
@@ -21,8 +20,7 @@ import com.identify.design.util.alert
 import com.identify.design.video.VideoRecordFragment
 import com.identify.design.webrtc.CallModuleFragment
 import com.identify.sdk.BaseIdentifyActivity
-import com.identify.sdk.base.viewBinding.viewBinding
-import permissions.dispatcher.PermissionRequest
+
 
 class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
@@ -62,16 +60,6 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
         }, {}, {})
     }
 
-    override fun showRationaleDialog(request: PermissionRequest) {
-        alert(false, getString(R.string.button_allow), getString(R.string.button_deny), null, getString(R.string.permission_camera_rationale), { dialog ->
-            request.proceed()
-            dialog.dismiss()
-        }, { dialog ->
-            request.cancel()
-            dialog.dismiss()
-        }, {})
-
-    }
 
     override fun getAuthenticationErrorMessage(): String  = getString(R.string.reason_authentication_error)
 
@@ -88,9 +76,12 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
     override fun initViews() {
         fragmentContainer = binding.fragmentContainerView
+        progressCircular = binding.progressCircularView
     }
 
 
     override fun getViewBinding(): ActivityIdentifyBinding = ActivityIdentifyBinding.inflate(layoutInflater)
+
+    override fun getPermissionFragmentInstance(): Fragment = PermissionFragment.newInstance()
 
 }

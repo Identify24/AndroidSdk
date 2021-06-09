@@ -19,10 +19,8 @@ class IntroFragment : BaseIntroFragment() {
         relLayWelcome = binding.relLayWelcomeView
         relLaySlider = binding.relLaySliderView
         btnNext = binding.relLayNextView
-        relLayPermission = binding.relLayPermissionView
         viewpager = binding.viewpagerView
         btnBack = binding.relLayBackView
-        btnGivePermission = binding.cardPermissionView
         tabLayout =  binding.tabLayoutView
         tvNext = binding.tvNextView
         imgRightArrow = binding.imgRightArrowView
