@@ -16,7 +16,9 @@ This code is ;
 
 **You don't need to add. it was added.**
 
-**app build gradle ->**
+# Okey, Let's start integrating
+
+**You must add in app build gradle ->**
 
 <pre>implementation project(path: ':design')</pre> 
 
@@ -46,6 +48,8 @@ repositories {
         }
 }
 }</pre>
+
+**Value = 'XXX' is private token. We will send you when you start to integration sdk.** 
 
 
 # Usage
