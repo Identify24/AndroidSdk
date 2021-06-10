@@ -150,6 +150,34 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 
 **OpenIntroPage** -> If true, the intro pages of the selected modules are shown. This is optional(can be null, default value = true)
 
+**OpenThankYouPage** -> If true, the kyc finish page(thanks page) are shown. This is optional(can be null, default value = true)
+
+**DocumentType** -> There are 3 options ;
+
+- DocType.NONE -> Identity card or passport is selected by pop up on ocr screen. The users chooses. (Default)
+
+- DocType.ID_CARD -> Pop up are not shown. Default selected is id card. The user continues the processes with the identity card.
+
+- DocType.PASSPORT -> Pop up are not shown. Default selected is pasaport. The user continues the processes with the pasaport.
+
+**ModuleCacheType** -> If the sdk is exited before the operations are completed, it is determined where to continue when the user comes back.There are 3 options ;
+
+- ModuleCacheType.ALWAYS_BACK_TO_TOP -> Always start from the first module.
+
+- ModuleCacheType.CONTINUE_FROM_REST_OF_PLACE -> Continue from the module you left.
+
+- ModuleCacheType.CONTINUE_FROM_CALL -> If it has reached the call module, continue from the call module. (Default)
+
+**setNfcDependency** -> If you use the state's identity sharing system, it is necessary to activate this feature. In this way, there is no need to show the ocr screen. Because you give the user's credentials to the sdk. The information needed are:
+
+- ID Card or Pasaport Serial No
+
+- Date Of Birth(YYMMDD)
+
+- Date Of Expiry(YYMMDD)
+
+
+
 
 
 Language is optional(can be null). Default value is English. Supported languages are English, German and Turkish.
