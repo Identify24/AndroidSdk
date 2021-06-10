@@ -7,11 +7,14 @@ Step 1. You must manually include "design lib" in your project in order to you n
 github. Then include design lib in your project with this code ; 
 
 **Description About The Design Module**
+
 This design module does not contain logic. It contains only design and resource files. Thanks to this module, you can design the way you want. Within the design module, logic is managed by base classes. The base logic classes are available in your maven repository. The code to fetch the classes from our Maven repository is included in the design module. 
 
 This code is ;
 
-<pre> api 'com.identify.sdk:android:1.0.8' </pre>  --> You don't need to add. it was added.
+<pre> api 'com.identify.sdk:android:1.0.8' </pre>  
+
+**You don't need to add. it was added.**
 
 **app build gradle ->**
 
