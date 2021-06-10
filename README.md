@@ -56,21 +56,27 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 # For Kotlin
 <pre>
      val identityOptions = IdentityOptions.Builder()
-                .setIdentityType(listOf(
-                        IdentifyModuleTypes.DIJITAL_SIGNATURE,
-                        IdentifyModuleTypes.VIDEO_RECORD,
+                IdentityOptions.Builder()
+                    .setIdentityType(listOf(
+                        IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC,
                         IdentifyModuleTypes.TAKE_SELFIE,
+                        IdentifyModuleTypes.VITALITY_TEST,
                         IdentifyModuleTypes.SPEECH_TEST,
                         IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_CARD_PHOTO,
-                        IdentifyModuleTypes.VITALITY_TEST,
-                        IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC,
+                        IdentifyModuleTypes.VIDEO_RECORD,
+                        IdentifyModuleTypes.DIJITAL_SIGNATURE,
                         IdentifyModuleTypes.AGENT_CALL
-                ))
-                .setNfcExceptionCount(3) // Default value 3
-                .setCallConnectionTimeOut(5000) // Default value 10sn
-                .setVideoRecordTime(5000) // Default value 5sn
-                .setOpenIntroPage(true) //Default true
-                .build()
+                    ))
+                     .setNfcExceptionCount(3)
+                    .setCallConnectionTimeOut(20000)
+                    .setOpenIntroPage(false)
+                    .setDocumentType(DocType.NONE)
+                    .setModuleCacheType(ModuleCacheType.CONTINUE_FROM_CALL)
+                    .setSslCertificateInformation(listOf(SslCertificateInformation("(ssl sha256 finger print)sha256/DGBYYE8aafeisJmKsjlJTnOGA6PfHJ02kdZYS1+SjhY","(domain)api.identifytr.com")))
+                    .setNfcDependency(NfcDependency(wantToOpenOcr = true,"SerialNo(Z24I06557=example)","DateOfBirth(YYMMDD)","DateOfExpiry(YYMMDD)"))
+                    .setOpenThankYouPage(false)
+                    .setVideoRecordTime(5000)
+                    .build()
 
 
         val identifyObject = IdentifySdk.Builder()
@@ -91,7 +97,7 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 
 
 <pre>
-ArrayList<IdentifyModuleTypes> moduleList = new ArrayList<IdentifyModuleTypes>();
+  ArrayList<IdentifyModuleTypes> moduleList = new ArrayList<IdentifyModuleTypes>();
         moduleList.add(IdentifyModuleTypes.DIJITAL_SIGNATURE);
         moduleList.add(IdentifyModuleTypes.VIDEO_RECORD);
         moduleList.add(IdentifyModuleTypes.TAKE_SELFIE);
@@ -101,12 +107,20 @@ ArrayList<IdentifyModuleTypes> moduleList = new ArrayList<IdentifyModuleTypes>()
         moduleList.add(IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC);
         moduleList.add(IdentifyModuleTypes.AGENT_CALL);
 
+        ArrayList<SslCertificateInformation> sslCertificateInformations = new ArrayList<>();
+        sslCertificateInformations.add(new SslCertificateInformation("(ssl sha256 finger print)sha256/REIUHE8adrsisJmKsjlJTnOUH6PfHJ02yrZYS1+SjhY","(domain)api.example.com"));
+
         IdentityOptions options = new IdentityOptions.Builder()
-                .setIdentityType(moduleList)
+                .setIdentityType(moduleList) // Default value IdentityType.FULL_PROCESS
                 .setNfcExceptionCount(5) // Default value 3
-                .setCallConnectionTimeOut(5000) // Default value 10sn
-                .setVideoRecordTime(5000) // Default value 5sn
                 .setOpenIntroPage(true) //Default true
+                .setCallConnectionTimeOut(5000)
+                .setVideoRecordTime(5000)
+                .setDocumentType(DocType.NONE)
+                .setModuleCacheType(ModuleCacheType.ALWAYS_BACK_TO_TOP)
+                .setNfcDependency(new NfcDependency(true,"SerialNo","DateOfBirth(YYMMDD)","DateOfExpiry(YYMMDD)"))
+                .setSslCertificateInformation(sslCertificateInformations)
+                .setOpenThankYouPage(true)
                 .build();
 
 
@@ -124,17 +138,17 @@ ArrayList<IdentifyModuleTypes> moduleList = new ArrayList<IdentifyModuleTypes>()
 
 </pre>
 
-- Identify Options
+## Identify Options
 
-IdentityType -> Indicates the modules. Modules can be added or removed in any order. Modules should be added to a list.
+**IdentityType** -> Indicates the modules. Modules can be added or removed in any order. Modules should be added to a list.
 
-NfcExceptionCount -> This number specifies the maximum number of errors to be received when reading nfc.This process is passed after the number of errors exceeds this number. This is optional(can be null, default value = 3)
+**NfcExceptionCount** -> This number specifies the maximum number of errors to be received when reading nfc.This process is passed after the number of errors exceeds this number. This is optional(can be null, default value = 3)
 
-CallConnectionTimeOut -> This number indicates the timeout when connecting to the call. This is optional(can be null, default value = 10000ms)
+**CallConnectionTimeOut** -> This number indicates the timeout when connecting to the call. This is optional(can be null, default value = 10000ms)
 
-VideoRecordTime -> This number indicates the duration of the video to be recorded.This is optional(can be null, default value = 5000ms)
+**VideoRecordTime** -> This number indicates the duration of the video to be recorded.This is optional(can be null, default value = 5000ms)
 
-OpenIntroPage -> If true, the intro pages of the selected modules are shown. This is optional(can be null, default value = true)
+**OpenIntroPage** -> If true, the intro pages of the selected modules are shown. This is optional(can be null, default value = true)
 
 
 
