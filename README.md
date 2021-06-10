@@ -1,6 +1,5 @@
 # AndroidSdk
 
-# Gradle
 To get a Git project into your build:
 
 Step 1. You must manually include "design lib" in your project in order to you need to change the design completely. For this you can download the project from
@@ -16,7 +15,7 @@ This code is ;
 
 **You don't need to add. it was added.**
 
-# Okey, Let's start integrating
+# Okay, Let's start integrating with Gradle
 
 **You must add in app build gradle ->**
 
