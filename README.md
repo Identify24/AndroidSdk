@@ -209,11 +209,13 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 
 <pre>
 
-        identifyObject.identifyErrorListener = object : IdentifyErrorListener{
+         identifyObject.identifyErrorListener = object : IdentifyErrorListener{
             override fun identError(errorMessage: String) {
                 Toast.makeText(this@MainActivity,errorMessage,Toast.LENGTH_SHORT).show()
-            }
-        }
+             }
+          }
+       
+       
        
        
             identifyObject.identifyResultListener = object : IdentifyResultListener {
@@ -253,6 +255,7 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
                     }
 
                
+               
                 identifyObject.identifyNavigationListener = object  :
                         IdentifyNavigationListener {
                         override fun redirectCallProcess() {
@@ -264,6 +267,7 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
                         }
 
                     }
+
 
 
                  identifyObject.sdkLifeCycleListener = object : SdkLifeCycleListener {
