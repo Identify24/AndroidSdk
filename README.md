@@ -138,6 +138,23 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 
 </pre>
 
+## Modules Information 
+
+- **MRZ read:** The customer keeps his/her back side ID card on phone. MRZ field, which is on back side of ID card, should be read and data should be taken by OCR. It should be a module on mobile app. Also, a separate field for MRZ data on agent panel or at back.
+	
+- **NFC data:** The customer keeps close his/her ID card to phone. NFC data, which is in ID card chip, should be taken and decryption. It should be a module on mobile app. Also, a separate field for NFC data on agent panel.
+	
+- **Selfie:** The customer takes own selfie and send. It should be a separate module on mobile app. There can be a frame to guiding customer. Selfie photo is characterised differently on agent panel, e.g. standard name like selfie photo is given automatically.
+	
+- **Photo taken:** The customer takes photos of front and back side of ID card and send. It should be a separate module on mobile app. There can be a frame to guiding customer. These photos are named differently and shown on agent panel automatically. 
+	
+- **Vitality control:** This control has a few steps: Smiling, winking, turning head to right, turning head to left, speech. These are separate steps, and it should be a module on mobile app.
+	
+- **E-sign:** The customer can write and sign on phone. The data should be taken.
+	
+- **ID card data:** Data on ID card (name, surname, serial no, etc.) should be taken by OCR, and they are kept separately.
+	
+
 ## Identify Options
 
 **IdentityType** -> Indicates the modules. Modules can be added or removed in any order. Modules should be added to a list.
