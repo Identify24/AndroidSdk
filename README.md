@@ -190,19 +190,19 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 - xxxx-xxxx-xxxx-xxxx-xxxxxxx is ident id for kyc users. it is a unique id. Before starting the sdk, you need to get this id from the service.
 
 - Language is optional(can be null). Default value is English. Supported languages are English, German and Turkish.
-* for Turkish language parameter -> tr
-* for English language parameter -> en
-* for German language parameter -> de
 
-- 
+ 1. for Turkish language parameter -> **tr**
+ 2. for English language parameter -> **en**
+ 3. for German language parameter -> **de**
+
 
 
 # Listeners
 
-* *IdentifyErrorListener* -> "xxxx-xxxx-xxxx-xxxx-xxxxxxx" If the ident id is not found
-* *IdentifyResultListener* ->  when processes are over
-* *SdkLifeCycleListener* -> get sdk lifecycle
-* *IdentifyNavigationListener* -> when there are navigation operations
+* **IdentifyErrorListener** -> "xxxx-xxxx-xxxx-xxxx-xxxxxxx" If the ident id is not found
+* **IdentifyResultListener** ->  when processes are over
+* **SdkLifeCycleListener** -> get sdk lifecycle
+* **IdentifyNavigationListener** -> when there are navigation operations
 
 
 # For Kotlin
