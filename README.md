@@ -199,10 +199,10 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 
 # Listeners
 
-* IdentifyErrorListener -> "xxxx-xxxx-xxxx-xxxx-xxxxxxx" If the ident id is not found
-* IdentifyResultListener ->  when processes are over
-* SdkLifeCycleListener -> get sdk lifecycle
-* IdentifyNavigationListener -> when there are navigation operations
+* *IdentifyErrorListener* -> "xxxx-xxxx-xxxx-xxxx-xxxxxxx" If the ident id is not found
+* *IdentifyResultListener* ->  when processes are over
+* *SdkLifeCycleListener* -> get sdk lifecycle
+* *IdentifyNavigationListener* -> when there are navigation operations
 
 
 # For Kotlin
