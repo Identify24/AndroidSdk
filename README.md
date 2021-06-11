@@ -168,7 +168,7 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 
 - ModuleCacheType.CONTINUE_FROM_CALL -> If it has reached the call module, continue from the call module. (Default)
 
-**setNfcDependency** -> If you use the state's identity sharing system, it is necessary to activate this feature. In this way, there is no need to show the ocr screen. Because you give the user's credentials to the sdk. The information needed are:
+**setNfcDependency** -> If you use the state's identity sharing system, it is necessary to activate this feature. In this way, there is no need to show the ocr screen. Because you give the user's credentials to the sdk. The information needed are: ( Default Ocr Page Open )
 
 - ID Card or Pasaport Serial No
 
@@ -176,14 +176,25 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 
 - Date Of Expiry(YYMMDD)
 
+**SslCertificateInformation** -> You can use it when you want to pin requests made from sdk. Need 2 parameters about ssl certificate :
+
+- Domain (api.example.com)
+
+- ssl sha256 finger print (sha256/REIUHE8adrsisJmKsjlJTnOUH6PfHJ02yrZYS1+SjhY)
 
 
+## Identify Object
 
+- You must give the api, socket, stun, and turn information to the sdk for connection.
 
-Language is optional(can be null). Default value is English. Supported languages are English, German and Turkish.
+- xxxx-xxxx-xxxx-xxxx-xxxxxxx is ident id for kyc users. it is a unique id. Before starting the sdk, you need to get this id from the service.
+
+- Language is optional(can be null). Default value is English. Supported languages are English, German and Turkish.
 * for Turkish language parameter -> tr
 * for English language parameter -> en
 * for German language parameter -> de
+
+- 
 
 
 # Listeners
@@ -198,74 +209,77 @@ Language is optional(can be null). Default value is English. Supported languages
 
 <pre>
 
-       identifyObject.identifyErrorListener = object : IdentifyErrorListener{
+        identifyObject.identifyErrorListener = object : IdentifyErrorListener{
             override fun identError(errorMessage: String) {
                 Toast.makeText(this@MainActivity,errorMessage,Toast.LENGTH_SHORT).show()
             }
         }
        
        
-          identifyObject.identifyResultListener = object : IdentifyResultListener {
-            override fun nfcProcessFinished(isSuccess: Boolean, mrzDto: MrzDto?) {
-                Toast.makeText(this@MainActivity, "nfc process finished", Toast.LENGTH_SHORT).show()
-            }
+            identifyObject.identifyResultListener = object : IdentifyResultListener {
+                        override fun nfcProcessFinished(isSuccess: Boolean, mrzDto: MrzDto?) {
+                            Toast.makeText(this@MainActivity, "nfc process finished", Toast.LENGTH_SHORT).show()
+                        }
 
-            override fun vitalityDetectionProcessFinished() {
-                Toast.makeText(this@MainActivity, "face process finished", Toast.LENGTH_SHORT).show()
-            }
-            override fun callProcessFinished() {
-                Toast.makeText(this@MainActivity, "call process finished", Toast.LENGTH_SHORT).show()
-                //  identifyObject.closeSdk() // You can finish sdk with this method when in the process you want
-            }
+                        override fun vitalityDetectionProcessFinished() {
+                            Toast.makeText(this@MainActivity, "face process finished", Toast.LENGTH_SHORT).show()
+                        }
 
-            override fun takeCardPhotoProcessFinished() {
-                Toast.makeText(this@MainActivity, "card photo process finished", Toast.LENGTH_SHORT).show()
-            }
+                        override fun callProcessFinished(withRedirect: Boolean) {
+                            Toast.makeText(this@MainActivity, "call process finished", Toast.LENGTH_SHORT).show()
+                            //  identifyObject.closeSdk() // You can finish sdk with this method when in the process you want
+                        }
 
-            override fun takeSelfieProcessFinished() {
-                Toast.makeText(this@MainActivity, "selfie process finished", Toast.LENGTH_SHORT).show()
-            }
+                        override fun takeCardPhotoProcessFinished() {
+                            Toast.makeText(this@MainActivity, "card photo process finished", Toast.LENGTH_SHORT).show()
+                        }
 
-            override fun speechProcessFinished() {
-                Toast.makeText(this@MainActivity, "speech process finished", Toast.LENGTH_SHORT).show()
-            }
+                        override fun takeSelfieProcessFinished() {
+                            Toast.makeText(this@MainActivity, "selfie process finished", Toast.LENGTH_SHORT).show()
+                        }
 
-            override fun videoRecordProcessFinished() {
-                Toast.makeText(this@MainActivity, "video record process finished", Toast.LENGTH_SHORT).show()
-            }
+                        override fun speechProcessFinished() {
+                            Toast.makeText(this@MainActivity, "speech process finished", Toast.LENGTH_SHORT).show()
+                        }
 
-            override fun signatureProcessFinished() {
-                Toast.makeText(this@MainActivity, "signature process finished", Toast.LENGTH_SHORT).show()
-            }
+                        override fun videoRecordProcessFinished() {
+                            Toast.makeText(this@MainActivity, "video record process finished", Toast.LENGTH_SHORT).show()
+                        }
 
-        }
+                        override fun signatureProcessFinished() {
+                            Toast.makeText(this@MainActivity, "signature process finished", Toast.LENGTH_SHORT).show()
+                        }
 
-identifyObject.identifyNavigationListener = object  : IdentifyNavigationListener {
-            override fun redirectCallProcess() {
-                Toast.makeText(this@MainActivity, "Redirect Call Process", Toast.LENGTH_SHORT).show()
-            }
+                    }
 
-            override fun backPressed(whereFrom: IdentifyModuleTypes) {
-                Toast.makeText(this@MainActivity, whereFrom.name + " Back Pressed", Toast.LENGTH_SHORT).show()
-            }
+               
+                identifyObject.identifyNavigationListener = object  :
+                        IdentifyNavigationListener {
+                        override fun redirectCallProcess() {
+                            Toast.makeText(this@MainActivity, "Redirect Call Process", Toast.LENGTH_SHORT).show()
+                        }
 
-        }
+                        override fun backPressed(whereFrom: IdentifyModuleTypes) {
+                            Toast.makeText(this@MainActivity, whereFrom.name + " Back Pressed", Toast.LENGTH_SHORT).show()
+                        }
+
+                    }
 
 
-        identifyObject.sdkLifeCycleListener = object : SdkLifeCycleListener {
-            override fun sdkDestroyed() {
-                // Sdk Activity Destroyed
-            }
+                 identifyObject.sdkLifeCycleListener = object : SdkLifeCycleListener {
+                        override fun sdkDestroyed() {
+                            // Sdk Activity Destroyed
+                        }
 
-            override fun sdkPaused() {
-                // Sdk Activity Paused
-            }
+                        override fun sdkPaused() {
+                            // Sdk Activity Paused
+                        }
 
-            override fun sdkResumed() {
-                // Sdk Activity Resumed
-            }
+                        override fun sdkResumed() {
+                            // Sdk Activity Resumed
+                        }
 
-        }
+                    }
 
 
 </pre>
@@ -281,7 +295,13 @@ identifyObject.identifyNavigationListener = object  : IdentifyNavigationListener
             }
         });
 
-        identifyObject.setIdentifyResultListener(new IdentifyResultListener() {
+              identifyObject.setIdentifyResultListener(new IdentifyResultListener() {
+            @Override
+            public void callProcessFinished(boolean withRedirect) {
+                Toast.makeText(getBaseContext(),"call process finished",Toast.LENGTH_SHORT).show();
+                identifyObject.closeSdk(); // You can finish sdk with this method when in the process you want
+            }
+
             @Override
             public void signatureProcessFinished() {
                 Toast.makeText(getBaseContext(),"signature process finished",Toast.LENGTH_SHORT).show();
@@ -299,12 +319,12 @@ identifyObject.identifyNavigationListener = object  : IdentifyNavigationListener
 
             @Override
             public void takeSelfieProcessFinished() {
-                Toast.makeText(getBaseContext(),"take selfie process finished",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(),"selfie process finished",Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void takeCardPhotoProcessFinished() {
-                Toast.makeText(getBaseContext(),"take card photo process finished",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(),"card photo process finished",Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -317,15 +337,10 @@ identifyObject.identifyNavigationListener = object  : IdentifyNavigationListener
                 Toast.makeText(getBaseContext(),"face process finished",Toast.LENGTH_SHORT).show();
             }
 
-            @Override
-            public void callProcessFinished() {
-                Toast.makeText(getBaseContext(),"call process finished",Toast.LENGTH_SHORT).show();
-               // identifyObject.closeSdk(); -> You can finish sdk with this method when in the process you want
-            }
         });
 
 
- identifyObject.setIdentifyNavigationListener(new IdentifyNavigationListener() {
+      identifyObject.setIdentifyNavigationListener(new IdentifyNavigationListener() {
             @Override
             public void redirectCallProcess() {
                 Toast.makeText(getBaseContext(),"Redirect Call Process",Toast.LENGTH_SHORT).show();
@@ -333,9 +348,10 @@ identifyObject.identifyNavigationListener = object  : IdentifyNavigationListener
 
             @Override
             public void backPressed(@NotNull IdentifyModuleTypes whereFrom) {
-                Toast.makeText(getBaseContext(),whereFrom.name() + " Back Pressed",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(),whereFrom.toString()+" Back Pressed",Toast.LENGTH_SHORT).show();
             }
         });
+
 
         identifyObject.setSdkLifeCycleListener(new SdkLifeCycleListener() {
             @Override
