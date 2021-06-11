@@ -295,6 +295,9 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
             }
         });
 
+
+
+
               identifyObject.setIdentifyResultListener(new IdentifyResultListener() {
             @Override
             public void callProcessFinished(boolean withRedirect) {
@@ -340,6 +343,8 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
         });
 
 
+
+
       identifyObject.setIdentifyNavigationListener(new IdentifyNavigationListener() {
             @Override
             public void redirectCallProcess() {
@@ -351,6 +356,7 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
                 Toast.makeText(getBaseContext(),whereFrom.toString()+" Back Pressed",Toast.LENGTH_SHORT).show();
             }
         });
+
 
 
         identifyObject.setSdkLifeCycleListener(new SdkLifeCycleListener() {
