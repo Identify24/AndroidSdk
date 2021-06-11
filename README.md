@@ -5,7 +5,7 @@ github. Then include design lib in your project with this code ;
 
 **Description About The Design Module**
 
-This design module does not contain logic. It contains only design and resource files. Thanks to this module, you can design the way you want. Within the design module, logic is managed by base classes. The base logic classes are available in your maven repository. The code to fetch the classes from our Maven repository is included in the design module. 
+This design module does not contain logic. It contains only design and resource files. Thanks to this module, you can design the way you want. Within the design module, logic is managed by base classes. The base logic classes are available in our maven repository. The code to fetch the classes from our Maven repository is included in the design module. 
 
 This code is ;
 
