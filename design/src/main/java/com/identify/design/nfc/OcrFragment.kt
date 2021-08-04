@@ -2,12 +2,11 @@ package com.identify.design.nfc
 
 import android.app.AlertDialog
 import android.content.DialogInterface
-import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentMrzBinding
 import com.identify.design.util.showInformationDialog
 import com.identify.sdk.base.viewBinding.viewBinding
-import com.identify.sdk.mrz.BaseOcrFragment
+import com.identify.sdk.mrz.newocr.BaseOcrFragment
 import com.identify.sdk.repository.model.mrz.DocType
 
 class OcrFragment : BaseOcrFragment() {
@@ -24,8 +23,9 @@ class OcrFragment : BaseOcrFragment() {
 
     override fun initViews() {
         btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
-        graphicsOverlay = binding.graphicsOverlayView
-        cameraSourcePreview = binding.cameraSourcePreviewView
+        overlay = binding.overlay
+        textOverlay = binding.textOverlay
+        ocrPreview = binding.ocrPreview
     }
 
     override fun showOcrForPassportInformation() {

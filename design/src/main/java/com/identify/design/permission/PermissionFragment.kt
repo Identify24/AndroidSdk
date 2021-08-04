@@ -1,6 +1,8 @@
 package com.identify.design.permission
 
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.View
 import com.identify.design.R
 import com.identify.design.databinding.FragmentPermissionBinding
 import com.identify.design.util.alert
@@ -29,6 +31,8 @@ class PermissionFragment : BasePermissionFragment() {
         }, {})
 
     }
+
+
 
     override fun getLayoutRes(): Int  = R.layout.fragment_permission
 

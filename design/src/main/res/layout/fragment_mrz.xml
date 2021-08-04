@@ -6,37 +6,39 @@
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <include
+        android:id="@+id/directCallWaitingView"
         layout="@layout/band_redirect_call"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/directCallWaitingView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.identify.sdk.mrz.mlkit.camera.CameraSourcePreview
-            android:id="@+id/cameraSourcePreviewView"
+    <androidx.camera.view.PreviewView
+        android:id="@+id/ocrPreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directCallWaitingView" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ocrPreview">
+
+        <SurfaceView
+            android:id="@+id/overlay"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent" />
 
-            <com.identify.sdk.mrz.mlkit.other.GraphicOverlay
-                android:id="@+id/graphicsOverlayView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-        </com.identify.sdk.mrz.mlkit.camera.CameraSourcePreview>
-
-        <View
+        <SurfaceView
+            android:id="@+id/textOverlay"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/border_background" />
+            android:layout_height="match_parent" />
+    </FrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

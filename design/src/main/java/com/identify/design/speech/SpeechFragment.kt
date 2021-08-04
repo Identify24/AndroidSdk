@@ -43,9 +43,5 @@ class SpeechFragment : BaseSpeechFragment() {
         fun newInstance() = SpeechFragment()
     }
 
-    override fun speechModuleFinished() {
-        finish()
-    }
-
     override fun getLayoutRes(): Int = R.layout.fragment_speech
 }

@@ -1,12 +1,15 @@
 package com.identify.design.liveness
 
 import android.os.Bundle
+import androidx.fragment.app.DialogFragment
 import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentLivenessDetectionBinding
+import com.identify.design.flowbreak.FlowBreakFragment
 import com.identify.design.util.showInformationDialog
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.face.BaseLivenessDetectionFragment
+import com.identify.sdk.repository.model.enums.IdentifyInformationTypes
 
 class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
 
@@ -23,7 +26,7 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
     }
 
     override fun showLivenessFinishedInformation() {
-        this.showInformationDialog(R.raw.success,null,getString(R.string.vitality_title),getString(R.string.finish_vitality_process))
+       this.showInformationDialog(R.raw.success,null,getString(R.string.vitality_title),getString(R.string.finish_vitality_process))
     }
 
     override fun getLivenessFinishedStatusText(): String = getString(R.string.finish_vitality_process)
@@ -32,9 +35,12 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
 
     override fun getSuccessAnimationRepeatCount(): Int = 0
 
-    override fun livenessDetectionModuleFinished() {
-        finish()
-    }
+
+    // canlılık kontrolleri arasına custom dialog eklenmek istediğinde
+/*
+    override fun setBackStackOpenWithFragmentList(): List<DialogFragment?>? {
+        return listOf(FlowBreakFragment.newInstance(IdentifyInformationTypes.VITALITY_TEST_INFORMATION),FlowBreakFragment.newInstance(IdentifyInformationTypes.VITALITY_TEST_INFORMATION),FlowBreakFragment.newInstance(IdentifyInformationTypes.VITALITY_TEST_INFORMATION),FlowBreakFragment.newInstance(IdentifyInformationTypes.VITALITY_TEST_INFORMATION))
+    }*/
 
     override fun getLayoutRes(): Int = R.layout.fragment_liveness_detection
 

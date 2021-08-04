@@ -26,7 +26,7 @@ class NfcFragment : BaseNfcFragment() {
     }
 
     override fun showNfcForPassportInformation() {
-        this.showInformationDialog(R.raw.nfc,R.drawable.img_passport,getString(R.string.mrz_info_title),getString(R.string.nfc_info_desc_passport),isImgFrameVisible = View.VISIBLE)
+       this.showInformationDialog(R.raw.nfc,R.drawable.img_passport,getString(R.string.mrz_info_title),getString(R.string.nfc_info_desc_passport),isImgFrameVisible = View.VISIBLE)
     }
 
     override fun showNfcForIdInformation() {

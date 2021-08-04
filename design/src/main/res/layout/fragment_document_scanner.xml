@@ -6,18 +6,31 @@
     android:layout_height="match_parent"
     android:background="@android:color/black"
     android:keepScreenOn="true">
-
     <include
         layout="@layout/band_redirect_call"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/directCallWaitingView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-
     <androidx.camera.view.PreviewView
         android:id="@+id/documentPreviewView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+<!--    <SurfaceView
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/documentPreviewView"
+        app:layout_constraintEnd_toEndOf="@id/documentPreviewView"
+        app:layout_constraintBottom_toBottomOf="@id/documentPreviewView"
+        app:layout_constraintTop_toTopOf="@id/documentPreviewView" />-->
+
+
     <com.identify.sdk.util.ViewFinderBackground
         android:id="@+id/finderBackgroundView"
         android:layout_width="0dp"

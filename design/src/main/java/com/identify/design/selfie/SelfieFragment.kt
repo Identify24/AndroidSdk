@@ -1,5 +1,6 @@
 package com.identify.design.selfie
 
+import android.view.View
 import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentNfcModuleBinding
@@ -8,9 +9,12 @@ import com.identify.design.util.hideProgressDialog
 import com.identify.design.util.showInformationDialog
 import com.identify.design.util.showProgressDialog
 import com.identify.sdk.base.viewBinding.viewBinding
+import com.identify.sdk.information.BaseInformationDialogFragment
 import com.identify.sdk.selfie.BaseSelfieFragment
+import com.identify.sdk.toasty.Toasty
 
-class SelfieFragment : BaseSelfieFragment() {
+class SelfieFragment : BaseSelfieFragment(),
+    BaseInformationDialogFragment.InformationStatusListener {
 
 
     val binding by viewBinding(FragmentSelfieBinding::bind)
@@ -42,6 +46,13 @@ class SelfieFragment : BaseSelfieFragment() {
         this.hideProgressDialog()
     }
 
+ // onbackpressclicked metodu override edilerek kullanıcı fiziksel geri butonuna bastığında alınacak aksiyonları yönetebilirsiniz.
+  /*  override fun onBackPressClicked(click: () -> Unit, disable: Boolean) {
+        super.onBackPressClicked({
+               Toasty.error(requireContext(),"back pressed",Toasty.LENGTH_SHORT).show()
+        },false)
+    }*/
+
     companion object {
         @JvmStatic
         fun newInstance() =
@@ -49,9 +60,6 @@ class SelfieFragment : BaseSelfieFragment() {
     }
 
 
-    override fun takeSelfieModuleFinished() {
-        finish()
-    }
 
     override fun getLayoutRes(): Int = R.layout.fragment_selfie
 }

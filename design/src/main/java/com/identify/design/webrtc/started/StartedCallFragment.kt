@@ -1,11 +1,13 @@
 package com.identify.design.webrtc.started
 
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import androidx.viewbinding.ViewBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.identify.design.R
 import com.identify.design.databinding.FragmentStartedCallBinding
 import com.identify.design.dialogs.TanBottomDialogFragment
+import com.identify.sdk.BaseIdentifyActivity
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.webrtc.started.BaseStartedCallFragment
 
@@ -22,6 +24,8 @@ class StartedCallFragment : BaseStartedCallFragment() {
         animIdLoading = binding.idLoadingAnimationView
         animFaceLoading = binding.faceLoadingAnimationView
     }
+
+
 
     override fun getConnectionErrorMessage(): String = getString(R.string.connection_error_when_calling)
 
@@ -40,6 +44,7 @@ class StartedCallFragment : BaseStartedCallFragment() {
     override fun errorBackPressed(): String = getString(R.string.identify_is_in_progress)
 
     override fun getLayoutRes(): Int = R.layout.fragment_started_call
+
 
 
     companion object {

@@ -40,10 +40,6 @@ class VideoRecordFragment : BaseVideoRecordFragment() {
             VideoRecordFragment()
     }
 
-    override fun videoRecordModuleFinished() {
-        finish()
-        // or  (activity as BaseIdentifyActivity).showFragment( FlowBreakFragment.newInstance(), FlowBreakFragment::class.java.toString())
-    }
 
     override fun getLayoutRes(): Int = R.layout.fragment_video_record
 }

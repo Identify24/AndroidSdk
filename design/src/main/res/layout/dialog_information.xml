@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/rootRelLay"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRelLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_centerInParent="true"
-            android:layout_gravity="center_horizontal"
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="20dp"
-            >
-            <LinearLayout
-                android:orientation="vertical"
+            android:background="@drawable/new_background"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imgCloseBtnView"
                 android:layout_width="wrap_content"
-                android:background="@drawable/new_background"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close_img"
+                />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_height="wrap_content">
-                <ImageButton
-                    android:id="@+id/imgCloseBtnView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:padding="20dp"
-                    android:background="@android:color/transparent"
-                    android:src="@drawable/ic_close_img"
-                    />
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="wrap_content">
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/animDetectionStatusView"
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_marginStart="30dp"
-                        android:visibility="gone"
-                        android:layout_marginEnd="30dp"
-                        app:lottie_autoPlay="false"
-                        android:layout_marginTop="20dp"
-                        app:lottie_loop="false" />
-                    <ImageView
-                        android:layout_width="230dp"
-                        android:layout_height="150dp"
-                        android:layout_marginEnd="30dp"
-                        android:layout_marginTop="20dp"
-                        android:id="@+id/imgInfoView"
-                        android:layout_marginBottom="10dp"
-                        android:visibility="gone"
-                        android:layout_marginStart="30dp"/>
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="90dp"
-                        android:id="@+id/imgFrameView"
-                        android:layout_marginEnd="20dp"
-                        android:visibility="gone"
-                        android:src="@drawable/all_white_border_transparent_bg"
-                        android:layout_marginStart="20dp"
-                        android:layout_gravity="bottom|center_horizontal"/>
-
-                </FrameLayout>
-                 <TextView
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animDetectionStatusView"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="30dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="30dp"
+                    app:lottie_autoPlay="false"
                     android:layout_marginTop="20dp"
-                    android:id="@+id/tvInfoTitleView"
-                    android:gravity="center"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="@font/nexa_slab_bold"
-                    android:layout_gravity="center_horizontal"
-                    android:textSize="20sp"
+                    app:lottie_loop="false" />
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imgInfoView"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:layout_marginStart="30dp"/>
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/imgFrameView"
                     android:layout_marginEnd="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/all_white_border_transparent_bg"
                     android:layout_marginStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_gravity="bottom|center_horizontal"/>
+
+            </FrameLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvInfoTitleView"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvInfoContentView"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardContinueBtnView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="12dp">
 
                 <TextView
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/tvInfoContentView"
-                    android:gravity="center"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="@font/nunito_sans_regular"
-                    android:layout_gravity="center_horizontal"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginStart="20dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nexa_slab_bold"
+                    android:text="@string/go_on"
+                    android:textColor="@color/colorDarkBlue"
+                    android:textSize="18sp" />
 
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardContinueBtnView"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="20dp"
-                    android:foreground="?attr/selectableItemBackground"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardCornerRadius="12dp">
+            </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/nexa_slab_bold"
-                        android:text="@string/go_on"
-                        android:textColor="@color/colorDarkBlue"
-                        android:textSize="18sp" />
-
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

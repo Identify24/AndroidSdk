@@ -93,47 +93,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </RelativeLayout>
-    <LinearLayout
-        android:id="@+id/buttonPanel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ToggleButton
-            android:id="@+id/microphoneEnabledToggle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:button="@drawable/ic_microphone_toggle"
-            android:contentDescription="@string/desc_toggle_microphone"
-            android:minWidth="0dp"
-            android:minHeight="0dp" />
-
-        <ImageButton
-            android:id="@+id/disconnectButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="?selectableItemBackgroundBorderless"
-            android:contentDescription="@string/desc_hangup"
-            android:src="@drawable/call_end_button" />
-
-        <ToggleButton
-            android:id="@+id/cameraEnabledToggle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:button="@drawable/ic_videocam_on_off_toggle"
-            android:contentDescription="@string/desc_toggle_camera"
-            android:minWidth="0dp"
-            android:minHeight="0dp" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
         <!--bottom sheet container-->

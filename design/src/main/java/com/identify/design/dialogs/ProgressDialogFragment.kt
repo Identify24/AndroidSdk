@@ -17,6 +17,7 @@ class ProgressDialogFragment : BaseProgressDialogFragment() {
         fun  newInstance() = ProgressDialogFragment()
     }
 
+
     override fun getLayoutRes(): Int = R.layout.progress_view
 
 

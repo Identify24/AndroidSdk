@@ -21,7 +21,7 @@ class SignatureFragment : BaseSignatureFragment() {
     }
 
     override fun showSignatureInformation() {
-       this.showInformationDialog(R.raw.signature,null,getString(R.string.pls_sign),getString(R.string.pls_sign_desc))
+        this.showInformationDialog(R.raw.signature,null,getString(R.string.pls_sign),getString(R.string.pls_sign_desc))
     }
 
     override fun showProgress() {
@@ -41,9 +41,6 @@ class SignatureFragment : BaseSignatureFragment() {
             SignatureFragment()
     }
 
-    override fun signatureModuleFinished() {
-        finish()
-    }
 
     override fun getLayoutRes(): Int = R.layout.fragment_signature
 
