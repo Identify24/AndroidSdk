@@ -3,6 +3,8 @@
 Step 1. You must manually include "design lib" in your project in order to you need to change the design completely. For this you can download the project from
 github. Then include design lib in your project with this code ; 
 
+<div style="width:100%;height:0;padding-bottom:71%;position:relative;"><iframe src="https://giphy.com/embed/oalNKyt5zPtntjUGZG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/oalNKyt5zPtntjUGZG">via GIPHY</a></p>
+
 **Description About The Design Module**
 
 This design module does not contain logic. It contains only design and resource files. Thanks to this module, you can design the way you want. Within the design module, logic is managed by base classes. The base logic classes are available in our maven repository. The code to fetch the classes from our Maven repository is included in the design module. 
