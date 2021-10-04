@@ -52,7 +52,7 @@ repositories {
 
 **Identify SDK Navigation Design Pattern**
 
-![](https://media4.giphy.com/media/oalNKyt5zPtntjUGZG/giphy.gif?cid=790b761152eeea63e50b21acea3df238e50bd6137224b1fc&rid=giphy.gif&ct=g){:height="700px" width="400px"}
+![](https://media.giphy.com/media/oalNKyt5zPtntjUGZG/giphy.gif)
 
 
 # Usage
