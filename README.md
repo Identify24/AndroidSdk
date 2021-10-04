@@ -3,7 +3,6 @@
 Step 1. You must manually include "design lib" in your project in order to you need to change the design completely. For this you can download the project from
 github. Then include design lib in your project with this code ; 
 
-![](https://media4.giphy.com/media/oalNKyt5zPtntjUGZG/giphy.gif?cid=790b761152eeea63e50b21acea3df238e50bd6137224b1fc&rid=giphy.gif&ct=g)
 
 **Description About The Design Module**
 
@@ -49,6 +48,11 @@ repositories {
 }</pre>
 
 **Value = 'XXX' is private token. We will send you when you start to integration sdk.** 
+
+
+**Identify SDK Navigation Design Pattern**
+
+![](https://media4.giphy.com/media/oalNKyt5zPtntjUGZG/giphy.gif?cid=790b761152eeea63e50b21acea3df238e50bd6137224b1fc&rid=giphy.gif&ct=g){:height="700px" width="400px"}
 
 
 # Usage
