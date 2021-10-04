@@ -1,13 +1,17 @@
 package com.identify.design.dialogs
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.DrawableRes
+import androidx.core.content.ContextCompat
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.DialogInformationBinding
+import com.identify.sdk.BaseIdentifyActivity
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.information.BaseInformationDialogFragment
+import com.identify.sdk.repository.model.enums.IdentifyInformationTypes
 
 class InformationDialogFragment : BaseInformationDialogFragment() {
 
@@ -20,7 +24,7 @@ class InformationDialogFragment : BaseInformationDialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
+        setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
     }
 
     override fun getLayoutRes(): Int = R.layout.dialog_information
@@ -36,16 +40,19 @@ class InformationDialogFragment : BaseInformationDialogFragment() {
         btnClose = binding.imgCloseBtnView
     }
 
+    override fun changeStatusColor(): Int? = android.R.color.transparent
+
 
     companion object {
 
         @JvmStatic
-        fun newInstance(@DrawableRes animResourceId : Int?,@DrawableRes imgResourceId : Int?,infoTitleText : String,infoContentText : String,animRepeatCount : Int = LottieDrawable.INFINITE,isImgFrameVisible: Int = View.GONE) =
+        fun newInstance(identifyInformationTypes: IdentifyInformationTypes,@DrawableRes animResourceId : Int?=null,@DrawableRes imgResourceId : Int?=null,infoTitleText : String,infoContentText : String,animRepeatCount : Int = LottieDrawable.INFINITE,isImgFrameVisible: Int = View.GONE) =
             InformationDialogFragment().apply {
                 arguments = Bundle().apply {
                     putString("infoContentText",infoContentText)
                     putString("infoTitleText",infoTitleText)
                     putInt("animRepeatCount",animRepeatCount)
+                    putString("identifyInformationTypes",identifyInformationTypes.name)
                     putInt("isImgFrameVisible",isImgFrameVisible)
                     animResourceId?.let { putInt("animResourceId", it) }
                     imgResourceId?.let { putInt("imgResourceId",it) }

@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="SdkAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/primaryColor</item>
-        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorPrimaryDark">@color/colorGreen</item>
         <item name="colorSecondary">@color/secondaryColor</item>
         <item name="colorAccent">@color/secondaryDarkColor</item>
         <item name="android:textColorPrimary">@color/primaryTextColor</item>

@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rootRelLay"
+<LinearLayout android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_centerInParent="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        >
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:background="@drawable/new_background"
-            android:layout_height="wrap_content">
+    android:background="@drawable/new_background"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
             <ImageButton
                 android:id="@+id/imgCloseBtnView"
                 android:layout_width="wrap_content"
@@ -116,5 +101,3 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</RelativeLayout>

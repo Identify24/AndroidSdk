@@ -20,9 +20,8 @@ class SignatureFragment : BaseSignatureFragment() {
         btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
     }
 
-    override fun showSignatureInformation() {
-        this.showInformationDialog(R.raw.signature,null,getString(R.string.pls_sign),getString(R.string.pls_sign_desc))
-    }
+    override fun changeStatusColor(): Int? = R.color.colorGreen
+
 
     override fun showProgress() {
         this.showProgressDialog()

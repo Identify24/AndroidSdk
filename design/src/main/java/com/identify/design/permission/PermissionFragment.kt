@@ -19,6 +19,8 @@ class PermissionFragment : BasePermissionFragment() {
         btnAllowPermission = binding.btnAllowPermissionView
     }
 
+    override fun changeStatusColor(): Int? = android.R.color.transparent
+
     override fun getPermissionDeniedToastMessage(): String? = null
 
     override fun showRationaleDialog(request: PermissionRequest) {

@@ -24,9 +24,8 @@ class VideoRecordFragment : BaseVideoRecordFragment() {
         tvSecond = binding.tvSecondView
     }
 
-    override fun showVideoRecordInformation() {
-       this.showInformationDialog(R.raw.video_record,null, getString(R.string.record_video), getString(R.string.record_video_desc))
-    }
+    override fun changeStatusColor(): Int? = R.color.colorGreen
+
 
     override fun setVideoRecordingAnimation(): Int =  R.raw.video_record
 

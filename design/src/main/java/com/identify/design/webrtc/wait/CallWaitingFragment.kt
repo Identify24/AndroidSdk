@@ -12,12 +12,9 @@ class CallWaitingFragment : BaseCallWaitingFragment() {
     val binding by viewBinding(FragmentWaitingCallBinding::bind)
 
 
-
-    override fun showCallInformation() {
-        this.showInformationDialog(R.raw.customer_sup,null,getString(R.string.call_info_title),getString(R.string.call_info_desc))
-    }
-
     override fun getLayoutRes(): Int = R.layout.fragment_waiting_call
+
+    override fun changeStatusColor(): Int? = android.R.color.transparent
 
     companion object {
 

@@ -28,7 +28,7 @@ class IntroFragment : BaseIntroFragment() {
         imgLeftArrow = binding.imgLeftArrowView
     }
 
-
+    override fun changeStatusColor(): Int? = android.R.color.transparent
 
     override fun getCardPhotoModulePair(): List<Pair<Drawable?, String>> = listOf( Pair(
         ContextCompat.getDrawable(requireContext(), R.drawable.ic_ocr_illustration), getString(

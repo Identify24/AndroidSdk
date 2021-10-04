@@ -16,6 +16,8 @@ class ThankYouFragment : BaseThankYouFragment() {
         btnFinish = binding.cardFinishView
     }
 
+    override fun changeStatusColor(): Int? = android.R.color.transparent
+
     override fun getLayoutRes(): Int = R.layout.fragment_thank_you
 
     companion object {

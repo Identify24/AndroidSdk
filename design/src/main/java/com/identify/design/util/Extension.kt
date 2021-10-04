@@ -1,6 +1,7 @@
 package com.identify.design.util
 
 
+import android.app.Activity
 import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
@@ -12,6 +13,7 @@ import android.media.Image
 import android.util.Size
 import android.view.View
 import androidx.annotation.CheckResult
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.dialogs.InformationDialogFragment
@@ -22,8 +24,13 @@ import kotlin.math.roundToInt
 
 
 fun Fragment.showInformationDialog(anim : Int?,img : Int?, title : String,description: String,animRepeatCount : Int = LottieDrawable.INFINITE,isImgFrameVisible : Int = View.GONE){
-    val fragment = InformationDialogFragment.newInstance(anim,img,title,description,animRepeatCount,isImgFrameVisible)
-    fragment.show(this.childFragmentManager, InformationDialogFragment::class.java.toString())
+    //val fragment = InformationDialogFragment.newInstance(anim,img,title,description,animRepeatCount,isImgFrameVisible)
+   // fragment.show(this.childFragmentManager, InformationDialogFragment::class.java.toString())
+}
+
+fun AppCompatActivity.showInformationDialog(anim : Int?,img : Int?, title : String,description: String,animRepeatCount : Int = LottieDrawable.INFINITE,isImgFrameVisible : Int = View.GONE){
+    //val fragment = InformationDialogFragment.newInstance(anim,img,title,description,animRepeatCount,isImgFrameVisible)
+    //fragment.show(this.supportFragmentManager, InformationDialogFragment::class.java.toString())
 }
 
 

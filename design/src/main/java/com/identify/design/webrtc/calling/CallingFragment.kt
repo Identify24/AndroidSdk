@@ -16,6 +16,8 @@ class CallingFragment : BaseCallingFragment() {
         btnAcceptCall = binding.ibAcceptCallView
     }
 
+    override fun changeStatusColor(): Int? = android.R.color.transparent
+
     override fun getRingMedia(): Int = R.raw.call_ring
 
     override fun setRingMediaLoop(): Boolean = true

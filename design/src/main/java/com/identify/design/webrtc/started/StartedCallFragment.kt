@@ -25,6 +25,8 @@ class StartedCallFragment : BaseStartedCallFragment() {
         animFaceLoading = binding.faceLoadingAnimationView
     }
 
+    override fun changeStatusColor(): Int? = android.R.color.transparent
+
 
 
     override fun getConnectionErrorMessage(): String = getString(R.string.connection_error_when_calling)

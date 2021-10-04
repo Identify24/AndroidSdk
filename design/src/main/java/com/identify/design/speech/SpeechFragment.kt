@@ -21,9 +21,9 @@ class SpeechFragment : BaseSpeechFragment() {
         ibMicrophone = binding.ibMicrophoneView
     }
 
-    override fun showSpeechInformation() {
-        showInformationDialog(R.raw.speech, null, getString(R.string.vitality_title), getString(R.string.speech_info_desc))
-    }
+    override fun changeStatusColor(): Int? = R.color.colorGreen
+
+
 
     override fun errorWrongTextPlsTryAgainText(): String = getString(R.string.wrong_text_pls_try)
 

@@ -25,50 +25,44 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
         animSuccessStatus = binding.successStatusAnimationView
     }
 
-    override fun showLivenessFinishedInformation() {
-       this.showInformationDialog(R.raw.success,null,getString(R.string.vitality_title),getString(R.string.finish_vitality_process))
+    override fun changeStatusColor(): Int? {
+        return R.color.colorGreen
     }
 
-    override fun getLivenessFinishedStatusText(): String = getString(R.string.finish_vitality_process)
+
+    override fun startingBlinkProcess() {
+       // this.showInformationDialog(R.raw.blink_couple,null,getString(R.string.vitality_title),getString(R.string.blink_text))
+        binding.tvFaceStatusView.text = getString(R.string.blink_text)
+    }
+
+    override fun startingSmileProcess() {
+        //this.showInformationDialog(R.raw.smile,null,getString(R.string.vitality_title),getString(R.string.smiling_text_content),0)
+        binding.tvFaceStatusView.text = getString(R.string.smiling_text)
+    }
+
+    override fun startingTurnLeftProcess() {
+        // this.showInformationDialog(R.raw.look_left,null,getString(R.string.vitality_title),getString(R.string.turn_your_head_left_text))
+        binding.tvFaceStatusView.text = getString(R.string.turn_your_head_left_text)
+    }
+
+    override fun startingTurnRightProcess() {
+      //  this.showInformationDialog(R.raw.look_right,null,getString(R.string.vitality_title),getString(R.string.turn_your_head_right_text))
+        binding.tvFaceStatusView.text = getString(R.string.turn_your_head_right_text)
+    }
+
+    override fun finishedLivenessDetection() {
+        binding.tvFaceStatusView.text = getString(R.string.finish_vitality_process)
+        super.finishedLivenessDetection()
+    }
+
 
     override fun getSuccessAnimationId(): Int = R.raw.smile
 
     override fun getSuccessAnimationRepeatCount(): Int = 0
 
-
-    // canlılık kontrolleri arasına custom dialog eklenmek istediğinde
-/*
-    override fun setBackStackOpenWithFragmentList(): List<DialogFragment?>? {
-        return listOf(FlowBreakFragment.newInstance(IdentifyInformationTypes.VITALITY_TEST_INFORMATION),FlowBreakFragment.newInstance(IdentifyInformationTypes.VITALITY_TEST_INFORMATION),FlowBreakFragment.newInstance(IdentifyInformationTypes.VITALITY_TEST_INFORMATION),FlowBreakFragment.newInstance(IdentifyInformationTypes.VITALITY_TEST_INFORMATION))
-    }*/
-
     override fun getLayoutRes(): Int = R.layout.fragment_liveness_detection
 
 
-    override fun showSmileInformation() {
-        this.showInformationDialog(R.raw.smile,null,getString(R.string.vitality_title),getString(R.string.smiling_text_content),0)
-    }
-
-    override fun getSmileStatusText(): String  = getString(R.string.smiling_text)
-
-    override fun showBlinkInformation() {
-        this.showInformationDialog(R.raw.blink_couple,null,getString(R.string.vitality_title),getString(R.string.blink_text))
-    }
-
-    override fun getBlinkStatusText(): String = getString(R.string.blink_text)
-
-    override fun showLookRightInformation() {
-        this.showInformationDialog(R.raw.look_right,null,getString(R.string.vitality_title),getString(R.string.turn_your_head_right_text))
-    }
-
-    override fun getLookRightStatusText(): String = getString(R.string.turn_your_head_right_text)
-
-
-    override fun showLookLeftInformation() {
-        this.showInformationDialog(R.raw.look_left,null,getString(R.string.vitality_title),getString(R.string.turn_your_head_left_text))
-    }
-
-    override fun getLookLeftStatusText(): String = getString(R.string.turn_your_head_left_text)
 
 
     companion object {

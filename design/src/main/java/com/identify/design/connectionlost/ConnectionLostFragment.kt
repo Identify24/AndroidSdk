@@ -15,6 +15,8 @@ class ConnectionLostFragment : BaseConnectionLostFragment() {
         btnReConnect = binding.cardReConnectView
     }
 
+    override fun changeStatusColor(): Int? = android.R.color.transparent
+
     override fun plsWaitForConnectionText(): String? = getString(R.string.pls_wait)
 
     override fun getLayoutRes(): Int = R.layout.fragment_connection_lost

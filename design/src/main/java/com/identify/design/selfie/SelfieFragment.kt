@@ -13,8 +13,7 @@ import com.identify.sdk.information.BaseInformationDialogFragment
 import com.identify.sdk.selfie.BaseSelfieFragment
 import com.identify.sdk.toasty.Toasty
 
-class SelfieFragment : BaseSelfieFragment(),
-    BaseInformationDialogFragment.InformationStatusListener {
+class SelfieFragment : BaseSelfieFragment(){
 
 
     val binding by viewBinding(FragmentSelfieBinding::bind)
@@ -32,9 +31,8 @@ class SelfieFragment : BaseSelfieFragment(),
         imgCapturedImage = binding.imgCapturedImageView
     }
 
-    override fun showSelfieInformation() {
-        this.showInformationDialog( R.raw.selfie,null, getString(R.string.take_photo), getString(R.string.pls_take_selfie))
-    }
+    override fun changeStatusColor(): Int? = R.color.colorGreen
+
 
     override fun errorNoFaceMessage(): String  = getString(R.string.must_have_face)
 

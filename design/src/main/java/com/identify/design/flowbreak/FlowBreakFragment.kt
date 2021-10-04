@@ -25,14 +25,14 @@ class FlowBreakFragment : BaseFlowBreakFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
+       // setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
     }
 
     companion object {
         @JvmStatic
-        fun  newInstance(identifyInformationTypes: IdentifyInformationTypes?= null) = FlowBreakFragment().apply {
+        fun  newInstance(identifyInformationTypes: IdentifyInformationTypes) = FlowBreakFragment().apply {
             arguments = Bundle().apply {
-                identifyInformationTypes?.let {
+                identifyInformationTypes.let {
                     putString("identifyInformationTypes",it.name)
                 }
             }

@@ -5,11 +5,13 @@ import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.identify.design.R
 import com.identify.design.databinding.FragmentCallModuleBinding
+import com.identify.design.dialogs.InformationDialogFragment
 import com.identify.design.thanks.ThankYouFragment
 import com.identify.design.webrtc.calling.CallingFragment
 import com.identify.design.webrtc.started.StartedCallFragment
 import com.identify.design.webrtc.wait.CallWaitingFragment
 import com.identify.sdk.base.viewBinding.viewBinding
+import com.identify.sdk.repository.model.enums.IdentifyInformationTypes
 import com.identify.sdk.webrtc.BaseCallModuleFragment
 
 class CallModuleFragment : BaseCallModuleFragment() {
@@ -23,6 +25,8 @@ class CallModuleFragment : BaseCallModuleFragment() {
     override fun getStartedCallFragmentInstance()  : Fragment = StartedCallFragment.newInstance()
 
     override fun getCallingFragmentInstance() : Fragment = CallingFragment.newInstance()
+
+    override fun getCallInformationFragment(): Fragment?  = InformationDialogFragment.newInstance(IdentifyInformationTypes.AGENT_CALL_INFORMATION,animResourceId = R.raw.customer_sup,infoTitleText = getString(R.string.call_info_title),infoContentText = getString(R.string.call_info_desc))
 
     override fun getFragmentContainer(): Int = R.id.callFragmentContainer
 

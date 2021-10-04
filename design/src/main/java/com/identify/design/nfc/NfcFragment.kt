@@ -25,13 +25,8 @@ class NfcFragment : BaseNfcFragment() {
         btnNext = binding.cardNextView
     }
 
-    override fun showNfcForPassportInformation() {
-       this.showInformationDialog(R.raw.nfc,R.drawable.img_passport,getString(R.string.mrz_info_title),getString(R.string.nfc_info_desc_passport),isImgFrameVisible = View.VISIBLE)
-    }
+    override fun changeStatusColor(): Int? = R.color.colorGreen
 
-    override fun showNfcForIdInformation() {
-        this.showInformationDialog(R.raw.nfc,null,getString(R.string.mrz_info_title),getString(R.string.nfc_info_desc_id),isImgFrameVisible = View.VISIBLE)
-    }
 
     override fun getNfcFailToastMessage(): String = getString(R.string.nfc_toast_message)
 
@@ -69,12 +64,7 @@ class NfcFragment : BaseNfcFragment() {
     companion object {
 
         @JvmStatic
-        fun newInstance(mrzInfo: MRZInfo, scannedText: String?) =
-            NfcFragment().apply {
-                arguments = Bundle().apply {
-                    putSerializable("mrzInfo",mrzInfo)
-                    putString("scannedText",scannedText)
-                }
-            }
+        fun newInstance() =
+            NfcFragment()
     }
 }
