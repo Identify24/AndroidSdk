@@ -50,7 +50,11 @@ repositories {
 **Value = 'XXX' is private token. We will send you when you start to integration sdk.** 
 
 
-**Identify SDK Navigation Design Pattern**
+# Usage
+
+Firstly, you have to create options and design for sdk.Later get a singleton object by set the environment variables and options from identify sdk. Then connect to sdk with ID number, thats all.
+
+# Identify SDK Navigation Design Pattern
 
 - Modules communicate themselves.
 
@@ -59,11 +63,6 @@ repositories {
 - Activity manages modules.
 
 ![](https://media.giphy.com/media/oalNKyt5zPtntjUGZG/source.gif)
-
-
-# Usage
-
-Firstly, you have to create options and design for sdk.Later get a singleton object by set the environment variables and options from identify sdk. Then connect to sdk with ID number, thats all.
 
 # For Kotlin
 <pre>
