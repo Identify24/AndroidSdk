@@ -3,7 +3,7 @@
 Step 1. You must manually include "design lib" in your project in order to you need to change the design completely. For this you can download the project from
 github. Then include design lib in your project with this code ; 
 
-<div style="width:100%;height:0;padding-bottom:71%;position:relative;"><iframe src="https://giphy.com/embed/oalNKyt5zPtntjUGZG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/oalNKyt5zPtntjUGZG">via GIPHY</a></p>
+![](https://media4.giphy.com/media/oalNKyt5zPtntjUGZG/giphy.gif?cid=790b761152eeea63e50b21acea3df238e50bd6137224b1fc&rid=giphy.gif&ct=g)
 
 **Description About The Design Module**
 
