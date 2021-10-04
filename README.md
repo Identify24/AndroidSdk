@@ -51,6 +51,10 @@ repositories {
 
 
 **Identify SDK Navigation Design Pattern**
+Modules communicate themselves.
+Module elements communicate themselves.
+Modules manage their own elements.
+Activity manages modules.
 
 ![](https://media.giphy.com/media/oalNKyt5zPtntjUGZG/source.gif)
 
