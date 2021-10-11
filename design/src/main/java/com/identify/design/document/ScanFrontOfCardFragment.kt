@@ -13,9 +13,6 @@ class ScanFrontOfCardFragment : BaseScanFrontOfCardFragment() {
 
     val binding by viewBinding(FragmentScanFrontOfCardBinding::bind)
 
-    override fun showOcrForIdInformation() {
-        this.showInformationDialog(null, R.drawable.img_id_card, getString(R.string.mrz_info_title), getString(R.string.ocr_info_desc_id))
-    }
 
     override fun initViews() {
         overlay = binding.overlayView

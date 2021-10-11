@@ -26,7 +26,7 @@ class CallModuleFragment : BaseCallModuleFragment() {
 
     override fun getCallingFragmentInstance() : Fragment = CallingFragment.newInstance()
 
-    override fun getCallInformationFragment(): Fragment?  = InformationDialogFragment.newInstance(IdentifyInformationTypes.AGENT_CALL_INFORMATION,animResourceId = R.raw.customer_sup,infoTitleText = getString(R.string.call_info_title),infoContentText = getString(R.string.call_info_desc))
+    override fun getCallInformationFragment(): Fragment?  = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.AGENT_CALL_INFORMATION,animResourceId = R.raw.customer_sup,infoTitleText = getString(R.string.call_info_title),infoContentText = getString(R.string.call_info_desc))
 
     override fun getFragmentContainer(): Int = R.id.callFragmentContainer
 

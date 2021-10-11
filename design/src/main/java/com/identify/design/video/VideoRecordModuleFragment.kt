@@ -10,7 +10,7 @@ class VideoRecordModuleFragment : BaseVideoRecordModuleFragment() {
 
     override fun getVideoRecordFragmentInstance(): Fragment = VideoRecordFragment.newInstance()
 
-    override fun getVideoRecordInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.VIDEO_RECORD_INFORMATION,animResourceId = R.raw.video_record, infoTitleText = getString(R.string.record_video),infoContentText = getString(R.string.record_video_desc))
+    override fun getVideoRecordInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.VIDEO_RECORD_INFORMATION,animResourceId = R.raw.video_record, infoTitleText = getString(R.string.record_video),infoContentText = getString(R.string.record_video_desc))
 
     override fun getFragmentContainer(): Int = R.id.videoRecordContainer
 

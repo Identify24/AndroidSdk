@@ -14,18 +14,18 @@
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/tvChooseKycItem"
             android:textColor="@android:color/white"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="Kimlik doğrulama işlemine ne ile devam etmek istersiniz ?"/>
 
     <RelativeLayout
         android:id="@+id/relLayWithIdCardView"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="120dp"
         android:layout_below="@+id/tvChooseKycItem"
         android:background="@drawable/all_grey_border_white_bg"
         android:elevation="4dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvChooseKycItem">
@@ -37,7 +37,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="30dp"
-            android:src="@drawable/ic_id_card" />
+            android:src="@drawable/kimlikon" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -56,8 +56,8 @@
     <RelativeLayout
         android:id="@+id/relLayWithPassportView"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/relLayWithIdCardView"
         android:background="@drawable/all_grey_border_white_bg"
         android:elevation="4dp"
@@ -72,7 +72,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="30dp"
-            android:src="@drawable/ic_passport" />
+            android:src="@drawable/pasaport_img" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -84,6 +84,76 @@
             android:paddingStart="25dp"
             android:paddingEnd="15dp"
             android:text="Pasaportum ile devam etmek istiyorum."
+            android:textColor="@color/colorTextGrey"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayWithOldICardView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relLayWithIdCardView"
+        android:background="@drawable/all_grey_border_white_bg"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relLayWithPassportView">
+
+        <ImageView
+            android:id="@+id/imgOldIdCard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/eski_kimlik" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imgOldIdCard"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:paddingStart="25dp"
+            android:paddingEnd="15dp"
+            android:text="Eski Kimliğim ile devam etmek istiyorum."
+            android:textColor="@color/colorTextGrey"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayWithDriverLicenseView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relLayWithIdCardView"
+        android:background="@drawable/all_grey_border_white_bg"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relLayWithOldICardView">
+
+        <ImageView
+            android:id="@+id/imgDriverLicense"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/driver_license" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imgDriverLicense"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:paddingStart="25dp"
+            android:paddingEnd="15dp"
+            android:text="Ehliyetim ile devam etmek istiyorum."
             android:textColor="@color/colorTextGrey"
             android:textSize="17sp" />
     </RelativeLayout>

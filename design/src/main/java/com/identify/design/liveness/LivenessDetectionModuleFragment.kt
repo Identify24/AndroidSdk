@@ -10,17 +10,21 @@ class LivenessDetectionModuleFragment : BaseLivenessDetectionModuleFragment() {
 
     override fun getLivenessDetectionFragmentInstance(): Fragment = LivenessDetectionFragment.newInstance()
 
-    override fun getSmileDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.LIVENESS_SMILE_INFORMATION,animResourceId = R.raw.smile,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.smiling_text_content))
+    override fun getLivenessDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_INFORMATION,animResourceId = R.raw.smile,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.smiling_text_content))
 
-    override fun getBlinkDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.LIVENESS_BLINK_INFORMATION,animResourceId = R.raw.blink_couple,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.blink_text))
+    override fun getSmileDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_SMILE_INFORMATION,animResourceId = R.raw.smile,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.smiling_text_content))
 
-    override fun getTurnRightDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.LIVENESS_TURN_RIGHT_INFORMATION,animResourceId = R.raw.look_right, infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.turn_your_head_right_text))
+    override fun getBlinkDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_BLINK_INFORMATION,animResourceId = R.raw.blink_couple,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.blink_text))
 
-    override fun getTurnLeftDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.LIVENESS_TURN_LEFT_INFORMATION,animResourceId = R.raw.look_left,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.turn_your_head_left_text))
+    override fun getTurnRightDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_TURN_RIGHT_INFORMATION,animResourceId = R.raw.look_right, infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.turn_your_head_right_text))
+
+    override fun getTurnLeftDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_TURN_LEFT_INFORMATION,animResourceId = R.raw.look_left,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.turn_your_head_left_text))
 
     override fun getFragmentContainer(): Int  = R.id.livenessContainer
 
     override fun getLayoutRes(): Int = R.layout.fragment_liveness_module
+
+
 
 
     companion object {

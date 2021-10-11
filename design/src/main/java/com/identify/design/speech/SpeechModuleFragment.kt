@@ -10,7 +10,7 @@ class SpeechModuleFragment : BaseSpeechModuleFragment() {
 
     override fun getSpeechFragmentInstance(): Fragment = SpeechFragment.newInstance()
 
-    override fun getSpeechInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.SPEECH_TEST_INFORMATION,animResourceId = R.raw.speech,infoTitleText =  getString(R.string.vitality_title),infoContentText =  getString(R.string.speech_info_desc))
+    override fun getSpeechInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.SPEECH_TEST_INFORMATION,animResourceId = R.raw.speech,infoTitleText =  getString(R.string.vitality_title),infoContentText =  getString(R.string.speech_info_desc))
 
     override fun getFragmentContainer(): Int = R.id.speechContainer
 

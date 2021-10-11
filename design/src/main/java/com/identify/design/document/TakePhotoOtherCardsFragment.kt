@@ -1,0 +1,49 @@
+package com.identify.design.document
+
+import com.identify.design.R
+import com.identify.design.databinding.FragmentTakePhotoOtherCardsBinding
+import com.identify.design.util.hideProgressDialog
+import com.identify.design.util.showProgressDialog
+import com.identify.sdk.base.viewBinding.viewBinding
+import com.identify.sdk.document.BaseTakePhotoOtherCardsFragment
+import kotlinx.android.synthetic.main.fragment_take_photo_other_cards.*
+
+class TakePhotoOtherCardsFragment : BaseTakePhotoOtherCardsFragment() {
+
+    val binding by viewBinding(FragmentTakePhotoOtherCardsBinding::bind)
+
+    override fun showProgress() {
+        this.showProgressDialog()
+    }
+
+    override fun hideProgress() {
+        this.hideProgressDialog()
+    }
+
+    override fun changeStatusColor(): Int? = R.color.colorGreen
+
+    override fun initViews() {
+
+        btnPictureConfirm = binding.cardPictureConfirmView
+        btnTakePicture = binding.cardTakePictureView
+        btnClose = binding.imgCloseView
+        relLayPictureConfirm = binding.relLayPictureConfirmView
+        finderBackground = binding.finderBackgroundView
+        oldIdCardFinderWindow = binding.oldIdCardFinderWindowView
+        driverLicenceFinderWindow = binding.driverLicenceFinderWindowView
+        imgCapturedImage  = binding.imgCapturedImageView
+        btnDirectCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
+        documentPreview  = binding.documentPreviewView
+        imgCropper = binding.imgCropperView
+    }
+
+    override fun getLayoutRes(): Int = R.layout.fragment_take_photo_other_cards
+
+
+    companion object {
+
+        @JvmStatic
+        fun newInstance() =
+            TakePhotoOtherCardsFragment()
+    }
+}

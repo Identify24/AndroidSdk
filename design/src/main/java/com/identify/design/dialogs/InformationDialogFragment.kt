@@ -12,6 +12,7 @@ import com.identify.sdk.BaseIdentifyActivity
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.information.BaseInformationDialogFragment
 import com.identify.sdk.repository.model.enums.IdentifyInformationTypes
+import com.identify.sdk.repository.model.enums.IdentifyModuleTypes
 
 class InformationDialogFragment : BaseInformationDialogFragment() {
 
@@ -24,7 +25,7 @@ class InformationDialogFragment : BaseInformationDialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
+       // setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
     }
 
     override fun getLayoutRes(): Int = R.layout.dialog_information
@@ -46,13 +47,14 @@ class InformationDialogFragment : BaseInformationDialogFragment() {
     companion object {
 
         @JvmStatic
-        fun newInstance(identifyInformationTypes: IdentifyInformationTypes,@DrawableRes animResourceId : Int?=null,@DrawableRes imgResourceId : Int?=null,infoTitleText : String,infoContentText : String,animRepeatCount : Int = LottieDrawable.INFINITE,isImgFrameVisible: Int = View.GONE) =
+        fun newInstance(identifyInformationTypes: IdentifyInformationTypes?=null,identifyModuleTypes: IdentifyModuleTypes?=null,@DrawableRes animResourceId : Int?=null,@DrawableRes imgResourceId : Int?=null,infoTitleText : String,infoContentText : String,animRepeatCount : Int = LottieDrawable.INFINITE,isImgFrameVisible: Int = View.GONE) =
             InformationDialogFragment().apply {
                 arguments = Bundle().apply {
                     putString("infoContentText",infoContentText)
                     putString("infoTitleText",infoTitleText)
                     putInt("animRepeatCount",animRepeatCount)
-                    putString("identifyInformationTypes",identifyInformationTypes.name)
+                    putString("identifyInformationTypes",identifyInformationTypes?.name)
+                    putString("identifyModuleTypes",identifyModuleTypes?.name)
                     putInt("isImgFrameVisible",isImgFrameVisible)
                     animResourceId?.let { putInt("animResourceId", it) }
                     imgResourceId?.let { putInt("imgResourceId",it) }

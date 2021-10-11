@@ -10,7 +10,7 @@ class SelfieModuleFragment : BaseSelfieModuleFragment() {
 
     override fun getSelfieFragmentInstance(): Fragment = SelfieFragment.newInstance()
 
-    override fun getSelfieInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.TAKE_SELFIE_INFORMATION,animResourceId = R.raw.selfie,infoTitleText =  getString(R.string.take_photo), infoContentText =  getString(R.string.pls_take_selfie))
+    override fun getSelfieInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.TAKE_SELFIE_INFORMATION,animResourceId = R.raw.selfie,infoTitleText =  getString(R.string.take_photo), infoContentText =  getString(R.string.pls_take_selfie))
 
     override fun getFragmentContainer(): Int = R.id.selfieContainer
 

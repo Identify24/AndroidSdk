@@ -15,9 +15,9 @@ class NfcModuleFragment : BaseNfcModuleFragment() {
 
     override fun getNfcNotAvailableFragment(): Fragment  = NfcNotAvailableFragment.newInstance()
 
-    override fun getIdCardNfcInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.ID_CARD_NFC_INFORMATION,R.raw.nfc, infoTitleText = getString(R.string.mrz_info_title), infoContentText = getString(R.string.nfc_info_desc_id))
+    override fun getIdCardNfcInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes =  IdentifyInformationTypes.ID_CARD_NFC_INFORMATION,animResourceId = R.raw.nfc, infoTitleText = getString(R.string.mrz_info_title), infoContentText = getString(R.string.nfc_info_desc_id))
 
-    override fun getPassportNfcInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(IdentifyInformationTypes.PASSPORT_NFC_INFORMATION,animResourceId = R.raw.nfc,infoTitleText = getString(R.string.mrz_info_title),infoContentText = getString(R.string.nfc_info_desc_passport))
+    override fun getPassportNfcInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.PASSPORT_NFC_INFORMATION,animResourceId = R.raw.nfc,infoTitleText = getString(R.string.mrz_info_title),infoContentText = getString(R.string.nfc_info_desc_passport))
 
     override fun getLayoutRes(): Int = R.layout.fragment_nfc_module
 

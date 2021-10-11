@@ -12,23 +12,38 @@
         android:id="@+id/directCallWaitingView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-    <androidx.camera.view.PreviewView
-        android:id="@+id/documentPreviewView"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.camera.view.PreviewView
+            android:id="@+id/documentPreviewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.identify.sdk.document.cropper.CropImageView
+            android:id="@+id/imgCropperView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:aspectRatioX="1"
+            app:aspectRatioY="1"
+            android:src="@drawable/transparent"
+            android:scaleType="centerCrop"
+            app:guidelines="on" />
+    </FrameLayout>
 
-<!--    <SurfaceView
-        android:id="@+id/overlay"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="@id/documentPreviewView"
-        app:layout_constraintEnd_toEndOf="@id/documentPreviewView"
-        app:layout_constraintBottom_toBottomOf="@id/documentPreviewView"
-        app:layout_constraintTop_toTopOf="@id/documentPreviewView" />-->
+
+
+    <!--    <SurfaceView
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="@id/documentPreviewView"
+            app:layout_constraintEnd_toEndOf="@id/documentPreviewView"
+            app:layout_constraintBottom_toBottomOf="@id/documentPreviewView"
+            app:layout_constraintTop_toTopOf="@id/documentPreviewView" />-->
 
 
     <com.identify.sdk.util.ViewFinderBackground
@@ -36,17 +51,39 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:backgroundColor="@color/notFoundBackground"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <FrameLayout
-        android:id="@+id/viewFinderWindowView"
+        android:id="@+id/oldIdCardFinderWindowView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/all_white_border_transparent_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,130:170"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/driverLicenceFinderWindowView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/shape_rectangle"
@@ -96,9 +133,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
         <ImageView
+            android:id="@+id/imgCapturedImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imgCapturedImageView"/>
+            />
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"

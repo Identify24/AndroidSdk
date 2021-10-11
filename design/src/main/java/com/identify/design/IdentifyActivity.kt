@@ -27,29 +27,31 @@ import com.identify.sdk.BaseIdentifyActivity
 class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
 
-    override fun getConnectionLostFragmentInstance(): Fragment = ConnectionLostFragment.newInstance()
+    override fun getConnectionLostFragmentInstance(): Fragment? = ConnectionLostFragment.newInstance()
 
-    override fun getCardScanModuleModuleFragmentInstance(): Fragment = CardScanModuleModuleFragment.newInstance()
+    override fun getCardScanModuleModuleFragmentInstance(): Fragment? = CardScanModuleModuleFragment.newInstance()
 
-    override fun getSpeechModuleFragmentInstance(): Fragment = SpeechModuleFragment.newInstance()
+    override fun getSpeechModuleFragmentInstance(): Fragment? = SpeechModuleFragment.newInstance()
 
-    override fun getSelfieModuleFragmentInstance(): Fragment = SelfieModuleFragment.newInstance()
+    override fun getSelfieModuleFragmentInstance(): Fragment? = SelfieModuleFragment.newInstance()
 
-    override fun getLivenessDetectionModuleFragmentInstance(): Fragment = LivenessDetectionModuleFragment.newInstance()
+    override fun getLivenessDetectionModuleFragmentInstance(): Fragment? = LivenessDetectionModuleFragment.newInstance()
 
-    override fun getNfcModuleFragmentInstance(): Fragment = NfcModuleFragment.newInstance()
+    override fun getNfcModuleFragmentInstance(): Fragment? = NfcModuleFragment.newInstance()
 
-    override fun getCallModuleFragmentInstance(isRedirect: Boolean): Fragment = CallModuleFragment.newInstance(isRedirect)
+    override fun getCallModuleFragmentInstance(isRedirect: Boolean): Fragment? = CallModuleFragment.newInstance(isRedirect)
 
-    override fun getIntroFragmentInstance(): Fragment = IntroFragment.newInstance()
+    override fun getIntroFragmentInstance(): Fragment? = IntroFragment.newInstance()
 
-    override fun getThankYouFragmentInstance(): Fragment = ThankYouFragment.newInstance()
+    override fun getThankYouFragmentInstance(): Fragment? = ThankYouFragment.newInstance()
 
-    override fun getVideoRecordModuleFragmentInstance(): Fragment = VideoRecordModuleFragment.newInstance()
+    override fun getVideoRecordModuleFragmentInstance(): Fragment? = VideoRecordModuleFragment.newInstance()
 
-    override fun getSignatureModuleFragmentInstance(): Fragment = SignatureModuleFragment.newInstance()
+    override fun getSignatureModuleFragmentInstance(): Fragment? = SignatureModuleFragment.newInstance()
 
-    override fun getNoInternetDialogInstance(): DialogFragment = NoInternetDialogFragment.newInstance()
+    override fun getNoInternetDialogInstance(): DialogFragment? = NoInternetDialogFragment.newInstance()
+
+    override fun getPermissionFragmentInstance(): Fragment? = PermissionFragment.newInstance()
 
     override fun getFragmentContainerId(): Int = R.id.fragmentContainerView
 
@@ -83,7 +85,5 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
 
     override fun getViewBinding(): ActivityIdentifyBinding = ActivityIdentifyBinding.inflate(layoutInflater)
-
-    override fun getPermissionFragmentInstance(): Fragment = PermissionFragment.newInstance()
 
 }
