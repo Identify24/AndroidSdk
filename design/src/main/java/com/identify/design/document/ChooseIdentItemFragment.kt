@@ -12,8 +12,7 @@ class ChooseIdentItemFragment : BaseChooseIdentItemFragment() {
     override fun initViews() {
         relLayWithIdCard = binding.relLayWithIdCardView
         relLayWithPassport = binding.relLayWithPassportView
-        relLayWithDriverLicense = binding.relLayWithDriverLicenseView
-        relLayWithOldICard = binding.relLayWithOldICardView
+        relLayWithOtherCard = binding.relLayOtherCardView
     }
 
     override fun changeStatusColor(): Int? = android.R.color.transparent

@@ -116,4 +116,8 @@ say the word in the picture</string>
     <string name="wrong_text_pls_try">Wrong word. Please try again...</string>
     <string name="speech_info_desc">For determination of vitality, please say the word you see in the picture by holding down the button.</string>
     <string name="mrz_not_avaible_desc">You cannot complete this step because there is no nfc reading device on your device. You can continue the authentication by clicking the button.</string>
+    <string name="choose_ident_type_title">What would you like to proceed with the authentication process ?</string>
+    <string name="id_card_ident_type">I want to continue with my new ID card.</string>
+    <string name="passport_ident_type">I want to continue with my passport.</string>
+    <string name="other_ident_type">I want to continue with another card. (Old ID, Driver License etc.)</string>
 </resources>

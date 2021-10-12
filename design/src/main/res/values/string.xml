@@ -116,4 +116,8 @@ sag das Wort auf dem Bild</string>
     <string name="now_speech">Du kannst jetzt reden.</string>
     <string name="wrong_text_pls_try">Falsches Wort. Bitte versuche es erneut...</string>
     <string name="speech_info_desc">Um die Vitalität zu bestimmen, sagen Sie bitte das Wort, das Sie auf dem Bild sehen, indem Sie die Taste gedrückt halten.</string>
+    <string name="choose_ident_type_title">Wie möchten Sie mit dem Authentifizierungsprozess fortfahren?</string>
+    <string name="id_card_ident_type">Ich möchte mit meinem neuen Personalausweis fortfahren.</string>
+    <string name="passport_ident_type">Ich möchte mit meinem Pass fortfahren.</string>
+    <string name="other_ident_type">Ich möchte mit einer anderen Karte fortfahren. (Alter Ausweis, Führerschein etc.)</string>
 </resources>

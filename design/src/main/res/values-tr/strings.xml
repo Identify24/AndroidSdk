@@ -116,7 +116,10 @@ resimdeki kelimeyi söyleyin</string>
     <string name="pls_sign">İmza At</string>
     <string name="pls_sign_desc">Kimlik tespiti yapabilmek için lütfen belirtilen alana imzanızı atınız.</string>
     <string name="clean">Temizle</string>
-
+    <string name="choose_ident_type_title">Kimlik doğrulama işlemine ne ile devam etmek istersiniz ?</string>
+    <string name="id_card_ident_type">Yeni Kimlik kartım ile devam etmek istiyorum.</string>
+    <string name="passport_ident_type">Pasaportum ile devam etmek istiyorum.</string>
+    <string name="other_ident_type">Başka bir kart ile devam etmek istiyorum.(Eski kimlik, Sücü Belgesi vs.)</string>
 
 
 </resources>
