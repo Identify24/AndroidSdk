@@ -69,11 +69,11 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
      val identityOptions = IdentityOptions.Builder()
                 IdentityOptions.Builder()
                     .setIdentityType(listOf(
-                        IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC,
                         IdentifyModuleTypes.TAKE_SELFIE,
                         IdentifyModuleTypes.VITALITY_TEST,
                         IdentifyModuleTypes.SPEECH_TEST,
                         IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_CARD_PHOTO,
+			IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC,
                         IdentifyModuleTypes.VIDEO_RECORD,
                         IdentifyModuleTypes.DIJITAL_SIGNATURE,
                         IdentifyModuleTypes.AGENT_CALL
