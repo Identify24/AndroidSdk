@@ -8,7 +8,7 @@ import com.identify.sdk.speech.BaseSpeechModuleFragment
 
 class SpeechModuleFragment : BaseSpeechModuleFragment() {
 
-    override fun getSpeechFragmentInstance(): Fragment = SpeechFragment.newInstance()
+    override fun getSpeechFragmentInstance(): Fragment? = SpeechFragment.newInstance()
 
     override fun getSpeechInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.SPEECH_TEST_INFORMATION,animResourceId = R.raw.speech,infoTitleText =  getString(R.string.vitality_title),infoContentText =  getString(R.string.speech_info_desc))
 

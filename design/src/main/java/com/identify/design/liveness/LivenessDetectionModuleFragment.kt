@@ -8,7 +8,7 @@ import com.identify.sdk.repository.model.enums.IdentifyInformationTypes
 
 class LivenessDetectionModuleFragment : BaseLivenessDetectionModuleFragment() {
 
-    override fun getLivenessDetectionFragmentInstance(): Fragment = LivenessDetectionFragment.newInstance()
+    override fun getLivenessDetectionFragmentInstance(): Fragment? = LivenessDetectionFragment.newInstance()
 
     override fun getLivenessDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_INFORMATION,animResourceId = R.raw.smile,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.smiling_text_content))
 

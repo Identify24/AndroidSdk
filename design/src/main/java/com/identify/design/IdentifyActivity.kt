@@ -1,14 +1,13 @@
 package com.identify.design
 
 import android.content.Intent
-import android.os.Bundle
 import android.provider.Settings
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.identify.design.connectionlost.ConnectionLostFragment
 import com.identify.design.databinding.ActivityIdentifyBinding
 import com.identify.design.dialogs.NoInternetDialogFragment
-import com.identify.design.document.CardScanModuleModuleFragment
+import com.identify.design.document.CardScanModuleFragment
 import com.identify.design.intro.IntroFragment
 import com.identify.design.liveness.LivenessDetectionModuleFragment
 import com.identify.design.nfc.NfcModuleFragment
@@ -18,7 +17,6 @@ import com.identify.design.signature.SignatureModuleFragment
 import com.identify.design.speech.SpeechModuleFragment
 import com.identify.design.thanks.ThankYouFragment
 import com.identify.design.util.alert
-import com.identify.design.util.showInformationDialog
 import com.identify.design.video.VideoRecordModuleFragment
 import com.identify.design.webrtc.CallModuleFragment
 import com.identify.sdk.BaseIdentifyActivity
@@ -29,7 +27,7 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
     override fun getConnectionLostFragmentInstance(): Fragment? = ConnectionLostFragment.newInstance()
 
-    override fun getCardScanModuleModuleFragmentInstance(): Fragment? = CardScanModuleModuleFragment.newInstance()
+    override fun getCardScanModuleModuleFragmentInstance(): Fragment? = CardScanModuleFragment.newInstance()
 
     override fun getSpeechModuleFragmentInstance(): Fragment? = SpeechModuleFragment.newInstance()
 

@@ -11,9 +11,9 @@ class NfcModuleFragment : BaseNfcModuleFragment() {
 
     override fun getFragmentContainer(): Int = R.id.nfcContainer
 
-    override fun getNfcFragmentInstance() : Fragment = NfcFragment.newInstance()
+    override fun getNfcFragmentInstance() : Fragment? = NfcFragment.newInstance()
 
-    override fun getNfcNotAvailableFragment(): Fragment  = NfcNotAvailableFragment.newInstance()
+    override fun getNfcNotAvailableFragment(): Fragment?  = NfcNotAvailableFragment.newInstance()
 
     override fun getIdCardNfcInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes =  IdentifyInformationTypes.ID_CARD_NFC_INFORMATION,animResourceId = R.raw.nfc, infoTitleText = getString(R.string.mrz_info_title), infoContentText = getString(R.string.nfc_info_desc_id))
 

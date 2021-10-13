@@ -20,11 +20,11 @@ class CallModuleFragment : BaseCallModuleFragment() {
     val binding by viewBinding(FragmentCallModuleBinding::bind)
 
 
-    override fun getCallWaitingFragmentInstance() : Fragment = CallWaitingFragment.newInstance()
+    override fun getCallWaitingFragmentInstance() : Fragment? = CallWaitingFragment.newInstance()
 
-    override fun getStartedCallFragmentInstance()  : Fragment = StartedCallFragment.newInstance()
+    override fun getStartedCallFragmentInstance()  : Fragment? = StartedCallFragment.newInstance()
 
-    override fun getCallingFragmentInstance() : Fragment = CallingFragment.newInstance()
+    override fun getCallingFragmentInstance() : Fragment? = CallingFragment.newInstance()
 
     override fun getCallInformationFragment(): Fragment?  = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.AGENT_CALL_INFORMATION,animResourceId = R.raw.customer_sup,infoTitleText = getString(R.string.call_info_title),infoContentText = getString(R.string.call_info_desc))
 
@@ -42,9 +42,6 @@ class CallModuleFragment : BaseCallModuleFragment() {
             }
     }
 
-    override fun callModuleFinished(withRedirect: Boolean) {
-        finish(withRedirect)
-    }
 
     override fun getLayoutRes(): Int = R.layout.fragment_call_module
 }
