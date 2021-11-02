@@ -27,7 +27,7 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
     override fun getConnectionLostFragmentInstance(): Fragment? = ConnectionLostFragment.newInstance()
 
-    override fun getCardScanModuleModuleFragmentInstance(): Fragment? = CardScanModuleFragment.newInstance()
+    override fun getCardScanModuleFragmentInstance(): Fragment? = CardScanModuleFragment.newInstance()
 
     override fun getSpeechModuleFragmentInstance(): Fragment? = SpeechModuleFragment.newInstance()
 
@@ -50,6 +50,7 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     override fun getNoInternetDialogInstance(): DialogFragment? = NoInternetDialogFragment.newInstance()
 
     override fun getPermissionFragmentInstance(): Fragment? = PermissionFragment.newInstance()
+
 
     override fun getFragmentContainerId(): Int = R.id.fragmentContainerView
 
@@ -78,8 +79,6 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
         fragmentContainer = binding.fragmentContainerView
         progressCircular = binding.progressCircularView
     }
-
-  
 
 
     override fun getViewBinding(): ActivityIdentifyBinding = ActivityIdentifyBinding.inflate(layoutInflater)

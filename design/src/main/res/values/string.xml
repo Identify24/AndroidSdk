@@ -111,6 +111,7 @@
     <string name="pls_take_selfie">Zur Identifizierung bringen Sie bitte Ihr Gesicht in den Rahmen, um ein Foto aufzunehmen und zu bestätigen.</string>
     <string name="speech_desc">Halten Sie das Mikrofon gedrückt,
 sag das Wort auf dem Bild</string>
+    <string name="liveness_description">In dieser Phase wird die Vitalitätsprüfung durchgeführt. Führen Sie die Schritte durch, indem Sie die Anweisungen lesen.</string>
     <string name="record_video">Nehmen Sie ein Video auf</string>
     <string name="record_video_desc">Zur Identifizierung bringen Sie bitte Ihr Gesicht in den Rahmen, um 5 Sekunden Video aufzunehmen und zu bestätigen.</string>
     <string name="now_speech">Du kannst jetzt reden.</string>
@@ -120,4 +121,7 @@ sag das Wort auf dem Bild</string>
     <string name="id_card_ident_type">Ich möchte mit meinem neuen Personalausweis fortfahren.</string>
     <string name="passport_ident_type">Ich möchte mit meinem Pass fortfahren.</string>
     <string name="other_ident_type">Ich möchte mit einer anderen Karte fortfahren. (Alter Ausweis, Führerschein etc.)</string>
+    <string name="document_num_error">Bitte geben Sie die Dokumentennummer Ihres Dokuments ein.</string>
+    <string name="birth_day_error">Bitte geben Sie Ihr Geburtsdatum ein.</string>
+    <string name="expiry_day_error">Bitte geben Sie das Ablaufdatum Ihres Dokuments ein.</string>
 </resources>

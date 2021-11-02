@@ -30,6 +30,10 @@ class FlowBreakFragment : BaseFlowBreakFragment() {
         }
     }
 
+    override fun initView() {
+        // işaret dili temsilcisi seçilen checkbox viewin referansı için kullanılabilir
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnNext.setOnClickListener {

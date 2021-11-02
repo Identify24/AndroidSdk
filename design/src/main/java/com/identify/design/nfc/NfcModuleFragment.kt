@@ -1,6 +1,7 @@
 package com.identify.design.nfc
 
 import android.view.View
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.identify.design.R
 import com.identify.design.dialogs.InformationDialogFragment
@@ -14,6 +15,8 @@ class NfcModuleFragment : BaseNfcModuleFragment() {
     override fun getNfcFragmentInstance() : Fragment? = NfcFragment.newInstance()
 
     override fun getNfcNotAvailableFragment(): Fragment?  = NfcNotAvailableFragment.newInstance()
+
+    override fun getCheckIdentityInformationFragmentInstance(): DialogFragment? = CheckIdentityInformationFragment.newInstance()
 
     override fun getIdCardNfcInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes =  IdentifyInformationTypes.ID_CARD_NFC_INFORMATION,animResourceId = R.raw.nfc, infoTitleText = getString(R.string.mrz_info_title), infoContentText = getString(R.string.nfc_info_desc_id))
 

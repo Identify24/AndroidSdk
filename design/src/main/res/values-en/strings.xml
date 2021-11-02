@@ -112,6 +112,7 @@
     <string name="pls_take_selfie">For identification, please bring your face inside the frame to take a photo and confirm.</string>
     <string name="speech_desc">Press and hold the microphone,
 say the word in the picture</string>
+    <string name="liveness_description">At this stage, the vitality check will be carried out. Complete the steps by reading the instructions.</string>
     <string name="now_speech">You can talk now.</string>
     <string name="wrong_text_pls_try">Wrong word. Please try again...</string>
     <string name="speech_info_desc">For determination of vitality, please say the word you see in the picture by holding down the button.</string>
@@ -120,4 +121,7 @@ say the word in the picture</string>
     <string name="id_card_ident_type">I want to continue with my new ID card.</string>
     <string name="passport_ident_type">I want to continue with my passport.</string>
     <string name="other_ident_type">I want to continue with another card. (Old ID, Driver License etc.)</string>
+    <string name="document_num_error">please enter the document number of your document.</string>
+    <string name="birth_day_error">please enter your date of birth.</string>
+    <string name="expiry_day_error">please enter the expiry date of your document.</string>
 </resources>

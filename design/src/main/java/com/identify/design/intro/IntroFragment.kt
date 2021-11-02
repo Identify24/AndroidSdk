@@ -55,8 +55,7 @@ class IntroFragment : BaseIntroFragment() {
 
 
     override fun getLivenessModulePair(): List<Pair<Drawable?, String>> = listOf(Pair(
-        ContextCompat.getDrawable(requireContext(),
-        R.drawable.ic_vitality_illustration), getString(R.string.intro_vitality_desc)))
+        ContextCompat.getDrawable(requireContext(), R.drawable.ic_vitality_illustration), getString(R.string.intro_vitality_desc)))
 
     override fun getNfcModulePair(): List<Pair<Drawable?, String>> {
         val list = mutableListOf<Pair<Drawable?, String>>()

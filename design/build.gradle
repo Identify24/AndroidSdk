@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-android-extensions'
 }
 
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -58,7 +59,7 @@ dependencies {
     implementation 'org.permissionsdispatcher:permissionsdispatcher:4.7.0'
     kapt 'org.permissionsdispatcher:permissionsdispatcher-processor:4.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    api 'com.identify.sdk:android-test:1.1.4'
+    api 'com.identify.sdk:android:1.1.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

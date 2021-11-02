@@ -10,7 +10,7 @@ class LivenessDetectionModuleFragment : BaseLivenessDetectionModuleFragment() {
 
     override fun getLivenessDetectionFragmentInstance(): Fragment? = LivenessDetectionFragment.newInstance()
 
-    override fun getLivenessDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_INFORMATION,animResourceId = R.raw.smile,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.smiling_text_content))
+    override fun getLivenessDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_INFORMATION,imgResourceId = R.drawable.ic_vitality_illustration,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.liveness_description))
 
     override fun getSmileDetectionInformationFragmentInstance(): Fragment? = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.LIVENESS_SMILE_INFORMATION,animResourceId = R.raw.smile,infoTitleText = getString(R.string.vitality_title),infoContentText = getString(R.string.smiling_text_content))
 

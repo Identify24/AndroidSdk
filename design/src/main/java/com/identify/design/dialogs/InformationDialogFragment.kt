@@ -39,6 +39,7 @@ class InformationDialogFragment : BaseInformationDialogFragment() {
         tvInfoTitle = binding.tvInfoTitleView
         btnContinue = binding.cardContinueBtnView
         btnClose = binding.imgCloseBtnView
+        cbSignLang = binding.cbSignLangView
     }
 
     override fun changeStatusColor(): Int? = android.R.color.transparent

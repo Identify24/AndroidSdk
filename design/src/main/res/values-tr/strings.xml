@@ -61,6 +61,7 @@
     <string name="nfc_error_count_desc">Maksimum nfc okuma hatası sayısına ulaştınız. Müşteri temsilcisi ile devam edin.</string>
     <string name="go_on">Devam Et</string>
     <string name="smiling_text">GÜÇLÜ BİR GÜLÜMSEME İLE DEVAM EDEBİLİRSİNİZ.</string>
+    <string name="liveness_description">Bu aşamada canlılık kontrolü yapılacaktır. Yönergeleri okuyarak adımları tamamlayınız.</string>
     <string name="smiling_text_content">Canlılık kontrolü aşamasındasınız. Birkaç adım ile canlılık kontrolü yapılacaktır. İlk adımda gülümseyerek devam edebilirsiniz.</string>
     <string name="blink_text">Canlılığı tespit etmek için göz kırpmalısınız...</string>
     <string name="redirect_to_customer_services">Canlılık kontrolü tamamlandı. Müşteri temsilcisine yönlendiriliyorsunuz...</string>
@@ -120,6 +121,8 @@ resimdeki kelimeyi söyleyin</string>
     <string name="id_card_ident_type">Yeni Kimlik kartım ile devam etmek istiyorum.</string>
     <string name="passport_ident_type">Pasaportum ile devam etmek istiyorum.</string>
     <string name="other_ident_type">Başka bir kart ile devam etmek istiyorum.(Eski kimlik, Sücü Belgesi vs.)</string>
-
+    <string name="document_num_error">lütfen belgenizin seri numarasını giriniz.</string>
+    <string name="birth_day_error">lütfen doğum tarihinizi giriniz.</string>
+    <string name="expiry_day_error">lütfen belgenin son geçerlilik tarihini giriniz.</string>
 
 </resources>
