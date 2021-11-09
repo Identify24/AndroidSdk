@@ -10,7 +10,7 @@ This design module does not contain logic. It contains only design and resource 
 
 This code is ;
 
-<pre> api 'com.identify.sdk:android:1.1.0' </pre>  
+<pre> api 'com.identify.sdk:android:1.1.1' </pre>  
 
 **You don't need to add. it was added.**
 
@@ -69,14 +69,15 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
      val identityOptions = IdentityOptions.Builder()
                 IdentityOptions.Builder()
                     .setIdentityType(listOf(
-                        IdentifyModuleTypes.TAKE_SELFIE,
-                        IdentifyModuleTypes.VITALITY_TEST,
-                        IdentifyModuleTypes.SPEECH_TEST,
-                        IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_CARD_PHOTO,
-			IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC,
-                        IdentifyModuleTypes.VIDEO_RECORD,
-                        IdentifyModuleTypes.DIJITAL_SIGNATURE,
-                        IdentifyModuleTypes.AGENT_CALL
+                            IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_CARD_PHOTO,
+                            IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC,
+                            IdentifyModuleTypes.TAKE_SELFIE,
+                            IdentifyModuleTypes.VALIDATE_ADDRESS,
+                            IdentifyModuleTypes.VITALITY_TEST,
+                            IdentifyModuleTypes.VIDEO_RECORD,
+                            IdentifyModuleTypes.DIJITAL_SIGNATURE,
+                            IdentifyModuleTypes.SPEECH_TEST,
+                            IdentifyModuleTypes.AGENT_CALL
                     ))
                      .setNfcExceptionCount(3)
                     .setCallConnectionTimeOut(20000)
@@ -108,14 +109,15 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 
 
 <pre>
-  ArrayList<IdentifyModuleTypes> moduleList = new ArrayList<IdentifyModuleTypes>();
-        moduleList.add(IdentifyModuleTypes.DIJITAL_SIGNATURE);
-        moduleList.add(IdentifyModuleTypes.VIDEO_RECORD);
-        moduleList.add(IdentifyModuleTypes.TAKE_SELFIE);
-        moduleList.add(IdentifyModuleTypes.SPEECH_TEST);
+        ArrayList<IdentifyModuleTypes> moduleList = new ArrayList<IdentifyModuleTypes>();
         moduleList.add(IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_CARD_PHOTO);
-        moduleList.add(IdentifyModuleTypes.VITALITY_TEST);
         moduleList.add(IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC);
+        moduleList.add(IdentifyModuleTypes.TAKE_SELFIE);
+        moduleList.add(IdentifyModuleTypes.VALIDATE_ADDRESS);
+        moduleList.add(IdentifyModuleTypes.VITALITY_TEST);
+        moduleList.add(IdentifyModuleTypes.VIDEO_RECORD);
+        moduleList.add(IdentifyModuleTypes.DIJITAL_SIGNATURE);
+        moduleList.add(IdentifyModuleTypes.SPEECH_TEST);
         moduleList.add(IdentifyModuleTypes.AGENT_CALL);
 
         ArrayList<SslCertificateInformation> sslCertificateInformations = new ArrayList<>();
