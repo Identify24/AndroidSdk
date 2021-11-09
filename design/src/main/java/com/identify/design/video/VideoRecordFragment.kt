@@ -16,8 +16,8 @@ class VideoRecordFragment : BaseVideoRecordFragment() {
 
     override fun initViews() {
         btnRecordVideo = binding.cardRecordVideoView
-        btnClose = binding.imgCloseView
-        btnVideoConfirm = binding.cardVideoConfirmView
+        btnClose = binding.tvAgainTakePhoto
+        btnVideoConfirm = binding.tvGoOn
         frameVideo = binding.frameVideoView
         btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         animVideoRecording = binding.animVideoRecordingView

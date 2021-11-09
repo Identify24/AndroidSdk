@@ -4,6 +4,7 @@ import android.content.Intent
 import android.provider.Settings
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
+import com.identify.design.address.ValidateAddressModule
 import com.identify.design.connectionlost.ConnectionLostFragment
 import com.identify.design.databinding.ActivityIdentifyBinding
 import com.identify.design.dialogs.NoInternetDialogFragment
@@ -32,6 +33,8 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     override fun getSpeechModuleFragmentInstance(): Fragment? = SpeechModuleFragment.newInstance()
 
     override fun getSelfieModuleFragmentInstance(): Fragment? = SelfieModuleFragment.newInstance()
+
+    override fun getValidateAddressModuleFragmentInstance(): Fragment?  = ValidateAddressModule.newInstance()
 
     override fun getLivenessDetectionModuleFragmentInstance(): Fragment? = LivenessDetectionModuleFragment.newInstance()
 

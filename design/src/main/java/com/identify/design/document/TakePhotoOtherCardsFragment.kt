@@ -23,14 +23,13 @@ class TakePhotoOtherCardsFragment : BaseTakePhotoOtherCardsFragment() {
 
     override fun initViews() {
 
-        btnPictureConfirm = binding.cardPictureConfirmView
+        btnPictureConfirm = binding.tvGoOn
         btnTakePicture = binding.cardTakePictureView
-        btnClose = binding.imgCloseView
+        btnClose = binding.tvAgainTakePhoto
         relLayPictureConfirm = binding.relLayPictureConfirmView
         imgCapturedImage  = binding.imgCapturedImageView
         btnDirectCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
         documentPreview  = binding.documentPreviewView
-        imgCropper = binding.imgCropperView
     }
 
     override fun getLayoutRes(): Int = R.layout.fragment_take_photo_other_cards

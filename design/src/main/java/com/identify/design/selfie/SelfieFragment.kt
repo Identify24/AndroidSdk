@@ -21,8 +21,8 @@ class SelfieFragment : BaseSelfieFragment(){
 
     override fun initViews() {
         btnTakePicture = binding.cardTakePictureView
-        btnPictureConfirm = binding.cardPictureConfirmView
-        btnClose = binding.imgCloseView
+        btnPictureConfirm = binding.tvGoOn
+        btnClose = binding.tvAgainTakePhoto
         relLayPictureConfirm = binding.relLayPictureConfirmView
         btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         selfiePreview = binding.selfiePreviewView

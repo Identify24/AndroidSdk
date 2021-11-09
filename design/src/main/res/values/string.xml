@@ -124,4 +124,14 @@ sag das Wort auf dem Bild</string>
     <string name="document_num_error">Bitte geben Sie die Dokumentennummer Ihres Dokuments ein.</string>
     <string name="birth_day_error">Bitte geben Sie Ihr Geburtsdatum ein.</string>
     <string name="expiry_day_error">Bitte geben Sie das Ablaufdatum Ihres Dokuments ein.</string>
+    <string name="id_serial_no">ID-Seriennummer</string>
+    <string name="birth_day">Geburtsdatum</string>
+    <string name="card_expiry_date">Ablaufdatum der Karte</string>
+    <string name="save">Speichern</string>
+    <string name="address_info_title">Adressverifikation</string>
+    <string name="address_info_content">Bestätigen Sie die von Ihnen geschriebene Adresse mit einem Bild mit der Adresse darauf, z. B. einer Rechnung, indem Sie Ihre Wohnadresse eingeben.</string>
+    <string name="address_title">Schreiben Sie Ihre Wohnadresse.</string>
+    <string name="address_desc">Bitte machen Sie ein Foto oder notieren Sie eine Ihrer Rechnungen, damit wir die Adresse überprüfen können.</string>
+    <string name="address_input">Die Anschrift</string>
+    <string name="again_take_photo">Nochmal fotografieren</string>
 </resources>

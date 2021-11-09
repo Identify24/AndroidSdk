@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Kimlik Seri No" />
+            android:text="@string/id_serial_no" />
 
         <ImageButton
             android:id="@+id/imgDocNumInfo"
@@ -41,7 +41,7 @@
                 android:layout_below="@+id/imgDocNumInfo"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/form_input_stroke"
-                android:hint="Seri No"
+                android:hint="@string/id_serial_no"
                 android:inputType="textCapSentences"
                 android:maxLines="1"
                 android:maxLength="9"
@@ -69,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Doğum Tarihi" />
+            android:text="@string/birth_day" />
 
         <ImageButton
             android:id="@+id/imgBirthDay"
@@ -89,7 +89,7 @@
             android:layout_gravity="center_vertical"
             android:textColor="@android:color/black"
             android:background="@drawable/form_input_stroke"
-            android:hint="Doğum Tarihi"
+            android:hint="@string/birth_day"
             android:textSize="18sp"
             android:gravity="center_vertical"
             android:maxLines="1"
@@ -119,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Kart Son Kullanma Tarihi" />
+            android:text="@string/card_expiry_date" />
 
         <ImageButton
             android:id="@+id/imgExpireDay"
@@ -139,7 +139,7 @@
             android:layout_gravity="center_vertical"
             android:textColor="@android:color/black"
             android:background="@drawable/form_input_stroke"
-            android:hint="Son Kullanma Tarihi"
+            android:hint="@string/card_expiry_date"
             android:textSize="18sp"
             android:gravity="center_vertical"
             android:maxLines="1"
@@ -161,7 +161,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/form_input_stroke"
         android:backgroundTint="@color/primaryColor"
-        android:text="Kaydet"
+        android:text="@string/save"
         android:textColor="@android:color/white"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"

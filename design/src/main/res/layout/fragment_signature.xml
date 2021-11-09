@@ -54,6 +54,30 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardClearBtnView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/red"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nexa_slab_bold"
+                android:text="@string/clean"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardConfirmBtnView"
             android:layout_width="0dp"
             android:layout_height="50dp"
@@ -77,29 +101,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardClearBtnView"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:foreground="?attr/selectableItemBackground"
-            app:cardBackgroundColor="@color/red"
-            app:cardCornerRadius="15dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/nexa_slab_bold"
-                android:text="@string/clean"
-                android:textColor="@android:color/white"
-                android:textSize="18sp" />
-
-
-        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
 
