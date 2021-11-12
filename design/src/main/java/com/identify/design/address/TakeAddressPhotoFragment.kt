@@ -2,6 +2,8 @@ package com.identify.design.address
 
 import com.identify.design.R
 import com.identify.design.databinding.FragmentTakeAddressPhotoBinding
+import com.identify.design.util.hideProgressDialog
+import com.identify.design.util.showProgressDialog
 import com.identify.sdk.address.BaseTakeAddressPhotoFragment
 import com.identify.sdk.base.viewBinding.viewBinding
 
@@ -17,6 +19,14 @@ class TakeAddressPhotoFragment : BaseTakeAddressPhotoFragment() {
         btnDirectCallWaiting = binding.directCallWaitingView.cardDirectCallWaiting
         addressPreview = binding.addressPreviewView
         imgCapturedImage = binding.imgCapturedImageView
+    }
+
+    override fun showProgress() {
+        this.showProgressDialog()
+    }
+
+    override fun hideProgress() {
+        this.hideProgressDialog()
     }
 
     override fun changeStatusColor(): Int? = R.color.colorGreen

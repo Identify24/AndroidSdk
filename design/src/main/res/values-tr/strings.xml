@@ -118,7 +118,7 @@
     <string name="clean">Temizle</string>
     <string name="choose_ident_type_title">Kimlik doğrulama işlemine hangisi ile devam etmek istersiniz ?</string>
     <string name="id_card_ident_type">Yeni kimlik kartı ile devam etmek istiyorum.</string>
-    <string name="passport_ident_type">Pasaport ile devam etmek istiyorum.</string>
+    <string name="passport_ident_type">Pasaportu ile devam etmek istiyorum.</string>
     <string name="other_ident_type">Başka bir kart ile devam etmek istiyorum.(Eski kimlik, Sücü Belgesi vs.)</string>
     <string name="document_num_error">Lütfen belgenizin seri numarasını giriniz.</string>
     <string name="birth_day_error">Lütfen doğum tarihinizi giriniz.</string>
