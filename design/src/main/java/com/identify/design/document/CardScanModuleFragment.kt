@@ -4,6 +4,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.identify.design.R
 import com.identify.design.dialogs.InformationDialogFragment
+import com.identify.design.util.showProgressDialog
 import com.identify.sdk.document.BaseCardScanModuleFragment
 import com.identify.sdk.repository.model.enums.IdentifyInformationTypes
 

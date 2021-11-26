@@ -39,6 +39,8 @@
     <string name="nfc_success">NFC okuma başarılı! </string>
     <string name="pls_wait">Lütfen Bekleyin...</string>
     <string name="pls_wait_for_calling">Müşteri temsilcimizin sizi araması için lütfen bu ekranda bekleyiniz.</string>
+    <string name="estimated_wait">Tahmini bekleme süreniz %1$s dakika, sırada bekleyen %2$s. kişisiniz</string>
+    <string name="agent_ready">İlk sıradasınız müşteri temsilcisi şimdi sizi aramak üzere lütfen bekleyiniz.</string>
     <string name="wait_with_id">Kimliğinizin yanınızda ve hazır olduğundan emin olunuz.</string>
     <string name="receiving_a_call">Müşteri temsilcimiz arıyor...</string>
     <string name="calling_description">Video görüşmeyi başlatmak için lütfen cevaplayınız.</string>

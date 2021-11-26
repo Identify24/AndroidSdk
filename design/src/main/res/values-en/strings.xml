@@ -31,6 +31,8 @@
     <string name="choose_language">Choose Language</string>
     <string name="selected_language">Selected Language : </string>
     <string name="button_deny">Deny</string>
+    <string name="agent_ready">You are in the first row, please wait for the customer representative to call you now.</string>
+    <string name="estimated_wait">Your estimated wait time is %1$s minutes, you are the %2$s person waiting in line.</string>
     <string name="permission_camera_rationale">To make a video call with the identify-agent,please allow access to the camera and microphone. </string>
     <string name="nfc_description"> Please hold your phone up to your ID card to read the NFC</string>
     <string name="nfc_ready">Ready to scan</string>

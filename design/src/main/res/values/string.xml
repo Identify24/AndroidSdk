@@ -29,6 +29,8 @@
     <string name="pls_wait">Warten Sie mal...</string>
     <string name="pls_wait_for_calling">Bitte warten Sie auf diesem Bildschirm, bis unser Kundenvertreter Sie anruft.</string>
     <string name="wait_with_id">Stellen Sie sicher, dass Sie Ihren Ausweis bei sich haben und bereit sind.</string>
+    <string name="estimated_wait">Ihre geschätzte Wartezeit beträgt %1$s Minuten, Sie sind die %2$s. Person, die in der Schlange steht.</string>
+    <string name="agent_ready">Sie befinden sich in der ersten Reihe, bitte warten Sie, bis der Kundenbetreuer Sie jetzt anruft.</string>
     <string name="receiving_a_call">Unser Kundenvertreter ruft an...</string>
     <string name="calling_description">Bitte antworten Sie, um den Videoanruf zu starten.</string>
     <string name="customer_service_online">Kundenservice online</string>

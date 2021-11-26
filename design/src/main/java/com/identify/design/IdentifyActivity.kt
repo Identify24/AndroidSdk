@@ -84,6 +84,7 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     }
 
 
+
     override fun getViewBinding(): ActivityIdentifyBinding = ActivityIdentifyBinding.inflate(layoutInflater)
 
 }
