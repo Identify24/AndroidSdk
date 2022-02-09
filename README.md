@@ -10,7 +10,7 @@ This design module does not contain logic. It contains only design and resource 
 
 This code is ;
 
-<pre> api 'com.identify.sdk:android:1.1.5' </pre>  
+<pre> api 'com.identify.sdk:android:1.1.6' </pre>  
 
 **You don't need to add. it was added.**
 
