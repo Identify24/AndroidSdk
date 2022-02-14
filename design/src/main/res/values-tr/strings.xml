@@ -17,6 +17,7 @@
     <string name="reason_authentication_error">Doğrulama Hatası!</string>
     <string name="reason_success_socket_data_send">Veri gönderme başarılı!</string>
     <string name="reason_generic">Hata Oluştu!</string>
+    <string name="reason_subrejected">Kimlik doğrulamaya sadece 1 hesap ile giriş yapılabilir.</string>
     <string name="reason_response">Ahh, bağlantı hatası!</string>
     <string name="reason_timeout">Zaman Aşımı!</string>
     <string name="reason_socket_connection">İnternet bağlantısı yok. Lütfen tekrar deneyiniz…</string>
@@ -135,4 +136,9 @@
     <string name="address_desc">Adresini doğrulayabilmemiz için lütfen herhangi bir faturanızın fotoğrafını çekin veya yazın</string>
     <string name="address_input">Adres</string>
     <string name="again_take_photo">Tekrar Çek</string>
+    <string name="light_warning_title">Işık Uyarısı</string>
+    <string name="high_light_warning_desc">Bulunduğunuz ortamda çok fazla ışık olduğundan kameraya yansıma yapmaktadır. Kameranın kimliğinizi daha doğru okuması için lütfen daha az ışıklı bir ortama geçiniz.</string>
+    <string name="high_light_warning_percent">Işık seviyesi %50 altına düştüğünde uyarı kapanacaktır.\n Anlık Işık Seviyesi : </string>
+    <string name="low_light_warning_desc">Bulunduğunuz ortamda çok az ışık olduğundan kameraya okuma yapamamaktadır. Kameranın kimliğinizi daha doğru okuması için lütfen daha çok ışıklı bir ortama geçiniz.</string>
+    <string name="low_light_warning_percent">Işık seviyesi %10 üstüne çıktığında uyarı kapanacaktır.\n Anlık Işık Seviyesi : </string>
 </resources>

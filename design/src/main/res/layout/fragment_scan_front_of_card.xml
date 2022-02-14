@@ -40,5 +40,32 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </FrameLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imgLightView"
+        android:layout_marginTop="5dp"
+        android:rotation="90"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tvLightPercentView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/lightbulb"/>
+
+    <TextView
+        android:id="@+id/tvLightPercentView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:rotation="90"
+        app:layout_constraintTop_toTopOf="@+id/frontCardPreviewView"
+        app:layout_constraintEnd_toEndOf="@id/imgLightView"
+        app:layout_constraintStart_toStartOf="@+id/imgLightView"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

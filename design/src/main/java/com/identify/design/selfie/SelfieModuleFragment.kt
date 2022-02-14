@@ -16,6 +16,7 @@ class SelfieModuleFragment : BaseSelfieModuleFragment() {
 
     override fun getLayoutRes(): Int = R.layout.fragment_selfie_module
 
+
     companion object {
 
         @JvmStatic

@@ -19,6 +19,14 @@ class ScanBackOfCardFragment : BaseScanBackOfCardFragment() {
         textOverlay = binding.textOverlayView
         backCardPreview = binding.backCardPreviewView
         btnDirectCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
+        tvLightPercent = binding.tvLightPercentView
+        imgLight = binding.imgLightView
+    }
+
+    override fun getAmbientLightPercent(percent: Int?) {
+        percent?.let {
+            binding.tvLightPercentView.text = "%$percent"
+        }
     }
 
     override fun changeStatusColor(): Int? = R.color.colorGreen

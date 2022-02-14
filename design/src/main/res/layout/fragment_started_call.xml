@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/bgLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/bgLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:id="@+id/constraintContainerView"
     android:fitsSystemWindows="true"
     android:layout_height="match_parent">
 
@@ -31,6 +32,39 @@
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:id="@+id/imgNetworkQualityView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgLightView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/net_mid"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:id="@+id/imgLightView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLightPercentView"
+        android:src="@drawable/lightbulb"/>
+
+    <TextView
+        android:id="@+id/tvLightPercentView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgLightView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLightView"/>
     <RelativeLayout
         android:id="@+id/relLayAnimation"
         android:layout_width="match_parent"

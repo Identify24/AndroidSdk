@@ -75,6 +75,8 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
     override fun getUiViewErrorMessage(): String = getString(R.string.reason_generic)
 
+    override fun getIdentSubRejectedMessage(): String = getString(R.string.reason_subrejected)
+
 
     override fun getLayoutId(): Int = R.layout.activity_identify
 

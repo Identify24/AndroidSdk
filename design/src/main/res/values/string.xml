@@ -16,6 +16,7 @@
     <string name="reason_timeout">Zeitüberschreitung</string>
     <string name="reason_socket_connection">Ihre Internetverbindung ist schlecht. Bitte versuchen Sie es erneut.</string>
     <string name="reason_persistance_empty">Leider sind keine Angaben vorhanden.</string>
+    <string name="reason_subrejected">Die Authentifizierung kann nur mit 1 Konto erfolgen.</string>
     <string name="reason_no_network_persistance_empty">Es scheint es liegen keine Daten oder kein Netzwerk vor</string>
     <string name="nfc_toast_message">Bitte lesen Sie die NFC-Karte erneut</string>
     <string name="button_allow">Erlauben</string>
@@ -136,4 +137,9 @@ sag das Wort auf dem Bild</string>
     <string name="address_desc">Bitte machen Sie ein Foto oder notieren Sie eine Ihrer Rechnungen, damit wir die Adresse überprüfen können.</string>
     <string name="address_input">Die Anschrift</string>
     <string name="again_take_photo">Nochmal fotografieren</string>
+    <string name="light_warning_title">Lichtalarm</string>
+    <string name="high_light_warning_desc">Es ist zu viel Licht in Ihrer Umgebung, es reflektiert auf der Kamera. Bitte begeben Sie sich in eine weniger beleuchtete Umgebung, damit die Kamera Ihren Ausweis genauer lesen kann.</string>
+    <string name="high_light_warning_percent">Wenn die Lichtstärke unter 50% fällt, wird die Warnung ausgeschaltet.\n Sofortige Lichtstärke:</string>
+    <string name="low_light_warning_desc">Es gibt sehr wenig Licht in der Umgebung, in der Sie sich befinden, die Kamera kann nicht lesen. Bitte begeben Sie sich in eine hellere Umgebung, damit die Kamera Ihren Ausweis genauer lesen kann.</string>
+    <string name="low_light_warning_percent">Wenn die Lichtstärke über 10 % steigt, wird die Warnung ausgeschaltet.\n Lichtstärke: </string>
 </resources>

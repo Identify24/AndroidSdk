@@ -18,6 +18,7 @@
     <string name="reason_success_socket_data_send">Data send successful</string>
     <string name="reason_generic">Something went wrong</string>
     <string name="reason_response">Oops, seems we got a server error</string>
+    <string name="reason_subrejected">Authentication can only be done with 1 account.</string>
     <string name="reason_timeout">Server timed out</string>
     <string name="reason_socket_connection">Your connection is bad. Please try it again.</string>
     <string name="reason_persistance_empty">There is no information available</string>
@@ -136,4 +137,9 @@ say the word in the picture</string>
     <string name="address_desc">Please take a photo or write down any of your invoices so we can verify the address.</string>
     <string name="address_input">Address</string>
     <string name="again_take_photo">Take Photo Again</string>
+    <string name="light_warning_title">Light Alert</string>
+    <string name="high_light_warning_desc">There is too much light in your environment, it reflects on the camera. Please move to a less lighted environment so that the camera can read your ID more accurately.</string>
+    <string name="high_light_warning_percent">When the light level drops below 50%, the warning will turn off.\n Light Level:</string>
+    <string name="low_light_warning_desc">There is very little light in the environment you are in, the camera cannot read. Please move to a more lighted environment so that the camera can read your ID more accurately.</string>
+    <string name="low_light_warning_percent">When the light level rises above 10%, the warning will turn off.\n Light Level: </string>
 </resources>

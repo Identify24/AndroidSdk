@@ -1,7 +1,6 @@
 package com.identify.design.document
 
 import com.identify.design.R
-import com.identify.design.databinding.FragmentScanFrontOfCardBinding
 import com.identify.design.databinding.FragmentScanPassportBinding
 import com.identify.design.util.hideProgressDialog
 import com.identify.design.util.showInformationDialog
@@ -31,11 +30,19 @@ class ScanPassportFragment : BaseScanPassportFragment() {
         this.hideProgressDialog()
     }
 
+    override fun getAmbientLightPercent(percent: Int?) {
+        percent?.let {
+            binding.tvLightPercentView.text = "%$percent"
+        }
+    }
+
     override fun initViews() {
         passportPreview = binding.passportPreview
         overlay = binding.overlay
         textOverlay = binding.textOverlay
         btnDirectCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
+        tvLightPercent = binding.tvLightPercentView
+        imgLight = binding.imgLightView
     }
 
     override fun changeStatusColor(): Int? = R.color.colorGreen

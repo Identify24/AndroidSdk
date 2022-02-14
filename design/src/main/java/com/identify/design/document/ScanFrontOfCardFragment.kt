@@ -3,8 +3,6 @@ package com.identify.design.document
 import com.identify.design.R
 import com.identify.design.databinding.FragmentScanFrontOfCardBinding
 import com.identify.design.util.hideProgressDialog
-import com.identify.design.util.isProgressShowing
-import com.identify.design.util.showInformationDialog
 import com.identify.design.util.showProgressDialog
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.document.BaseScanFrontOfCardFragment
@@ -19,6 +17,14 @@ class ScanFrontOfCardFragment : BaseScanFrontOfCardFragment() {
         textOverlay = binding.textOverlayView
         frontCardPreview = binding.frontCardPreviewView
         btnDirectCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
+        tvLightPercent = binding.tvLightPercentView
+        imgLight = binding.imgLightView
+    }
+
+    override fun getAmbientLightPercent(percent: Int?) {
+        percent?.let {
+            binding.tvLightPercentView.text = "%$percent"
+        }
     }
 
     override fun changeStatusColor(): Int? = R.color.colorGreen
