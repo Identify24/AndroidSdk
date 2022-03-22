@@ -6,10 +6,8 @@ import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.FragmentNfcBinding
 import com.identify.design.util.alert
-import com.identify.design.util.showInformationDialog
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.mrz.BaseNfcFragment
-import org.jmrtd.lds.icao.MRZInfo
 
 class NfcFragment : BaseNfcFragment() {
 
