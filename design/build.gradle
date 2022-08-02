@@ -46,6 +46,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.31"
@@ -54,12 +55,11 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.airbnb.android:lottie:3.3.1'
-    implementation 'org.jmrtd:jmrtd:0.7.19'
     implementation 'com.identify.call:android:1.0.1'
     implementation 'com.github.permissions-dispatcher:permissionsdispatcher:4.9.1'
     kapt 'com.github.permissions-dispatcher:permissionsdispatcher-processor:4.9.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    api 'com.identify.sdk:android:1.1.9'
+    api 'com.identify.sdk:android:1.2.5'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

@@ -1,13 +1,13 @@
 package com.identify.design
 
 import android.content.Intent
+import android.os.Bundle
 import android.provider.Settings
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.identify.design.address.ValidateAddressModule
 import com.identify.design.connectionlost.ConnectionLostFragment
 import com.identify.design.databinding.ActivityIdentifyBinding
-import com.identify.design.dialogs.NoInternetDialogFragment
 import com.identify.design.document.CardScanModuleFragment
 import com.identify.design.intro.IntroFragment
 import com.identify.design.liveness.LivenessDetectionModuleFragment
@@ -49,8 +49,6 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     override fun getVideoRecordModuleFragmentInstance(): Fragment? = VideoRecordModuleFragment.newInstance()
 
     override fun getSignatureModuleFragmentInstance(): Fragment? = SignatureModuleFragment.newInstance()
-
-    override fun getNoInternetDialogInstance(): DialogFragment? = NoInternetDialogFragment.newInstance()
 
     override fun getPermissionFragmentInstance(): Fragment? = PermissionFragment.newInstance()
 

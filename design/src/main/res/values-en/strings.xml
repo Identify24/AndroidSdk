@@ -64,7 +64,7 @@
     <string name="enter_pin_description">Please enter the TAN</string>
     <string name="confirm">Confirm</string>
     <string name="vitality_title">Vitality Control</string>
-    <string name="smiling_text_content">You can continue with a smile on the first step.</string>
+    <string name="smiling_text_content">You can continue with a smile on the this step.</string>
     <string name="are_you_sure_title">Are you sure you want to cancel?</string>
     <string name="nfc_error_count_title">Nfc Data Read Counter Error</string>
     <string name="nfc_error_count_desc">You have reached the maximum number of nfc read errors. Continue with the customer representative.</string>
@@ -73,7 +73,7 @@
     <string name="blink_text">you can blink to connect customer services</string>
     <string name="redirect_to_customer_services">You must blink to detect vitality...</string>
     <string name="turn_your_head_right_text">Turn your head to the right at 45 degrees to detect vitality.</string>
-    <string name="turn_your_head_left_text">Finally, turn your head to the left at 45 degrees to detect vitality.</string>
+    <string name="turn_your_head_left_text">Turn your head to the left at 45 degrees to detect vitality.</string>
     <string name="finish_process">You have completed the authentication, thank you...</string>
     <string name="intro_welcome">Welcome</string>
     <string name="intro_welcome_desc">The steps we will take in the identification process are respectively</string>

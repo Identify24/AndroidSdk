@@ -57,13 +57,23 @@
         android:layout_gravity="center"
         android:id="@+id/tvFaceStatusView"
         android:layout_marginTop="20dp"
+        android:text="Veriler alınıyor..."
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/nexa_slab_bold"
         android:gravity="center"
-        android:textColor="@android:color/white"
-        android:text="@string/smiling_text"/>
+        android:textColor="@android:color/white" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/livenessProgressView"
+        android:indeterminateTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="center_vertical|center_horizontal" />
 
 
   </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

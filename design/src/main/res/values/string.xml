@@ -67,12 +67,12 @@
     <string name="nfc_error_count_desc">Sie haben die maximale Anzahl von NFC-Lesefehlern erreicht. Fahren Sie mit dem Kundenvertreter fort.</string>
     <string name="go_on">Fortsetzen</string>
     <string name="vitality_title">Vitalitätskontrolle</string>
-    <string name="smiling_text_content">Sie befinden sich in der Vitalitätsprüfungsphase. Die Vitalitätsprüfung erfolgt in wenigen Schritten. Sie können mit dem ersten Schritt mit einem Lächeln fortfahren.</string>
+    <string name="smiling_text_content">Sie befinden sich in der Vitalitätskontrollphase. Der Viabilitätstest wird in mehreren Schritten durchgeführt. Sie können diesen Schritt mit einem Lächeln gehen.</string>
     <string name="smiling_text">Sie können mit einem kraftvollen Lächeln weitermachen.</string>
     <string name="blink_text">Sie müssen blinken, um Vitalität zu erkennen..</string>
     <string name="turn_your_head_right_text">Drehen Sie Ihren Kopf um 45 Grad nach rechts, um die Vitalität zu erkennen.</string>
     <string name="redirect_to_customer_services">Sie werden zu den Kundendiensten weitergeleitet</string>
-    <string name="turn_your_head_left_text">Zum Schluss drehen Sie Ihren Kopf um 45 Grad nach links, um die Vitalität zu erkennen.</string>
+    <string name="turn_your_head_left_text">Drehen Sie Ihren Kopf um 45 Grad nach links, um Vitalität zu sehen.</string>
     <string name="finish_process">Sie haben die Authentifizierung abgeschlossen, danke...</string>
     <string name="intro_welcome">Herzlich willkommen</string>
     <string name="intro_welcome_desc">Die Schritte, die wir im Identifizierungsprozess unternehmen werden, sind jeweils</string>

@@ -20,6 +20,7 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
         smileRating = binding.smileRatingView
         tvFaceStatus = binding.tvFaceStatusView
         animSuccessStatus = binding.successStatusAnimationView
+        livenessProgress = binding.livenessProgressView
     }
 
     override fun showProgress() {
@@ -54,7 +55,6 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
     override fun finishedLivenessDetection() {
         binding.tvFaceStatusView.text = getString(R.string.finish_vitality_process)
     }
-
 
     override fun getSuccessAnimationId(): Int = R.raw.smile
 

@@ -34,21 +34,21 @@
             android:src="@drawable/ic_information" />
 
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtDocNumberView"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_below="@+id/imgDocNumInfo"
-                android:layout_gravity="center_vertical"
-                android:background="@drawable/form_input_stroke"
-                android:hint="@string/id_serial_no"
-                android:inputType="textCapSentences"
-                android:maxLines="1"
-                android:maxLength="9"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtDocNumberView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imgDocNumInfo"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/form_input_stroke"
+            android:hint="@string/id_serial_no"
+            android:inputType="textCapSentences"
+            android:maxLength="9"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp" />
 
 
     </RelativeLayout>

@@ -65,13 +65,13 @@
     <string name="go_on">Devam Et</string>
     <string name="smiling_text">Güçlü bir gülümseme ile devam edebilirsiniz.</string>
     <string name="liveness_description">Bu aşamada canlılık kontrolü yapılacaktır. Yönergeleri okuyarak adımları tamamlayınız.</string>
-    <string name="smiling_text_content">İlk adımda gülümseyerek devam edebilirsiniz.</string>
+    <string name="smiling_text_content">Bu adımda gülümseyerek devam edebilirsiniz.</string>
     <string name="blink_text">Canlılığı tespit etmek için göz kırpmalısınız...</string>
     <string name="redirect_to_customer_services">Canlılık kontrolü tamamlandı.</string>
     <string name="finish_process">Kimlik doğrulamayı tamamladınız, Teşekkürler...</string>
     <string name="finish_vitality_process">Canlılık kontrolünü tamamladınız, Teşekkürler...</string>
     <string name="turn_your_head_right_text">Canlılığı algılamak için başınızı 45 derece sağa döndürmelisiniz.</string>
-    <string name="turn_your_head_left_text">Son olarak canlılığı algılamak için başınızı 45 derece sola döndürmelisiniz.</string>
+    <string name="turn_your_head_left_text">Canlılığı algılamak için başınızı 45 derece sola döndürmelisiniz.</string>
     <string name="intro_welcome">Hoş geldiniz</string>
     <string name="intro_welcome_desc">Tanımlama sürecinde gerçekleştireceğimiz adımlar sırasıyla</string>
     <string name="intro_ocr_desc">Kimliğinizin ya da Pasaportunuzun belirtilen bölümünü kameraya okutun.</string>
