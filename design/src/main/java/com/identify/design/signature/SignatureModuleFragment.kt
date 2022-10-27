@@ -10,7 +10,7 @@ import com.identify.sdk.signature.BaseSignatureModuleFragment
 class SignatureModuleFragment : BaseSignatureModuleFragment() {
     override fun getSignatureFragmentInstance(): Fragment? = SignatureFragment.newInstance()
 
-    override fun getSignatureInformationFragmentInstance(): Fragment  ?= InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.DIJITAL_SIGNATURE_INFORMATION,animResourceId = R.raw.signature,infoTitleText = getString(R.string.pls_sign),infoContentText = getString(R.string.pls_sign_desc))
+    override fun getSignatureInformationFragmentInstance(): Fragment  ?= InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.SIGNATURE_INFORMATION,animResourceId = R.raw.signature,infoTitleText = getString(R.string.pls_sign),infoContentText = getString(R.string.pls_sign_desc))
 
     override fun getFragmentContainer(): Int = R.id.signatureContainer
 
@@ -20,7 +20,7 @@ class SignatureModuleFragment : BaseSignatureModuleFragment() {
     Modül bitiminde araya girip ekran göstermek istenirse
 
     override fun signatureModuleFinished() {
-        childFragmentManager.beginTransaction().replace(getFragmentContainer(),InformationDialogFragment.newInstance(identifyModuleTypes = IdentifyModuleTypes.DIJITAL_SIGNATURE,animResourceId = R.raw.signature,infoTitleText = getString(R.string.pls_sign),infoContentText = getString(R.string.pls_sign_desc)),InformationDialogFragment::class.java.toString()).commitAllowingStateLoss()
+        childFragmentManager.beginTransaction().replace(getFragmentContainer(),InformationDialogFragment.newInstance(identifyModuleTypes = IdentifyModuleTypes.SIGNATURE,animResourceId = R.raw.signature,infoTitleText = getString(R.string.pls_sign),infoContentText = getString(R.string.pls_sign_desc)),InformationDialogFragment::class.java.toString()).commitAllowingStateLoss()
     }*/
 
     companion object {
