@@ -10,7 +10,7 @@ This design module does not contain logic. It contains only design and resource 
 
 This code is ;
 
-<pre> api 'com.identify.sdk:android:1.2.5' </pre>  
+<pre> api 'com.identify.sdk:android:1.2.7' </pre>  
 
 **You don't need to add. it was added.**
 
@@ -67,28 +67,27 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 # For Kotlin
 <pre>
      val identityOptions = IdentityOptions.Builder()
-                IdentityOptions.Builder()
-                    .setIdentityType(listOf(
-                            IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_CARD_PHOTO,
-                            IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC,
-                            IdentifyModuleTypes.TAKE_SELFIE,
-                            IdentifyModuleTypes.VALIDATE_ADDRESS,
-                            IdentifyModuleTypes.VITALITY_TEST,
-                            IdentifyModuleTypes.VIDEO_RECORD,
-                            IdentifyModuleTypes.DIJITAL_SIGNATURE,
-                            IdentifyModuleTypes.SPEECH_TEST,
-                            IdentifyModuleTypes.AGENT_CALL
-                    ))
-                     .setNfcExceptionCount(3)
-                    .setCallConnectionTimeOut(20000)
-                    .setOpenIntroPage(false)
-                    .setDocumentType(DocType.NONE)
-                    .setModuleCacheType(ModuleCacheType.CONTINUE_FROM_CALL)
-                    .setSslCertificateInformation(listOf(SslCertificateInformation("(ssl sha256 finger print)sha256/DGBYYE8aafeisJmKsjlJTnOGA6PfHJ02kdZYS1+SjhY","(domain)api.identifytr.com")))
-                    .setNfcDependency(NfcDependency(wantToOpenOcr = true,"SerialNo(Z24I06557=example)","DateOfBirth(YYMMDD)","DateOfExpiry(YYMMDD)"))
-                    .setOpenThankYouPage(false)
-                    .setVideoRecordTime(5000)
-                    .build()
+            .setIdentityType(listOf(
+                IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_CARD_PHOTO,
+                IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC,
+                IdentifyModuleTypes.TAKE_SELFIE,
+                IdentifyModuleTypes.VALIDATE_ADDRESS,
+                IdentifyModuleTypes.LIVENESS_TEST,
+                IdentifyModuleTypes.VIDEO_RECORD,
+                IdentifyModuleTypes.SIGNATURE,
+                IdentifyModuleTypes.SPEECH_TEST,
+                IdentifyModuleTypes.AGENT_CALL
+            ))
+            .setNfcExceptionCount(3)
+            .setCallConnectionTimeOut(20000)
+            .setOpenIntroPage(false)
+            .setDocumentType(DocType.NONE)
+            .setModuleCacheType(ModuleCacheType.CONTINUE_FROM_CALL)
+            .setSslCertificateInformation(listOf(SslCertificateInformation("(ssl sha256 finger print)sha256/DGBYYE8aafeisJmKsjlJTnOGA6PfHJ02kdZYS1+SjhY","(domain)api.identifytr.com")))
+            .setNfcDependency(NfcDependency(wantToOpenOcr = true,"SerialNo(Z24I06557=example)","DateOfBirth(YYMMDD)","DateOfExpiry(YYMMDD)"))
+            .setOpenThankYouPage(false)
+            .setVideoRecordTime(5000)
+            .build()
 
 
         val identifyObject = IdentifySdk.Builder()
@@ -114,9 +113,9 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
         moduleList.add(IdentifyModuleTypes.IDENTIFICATION_INFORMATION_WITH_NFC);
         moduleList.add(IdentifyModuleTypes.TAKE_SELFIE);
         moduleList.add(IdentifyModuleTypes.VALIDATE_ADDRESS);
-        moduleList.add(IdentifyModuleTypes.VITALITY_TEST);
+        moduleList.add(IdentifyModuleTypes.LIVENESS_TEST);
         moduleList.add(IdentifyModuleTypes.VIDEO_RECORD);
-        moduleList.add(IdentifyModuleTypes.DIJITAL_SIGNATURE);
+        moduleList.add(IdentifyModuleTypes.SIGNATURE);
         moduleList.add(IdentifyModuleTypes.SPEECH_TEST);
         moduleList.add(IdentifyModuleTypes.AGENT_CALL);
 
@@ -164,9 +163,9 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
 	
 3. **IDENTIFICATION_INFORMATION_WITH_CARD_PHOTO :** The customer takes photos of front and back side of ID card and send. It should be a separate module on mobile app. There can be a frame to guiding customer. These photos are named differently and shown on agent panel automatically. 
 	
-4. **VITALITY_TEST :** This control has a few steps: Smiling, winking, turning head to right, turning head to left, speech. These are separate steps, and it should be a module on mobile app.
+4. **LIVENESS_TEST :** This control has a few steps: Smiling, winking, turning head to right, turning head to left, speech. These are separate steps, and it should be a module on mobile app.
 	
-5. **DIJITAL_SIGNATURE :** The customer can write and sign on phone. The data should be taken.
+5. **SIGNATURE :** The customer can write and sign on phone. The data should be taken.
 
 	
 	
