@@ -10,7 +10,7 @@ This design module does not contain logic. It contains only design and resource 
 
 This code is ;
 
-<pre> api 'com.identify.sdk:android:1.2.7' </pre>  
+<pre> api 'com.identify.sdk:android:1.3.1' </pre>  
 
 **You don't need to add. it was added.**
 
@@ -48,6 +48,10 @@ repositories {
 }</pre>
 
 **Value = 'XXX' is private token. We will send you when you start to integration sdk.** 
+
+# Warning
+
+If you did the integration before version 1.3.1, you should update your "build.gradle" file in your design module to avoid getting an error while building, and you should update your "consumer-rules.pro" file in your design module to ensure that the "nfc" reading phase does not fail when "minifyEnable true" is set in your project and to avoid getting a crash when starting a video call.
 
 
 # Usage
