@@ -35,17 +35,17 @@ class NfcWhenCallingBottomDialogFragmentBottomDialogFragment : BaseNfcWhenCallin
         binding.tvNfcStatusView.text = getString(R.string.nfc_success)
         binding.nfcAnimationView.repeatCount = 0
         binding.nfcAnimationView.addAnimatorListener(object : Animator.AnimatorListener{
-            override fun onAnimationStart(animation: Animator?) {
+            override fun onAnimationStart(animation: Animator) {
             }
 
-            override fun onAnimationEnd(animation: Animator?) {
+            override fun onAnimationEnd(animation: Animator) {
                finishPage()
             }
 
-            override fun onAnimationCancel(animation: Animator?) {
+            override fun onAnimationCancel(animation: Animator) {
             }
 
-            override fun onAnimationRepeat(animation: Animator?) {
+            override fun onAnimationRepeat(animation: Animator) {
             }
 
         })

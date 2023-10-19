@@ -92,7 +92,7 @@
         android:layout_marginTop="20dp"
         android:checked="false"
         android:padding="10dp"
-        android:text="İşaret dili bilen bir müşteri temsilcisi ile görüşmek istiyorum."
+        android:text="@string/sign_checkbox_text"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:visibility="gone" />

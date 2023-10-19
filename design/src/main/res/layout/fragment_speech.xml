@@ -80,7 +80,7 @@
             android:fontFamily="@font/nexa_slab_bold"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Söylediğiniz Kelime : "
+            android:text="@string/speech_word"
             android:textColor="@android:color/black"
             android:textSize="14sp" />
 

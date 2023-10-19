@@ -10,7 +10,7 @@ This design module does not contain logic. It contains only design and resource 
 
 This code is ;
 
-<pre> api 'com.identify.sdk:android:1.3.2' </pre>  
+<pre> api 'com.identify.sdk:android:1.3.7' </pre>  
 
 **You don't need to add. it was added.**
 
@@ -33,6 +33,7 @@ Add it in your root build.gradle at the end of repositories:
  <pre>allprojects {
 repositories {
 ...
+   maven { url 'https://jitpack.io' }
    maven {
             url 'https://gitlab.com/api/v4/projects/26590072/packages/maven'
             name "GitLab"

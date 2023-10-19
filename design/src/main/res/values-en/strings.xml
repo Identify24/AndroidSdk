@@ -52,6 +52,7 @@
     <string name="desc_hangup">Hang-up</string>
     <string name="pls_sign">Sign</string>
     <string name="pls_sign_desc">For identification, please sign your signature in the specified area.</string>
+    <string name="sign_checkbox_text">I would like to speak to a customer service representative who speaks sign language.</string>
     <string name="clean">Clean</string>
     <string name="desc_toggle_camera">Camera On-Off</string>
     <string name="connecting_stream">Connecting...</string>
@@ -107,8 +108,8 @@
     <string name="call_info_desc">Our customer representative will call you as soon as possible and perform the identity verification process. During this time, make sure you are alone in the room, with your ID with you and ready, without closing this screen.</string>
     <string name="take_photo">Take Photo</string>
     <string name="finish_vitality_process">You have completed the vitality check, Thank you...</string>
-    <string name="id_card_front_side">Please take a photo of the front of your ID card and confirm it.</string>
-    <string name="id_card_back_side">Please take a photo of the back of your ID card and confirm it.</string>
+    <string name="id_card_front_side">Please place your ID card on a dark background and take a photo of it in a frame.</string>
+    <string name="id_card_back_side">Please place your ID card on a dark background and take a photo of it in a frame.</string>
     <string name="mrz_not_avaible_title">Nfc not found</string>
     <string name="record_video">Record a video</string>
     <string name="record_video_desc">For identification, please bring your face inside the frame to shoot 5 seconds of video and confirm.</string>
@@ -119,6 +120,7 @@ say the word in the picture</string>
     <string name="now_speech">You can read now.</string>
     <string name="wrong_text_pls_try">Wrong word. Please try again...</string>
     <string name="speech_info_desc">For determination of vitality, please say the word you see in the picture by holding down the button.</string>
+    <string name="speech_word">Spoken Word : </string>
     <string name="mrz_not_avaible_desc">You cannot complete this step because there is no nfc reading device on your device. You can continue the authentication by clicking the button.</string>
     <string name="choose_ident_type_title">What would you like to proceed with the authentication process ?</string>
     <string name="id_card_ident_type">I want to continue with my new ID card.</string>
@@ -142,4 +144,14 @@ say the word in the picture</string>
     <string name="high_light_warning_percent">When the light level drops below 50%, the warning will turn off.\n Light Level:</string>
     <string name="low_light_warning_desc">There is very little light in the environment you are in, the camera cannot read. Please move to a more lighted environment so that the camera can read your ID more accurately.</string>
     <string name="low_light_warning_percent">When the light level rises above 10%, the warning will turn off.\n Light Level: </string>
+
+    <string name="take_picture">Take picture</string>
+    <string name="toggle_flash">Toggle flash</string>
+    <string name="close_document_preview">Close document preview</string>
+    <string name="confirm_document">Confirm document</string>
+    <string name="crop_error">Error while cropping the document</string>
+    <string name="hold_steady">Please hold the phone steady after pressing the button</string>
+    <string name="id_not_detected">The ID card could not be detected, please try again</string>
+    <string name="invalid_front_id">The front side of the ID is not valid</string>
+    <string name="capturing_conditions_error">Please make sure that your ID is in the ideal environment such as suitable light, distance and angle and try again</string>
 </resources>

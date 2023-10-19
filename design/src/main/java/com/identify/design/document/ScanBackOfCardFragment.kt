@@ -2,12 +2,8 @@ package com.identify.design.document
 
 import com.identify.design.R
 import com.identify.design.databinding.FragmentScanBackOfCardBinding
-import com.identify.design.databinding.FragmentScanFrontOfCardBinding
-import com.identify.design.util.hideProgressDialog
-import com.identify.design.util.showProgressDialog
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.document.BaseScanBackOfCardFragment
-import kotlinx.android.synthetic.main.fragment_scan_back_of_card.*
 
 class ScanBackOfCardFragment : BaseScanBackOfCardFragment() {
 
@@ -15,30 +11,24 @@ class ScanBackOfCardFragment : BaseScanBackOfCardFragment() {
 
 
     override fun initViews() {
-        overlay = binding.overlayView
-        textOverlay = binding.textOverlayView
-        backCardPreview = binding.backCardPreviewView
-        btnDirectCallWaiting  = binding.directCallWaitingView.cardDirectCallWaiting
-        tvLightPercent = binding.tvLightPercentView
-        imgLight = binding.imgLightView
+        viewFinder = binding.viewFinder
+        progress = binding.progress
+        cornerDetector = binding.cornerDetector
+        flashToggle = binding.flashToggle
+        shutter = binding.shutter
+        closeScanner = binding.closeScanner
+        rootView = binding.rootView
+        holdSteadyLayout = binding.rlHoldSteady
+        holdSteadyTv = binding.tvHoldSteady
     }
 
-    override fun getAmbientLightPercent(percent: Int?) {
-        percent?.let {
-            binding.tvLightPercentView.text = "%$percent"
-        }
-    }
+    override fun getFlashOnSrc(): Int? = R.drawable.ic_flash_on
+
+    override fun getFlashOffSrc(): Int? = R.drawable.ic_flash_off
+
+    override fun getHoldSteadyMessage(): String? = getString(R.string.hold_steady)
 
     override fun changeStatusColor(): Int? = R.color.colorGreen
-
-    override fun showProgress() {
-        this.showProgressDialog()
-    }
-
-
-    override fun hideProgress() {
-        this.hideProgressDialog()
-    }
 
     override fun getLayoutRes(): Int = R.layout.fragment_scan_back_of_card
 

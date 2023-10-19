@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvMissingDataTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:text="Missing or incorrect information found!" />
+
+    <TextView
+        android:id="@+id/tvMissingDataMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:layout_marginTop="10dp"
+        android:text="Please verify the data(s) below"
+        android:layout_below="@id/tvMissingDataTitle"/>
+
+    <EditText
+        android:id="@+id/etSerialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:hint="Serial Number"
+        android:paddingStart="20dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:nextFocusDown="@id/tvDateOfBirth"
+        android:textSize="16sp"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:layout_below="@id/tvMissingDataMessage"
+        android:background="@drawable/edittext_border_bg"/>
+
+    <TextView
+        android:id="@+id/tvDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Date of Birth"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:paddingStart="20dp"
+        android:nextFocusDown="@id/tvExpiryDate"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etSerialNumber"
+        android:background="@drawable/edittext_border_bg"/>
+
+    <TextView
+        android:id="@+id/tvExpiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:hint="Expiry Date"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:textSize="16sp"
+        android:paddingStart="20dp"
+        android:layout_below="@id/tvDateOfBirth"
+        android:background="@drawable/edittext_border_bg"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:elevation="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@id/tvExpiryDate">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nexa_slab_bold"
+            android:gravity="center"
+            android:text="UPDATE"
+            android:textColor="@color/colorDarkBlue" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

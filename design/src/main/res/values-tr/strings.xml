@@ -108,16 +108,18 @@
     <string name="take_photo">Fotoğraf Çek</string>
     <string name="record_video">Video Çek</string>
     <string name="record_video_desc">Kimlik tespiti için lütfen yüzünüzü çerçevenin içine getirerek 5 saniye video çekin ve onaylayın.</string>
-    <string name="id_card_front_side">Lütfen kimlik kartınızın ön yüzünü fotoğraf çekin ve onaylayın.</string>
-    <string name="id_card_back_side">Lütfen kimlik kartınızın arka yüzünü fotoğraf çekin ve onaylayın.</string>
+    <string name="id_card_front_side">Lütfen kimlik kartınızı koyu bir zemin üzerine koyup çerçeve içerisinde fotoğrafını çekiniz.</string>
+    <string name="id_card_back_side">Lütfen kimlik kartınızı koyu bir zemin üzerine koyup çerçeve içerisinde fotoğrafını çekiniz.</string>
     <string name="pls_take_selfie">Kimlik tespiti için lütfen yüzünüzü çerçevenin içine getirerek fotoğraf çekin ve onaylayın.</string>
     <string name="speech_desc">Mikrofona basılı tutarak resimdeki kelimeyi  okuyunuz</string>
     <string name="now_speech">Şimdi okuyabilirsiniz.</string>
     <string name="wrong_text_pls_try">Yanlış kelime. Lütfen tekrar deneyiniz...</string>
     <string name="speech_info_desc">Canlılık tespiti için lütfen resimde gördüğünüz kelimeyi butona basılı tutarak söyleyiniz.</string>
+    <string name="speech_word">Söylediğiniz Kelime : </string>
     <string name="must_have_face">Resimde yüzünüz olmalıdır.</string>
     <string name="pls_sign">Imza At</string>
     <string name="pls_sign_desc">Kimlik tespiti için lütfen belirtilen alana imzanızı atınız.</string>
+    <string name="sign_checkbox_text">İşaret dili bilen bir müşteri temsilcisi ile görüşmek istiyorum.</string>
     <string name="clean">Temizle</string>
     <string name="choose_ident_type_title">Kimlik doğrulama işlemine hangisi ile devam etmek istersiniz ?</string>
     <string name="id_card_ident_type">Yeni kimlik kartı ile devam etmek istiyorum.</string>
@@ -141,4 +143,14 @@
     <string name="high_light_warning_percent">Işık seviyesi %50 altına düştüğünde uyarı kapanacaktır.\n Anlık Işık Seviyesi : </string>
     <string name="low_light_warning_desc">Bulunduğunuz ortamda çok az ışık olduğundan kameraya okuma yapamamaktadır. Kameranın kimliğinizi daha doğru okuması için lütfen daha çok ışıklı bir ortama geçiniz.</string>
     <string name="low_light_warning_percent">Işık seviyesi %10 üstüne çıktığında uyarı kapanacaktır.\n Anlık Işık Seviyesi : </string>
+
+    <string name="take_picture">Fotoğraf çek</string>
+    <string name="toggle_flash">Flaşı aç/kapa</string>
+    <string name="close_document_preview">Belge önizlemeyi kapat</string>
+    <string name="confirm_document">Belgeyi onaylayın</string>
+    <string name="crop_error">Belge kırpılırken hata oluştu</string>
+    <string name="hold_steady">Lütfen butona bastıktan sonra telefonu sabit tutup bekleyiniz</string>
+    <string name="id_not_detected">Kimlik tespit edilemedi, lütfen tekrar deneyiniz</string>
+    <string name="invalid_front_id">Kimlik ön yüzü geçerli değil</string>
+    <string name="capturing_conditions_error">Kimliğinizin uygun ışık, uzaklık ve açı gibi ideal ortamıda olduğundan emin olup tekrar deneyiniz</string>
 </resources>
