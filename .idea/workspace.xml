@@ -5,33 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa2f6b5-ad8b-47dc-b815-bb879cbf0e51" name="Default Changelist" comment="Upgrade version">
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/dialogs/NfcMissingDataBottomDialogFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/CropBackOfCardFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/CropFrontOfCardFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/edittext_border_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_check.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_close_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_flash_off.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_flash_on.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_lens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_rotate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/layout/fragment_cropper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/layout/fragment_dialog_nfc_missing_data.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/design/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/dialogs/NfcWhenCallingBottomDialogFragmentBottomDialogFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/dialogs/NfcWhenCallingBottomDialogFragmentBottomDialogFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/CardScanModuleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/CardScanModuleFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/ScanBackOfCardFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/ScanBackOfCardFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/ScanFrontOfCardFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/ScanFrontOfCardFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/nfc/NfcModuleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/nfc/NfcModuleFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/signature/SignatureModuleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/signature/SignatureModuleFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/layout/dialog_information.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/layout/dialog_information.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/layout/fragment_speech.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/layout/fragment_speech.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/values-tr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values-tr/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/values/string.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values/string.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
