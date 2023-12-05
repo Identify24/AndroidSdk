@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_waiting_illustration" />
+
+    <CheckBox
+        android:id="@+id/cbIdNear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cbIamAlone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:buttonTint="@color/colorGreen"
+        android:layout_marginStart="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/id_near"
+        android:textColor="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/cbIamAlone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cbPlaceState"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:buttonTint="@color/colorGreen"
+        android:layout_marginStart="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/alone_for_authentication"
+        android:textColor="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/cbPlaceState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llConnection"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:buttonTint="@color/colorGreen"
+        android:layout_marginStart="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/favorable_conditions"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/llConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnConfirm"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="10dp">
+        <CheckBox
+            android:id="@+id/cbConnectionFine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorGreen"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/suitable_internet"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/ivDownloadTestAgain"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_rotate_left"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:fontFamily="@font/nexa_slab_bold"
+        android:enabled="false"
+        android:clickable="false"
+        android:text="@string/go_on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

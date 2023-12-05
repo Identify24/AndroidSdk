@@ -154,4 +154,10 @@ sag das Wort auf dem Bild</string>
     <string name="id_not_detected">Die ID-Karte konnte nicht erkannt werden, bitte versuchen Sie es erneut</string>
     <string name="invalid_front_id">Die Vorderseite des Personalausweises ist ungültig</string>
     <string name="capturing_conditions_error">Bitte vergewissern Sie sich, dass Ihr Ausweis in der idealen Umgebung, d. h. bei geeignetem Licht, Abstand und Winkel, angebracht ist, und versuchen Sie es erneut</string>
+
+    <string name="id_near">Habe mein Ausweis zur Hand</string>
+    <string name="alone_for_authentication">Identifizierung wird eigenständig durchgeführt</string>
+    <string name="favorable_conditions">Licht- und Geräuschbedingungen sind angemessen</string>
+    <string name="suitable_internet">Meine Internetgeschwindigkeit ist angemessen</string>
+    <string name="unsuitable_internet">Die Qualität Ihrer Internetverbindung ist derzeit nicht ausreichend für die Authentifizierung. Bitte versuchen Sie es später erneut</string>
 </resources>

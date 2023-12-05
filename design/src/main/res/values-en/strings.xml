@@ -154,4 +154,10 @@ say the word in the picture</string>
     <string name="id_not_detected">The ID card could not be detected, please try again</string>
     <string name="invalid_front_id">The front side of the ID is not valid</string>
     <string name="capturing_conditions_error">Please make sure that your ID is in the ideal environment such as suitable light, distance and angle and try again</string>
+
+    <string name="id_near">I have my ID card to hand</string>
+    <string name="alone_for_authentication">Identification is performed independently</string>
+    <string name="favorable_conditions">Light and noise conditions are appropriate</string>
+    <string name="suitable_internet">My internet speed is suitable</string>
+    <string name="unsuitable_internet">Your internet quality is currently not sufficient for authentication. Please try again later</string>
 </resources>

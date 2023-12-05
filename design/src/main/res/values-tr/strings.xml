@@ -153,4 +153,10 @@
     <string name="id_not_detected">Kimlik tespit edilemedi, lütfen tekrar deneyiniz</string>
     <string name="invalid_front_id">Kimlik ön yüzü geçerli değil</string>
     <string name="capturing_conditions_error">Kimliğinizin uygun ışık, uzaklık ve açı gibi ideal ortamıda olduğundan emin olup tekrar deneyiniz</string>
+
+    <string name="id_near">Kimliğim yanımda</string>
+    <string name="alone_for_authentication">Kimlik doğrulama süreci için tek başımayım</string>
+    <string name="favorable_conditions">Uygun ışık ve ses koşullarındayım</string>
+    <string name="suitable_internet">İnternet hızım uygun</string>
+    <string name="unsuitable_internet">İnternet kaliteniz şu anda kimlik doğrulama için yeterli değil. Lütfen daha sonra tekrar deneyin</string>
 </resources>

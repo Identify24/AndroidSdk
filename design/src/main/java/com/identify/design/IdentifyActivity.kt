@@ -13,6 +13,7 @@ import com.identify.design.intro.IntroFragment
 import com.identify.design.liveness.LivenessDetectionModuleFragment
 import com.identify.design.nfc.NfcModuleFragment
 import com.identify.design.permission.PermissionFragment
+import com.identify.design.prepare.PrepareModuleFragment
 import com.identify.design.selfie.SelfieModuleFragment
 import com.identify.design.signature.SignatureModuleFragment
 import com.identify.design.speech.SpeechModuleFragment
@@ -33,6 +34,7 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
     override fun getSpeechModuleFragmentInstance(): Fragment? = SpeechModuleFragment.newInstance()
 
     override fun getSelfieModuleFragmentInstance(): Fragment? = SelfieModuleFragment.newInstance()
+    override fun getPrepareModuleFragmentInstance(): Fragment? = PrepareModuleFragment.newInstance()
 
     override fun getValidateAddressModuleFragmentInstance(): Fragment?  = ValidateAddressModule.newInstance()
 
