@@ -10,6 +10,8 @@ class PrepareFragment : BasePrepareFragment() {
 
     val binding by viewBinding(FragmentPrepareBinding::bind)
 
+    override fun getUnsuitableInternetErrorMessage(): String =getString(R.string.unsuitable_internet)
+
     override fun initViews() {
         cbIdNear = binding.cbIdNear
         cbIamAlone = binding.cbIamAlone

@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa2f6b5-ad8b-47dc-b815-bb879cbf0e51" name="Default Changelist" comment="Upgrade version">
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/prepare/PrepareFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/prepare/PrepareModuleFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_rotate_left.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/layout/fragment_prepare.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/res/layout/fragment_prepare_module.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/IdentifyActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/IdentifyActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/values-tr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values-tr/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/res/values/string.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values/string.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/design/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/prepare/PrepareFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/prepare/PrepareFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
