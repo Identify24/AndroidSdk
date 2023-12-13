@@ -160,4 +160,8 @@ say the word in the picture</string>
     <string name="favorable_conditions">Light and noise conditions are appropriate</string>
     <string name="suitable_internet">My internet speed is suitable</string>
     <string name="unsuitable_internet">Your internet quality is currently not sufficient for authentication. Please try again later</string>
+
+    <string name="not_reach_you">We could not reach you</string>
+    <string name="not_reach_you_detail">Unfortunately, we were unable to reach you to do the video identification</string>
+    <string name="okay">OK</string>
 </resources>

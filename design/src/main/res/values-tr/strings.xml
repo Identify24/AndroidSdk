@@ -159,4 +159,8 @@
     <string name="favorable_conditions">Uygun ışık ve ses koşullarındayım</string>
     <string name="suitable_internet">İnternet hızım uygun</string>
     <string name="unsuitable_internet">İnternet kaliteniz şu anda kimlik doğrulama için yeterli değil. Lütfen daha sonra tekrar deneyin</string>
+
+    <string name="not_reach_you">Size Ulaşamadık</string>
+    <string name="not_reach_you_detail">Üzgünüz, video görüşmeye bağlanabilmek için sizden yanıt alamadık</string>
+    <string name="okay">Tamam</string>
 </resources>

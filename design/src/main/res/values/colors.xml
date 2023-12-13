@@ -38,15 +38,5 @@
 	<color name="cropBlack">#FF000000</color>
 	<color name="cropWhite">#FFFFFFFF</color>
 	<color name="colorBlackFortyPercentAlpha">#66000000</color>
-
-
-
-
-
-
-
-
-
-
-
+	<color name="button_text_color">#3447D6</color>
 </resources>

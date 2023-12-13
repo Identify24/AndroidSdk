@@ -26,6 +26,8 @@ class CallModuleFragment : BaseCallModuleFragment() {
 
     override fun getStartedCallFragmentInstance()  : Fragment? = StartedCallFragment.newInstance()
 
+    override fun getMissedCallFragmentInstance(): Fragment? = MissedCallFragment.newInstance()
+
     override fun getCallingFragmentInstance() : Fragment? = CallingFragment.newInstance()
 
     override fun getNfcWhenCallingBottomDialogFragment(): BottomSheetDialogFragment? = NfcWhenCallingBottomDialogFragmentBottomDialogFragment.newInstance()

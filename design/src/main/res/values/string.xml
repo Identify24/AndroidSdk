@@ -160,4 +160,8 @@ sag das Wort auf dem Bild</string>
     <string name="favorable_conditions">Licht- und Geräuschbedingungen sind angemessen</string>
     <string name="suitable_internet">Meine Internetgeschwindigkeit ist angemessen</string>
     <string name="unsuitable_internet">Die Qualität Ihrer Internetverbindung ist derzeit nicht ausreichend für die Authentifizierung. Bitte versuchen Sie es später erneut</string>
+
+    <string name="not_reach_you">Wir konnten Sie nicht erreichen</string>
+    <string name="not_reach_you_detail">Wir konnten Sie leider nicht erreichen, um die Video-Identifizierung durchzuführen</string>
+    <string name="okay">OK</string>
 </resources>
