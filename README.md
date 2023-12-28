@@ -10,7 +10,7 @@ This design module does not contain logic. It contains only design and resource 
 
 This code is ;
 
-<pre> api 'com.identify.sdk:android:1.3.7' </pre>  
+<pre> api 'com.identify.sdk:android:1.4.0' </pre>  
 
 **You don't need to add. it was added.**
 
@@ -87,7 +87,6 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
             .setCallConnectionTimeOut(20000)
             .setOpenIntroPage(false)
             .setDocumentType(DocType.NONE)
-            .setModuleCacheType(ModuleCacheType.CONTINUE_FROM_CALL)
             .setSslCertificateInformation(listOf(SslCertificateInformation("(ssl sha256 finger print)sha256/DGBYYE8aafeisJmKsjlJTnOGA6PfHJ02kdZYS1+SjhY","(domain)api.identifytr.com")))
             .setNfcDependency(NfcDependency(wantToOpenOcr = true,"SerialNo(Z24I06557=example)","DateOfBirth(YYMMDD)","DateOfExpiry(YYMMDD)"))
             .setOpenThankYouPage(false)
@@ -134,7 +133,6 @@ Firstly, you have to create options and design for sdk.Later get a singleton obj
                 .setCallConnectionTimeOut(5000)
                 .setVideoRecordTime(5000)
                 .setDocumentType(DocType.NONE)
-                .setModuleCacheType(ModuleCacheType.ALWAYS_BACK_TO_TOP)
                 .setNfcDependency(new NfcDependency(true,"SerialNo","DateOfBirth(YYMMDD)","DateOfExpiry(YYMMDD)"))
                 .setSslCertificateInformation(sslCertificateInformations)
                 .setOpenThankYouPage(true)
