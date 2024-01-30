@@ -164,4 +164,11 @@ sag das Wort auf dem Bild</string>
     <string name="not_reach_you">Wir konnten Sie nicht erreichen</string>
     <string name="not_reach_you_detail">Wir konnten Sie leider nicht erreichen, um die Video-Identifizierung durchzuführen</string>
     <string name="okay">OK</string>
+
+    <string name="verification_failed_title">Identifizierung fehlgeschlagen</string>
+    <string name="verification_failed_desc">Identifizierung fehlgeschlagen. Bitte versuchen Sie es später erneut.</string>
+    <string name="selfie_comparison_error">Ihr Ausweisfoto stimmt nicht mit Ihrem Selfie überein. Bitte machen Sie ein neues.</string>
+    <string name="selfie_verification_error">Sie haben ausreichend Versuche unternommen, Vielen Dank.</string>
+    <string name="nfc_comparison_error">Ihre Formular und NFC Daten stimmen nicht überein. Bitte nehmen Sie das korrekte Ausweisfoto erneut auf.</string>
+    <string name="nfc_verification_error">Ihre Identifikationsdaten stimmen nicht mit den Angaben im Formular überein. Sie haben ausreichend Versuche unternommen, Vielen Dank.</string>
 </resources>

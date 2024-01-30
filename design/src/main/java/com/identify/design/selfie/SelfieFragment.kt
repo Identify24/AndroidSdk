@@ -34,6 +34,10 @@ class SelfieFragment : BaseSelfieFragment(){
     override fun changeStatusColor(): Int? = R.color.colorGreen
 
 
+    override fun getSelfieComparisonErrorToastMessage(): String? = getString(R.string.selfie_comparison_error)
+
+    override fun getSelfieVerificationFailToastMessage(): String? = getString(R.string.selfie_verification_error)
+
     override fun errorNoFaceMessage(): String  = getString(R.string.must_have_face)
 
     override fun showProgress() {

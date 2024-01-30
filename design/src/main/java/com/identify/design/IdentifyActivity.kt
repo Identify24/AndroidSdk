@@ -46,6 +46,8 @@ class IdentifyActivity : BaseIdentifyActivity<ActivityIdentifyBinding>() {
 
     override fun getIntroFragmentInstance(): Fragment? = IntroFragment.newInstance()
 
+    override fun getVerificationFailFragmentInstance(): Fragment? = VerificationFailFragment.newInstance()
+
     override fun getThankYouFragmentInstance(): Fragment? = ThankYouFragment.newInstance()
 
     override fun getVideoRecordModuleFragmentInstance(): Fragment? = VideoRecordModuleFragment.newInstance()

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa2f6b5-ad8b-47dc-b815-bb879cbf0e51" name="Default Changelist" comment="Upgrade version" />
+    <list default="true" id="ffa2f6b5-ad8b-47dc-b815-bb879cbf0e51" name="Default Changelist" comment="Upgrade version">
+      <change afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/verification/VerificationFailFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/drawable/ic_sad_face.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/src/main/res/layout/fragment_verification_fail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/design/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/IdentifyActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/IdentifyActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/nfc/NfcFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/nfc/NfcFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/selfie/SelfieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/selfie/SelfieFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/values-tr/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values-tr/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/values/string.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/values/string.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685452513150</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Upgrade version">
+      <created>1703747718311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703747718311</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-Upgrade webRtc version&#10;-Rules added in consumer-rules.pro" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Upgrade webRtc version&#10;-Rules added in consumer-rules.pro" />
+    <MESSAGE value="Upgrade version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade version" />
   </component>
 </project>

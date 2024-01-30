@@ -23,6 +23,10 @@ class NfcFragment : BaseNfcFragment() {
         btnNext = binding.cardNextView
     }
 
+    override fun getNfcComparisonErrorToastMessage(): String? = getString(R.string.nfc_comparison_error)
+
+    override fun getNfcVerificationFailToastMessage(): String? = getString(R.string.nfc_verification_error)
+
     override fun changeStatusColor(): Int? = R.color.colorGreen
 
 

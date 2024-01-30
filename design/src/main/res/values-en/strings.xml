@@ -164,4 +164,11 @@ say the word in the picture</string>
     <string name="not_reach_you">We could not reach you</string>
     <string name="not_reach_you_detail">Unfortunately, we were unable to reach you to do the video identification</string>
     <string name="okay">OK</string>
+
+    <string name="verification_failed_title">Identification failed</string>
+    <string name="verification_failed_desc">Identification failed. Please try again later.</string>
+    <string name="selfie_comparison_error">Your identification photo does not match your selfie. Please take it again.</string>
+    <string name="selfie_verification_error">You have made enough attempts, thank you.</string>
+    <string name="nfc_comparison_error">Your form and NFC data do not match. Please retake the correct identification photo.</string>
+    <string name="nfc_verification_error">Ihre Identifikationsdaten stimmen nicht mit den Angaben im Formular überein. Sie haben ausreichend Versuche unternommen, Vielen Dank.</string>
 </resources>

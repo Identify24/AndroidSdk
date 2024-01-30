@@ -163,4 +163,11 @@
     <string name="not_reach_you">Size Ulaşamadık</string>
     <string name="not_reach_you_detail">Üzgünüz, video görüşmeye bağlanabilmek için sizden yanıt alamadık</string>
     <string name="okay">Tamam</string>
+
+    <string name="verification_failed_title">Doğrulama başarısız</string>
+    <string name="verification_failed_desc">Doğrulama başarısız. Lütfen daha sonra tekrar deneyiniz.</string>
+    <string name="selfie_comparison_error">Kimlik fotoğrafınız ile selfie fotoğrafınız uyuşmamaktadır. Lütfen tekrar çekiniz.</string>
+    <string name="selfie_verification_error">Yeterli sayıda deneme yaptınız, teşekkürler.</string>
+    <string name="nfc_comparison_error">Form ve NFC verileriniz uyuşmamaktadır. Lütfen doğru kimlik fotoğrafını tekrar çekiniz.</string>
+    <string name="nfc_verification_error">Kimlik bilgileri ile formdaki veriler uyuşmamaktadır. Yeterli sayıda deneme yaptınız, teşekkürler.</string>
 </resources>
