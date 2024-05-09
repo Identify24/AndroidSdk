@@ -143,6 +143,8 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
                         finishTurnLeftFragment()
                         finishedLivenessDetection()
                     }
+
+                    else -> {}
                 }
                 binding.successStatusAnimationView.removeAllAnimatorListeners()
                 binding.successStatusAnimationView.visibility = View.GONE
