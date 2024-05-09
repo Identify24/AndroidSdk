@@ -143,6 +143,8 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
                         finishTurnLeftFragment()
                         finishedLivenessDetection()
                     }
+                    FaceDetectionProcessType.NOT_AVAILABLE -> {}
+                    null -> {}
                 }
                 binding.successStatusAnimationView.removeAllAnimatorListeners()
                 binding.successStatusAnimationView.visibility = View.GONE
@@ -185,7 +187,7 @@ class LivenessDetectionFragment : BaseLivenessDetectionFragment() {
     }
 
     private fun hideProgress() {
-        this.hideProgressDialog()
+       this.hideProgressDialog()
     }
 
     override fun changeStatusColor(): Int? {

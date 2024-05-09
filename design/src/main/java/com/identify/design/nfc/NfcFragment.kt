@@ -1,12 +1,14 @@
 package com.identify.design.nfc
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.airbnb.lottie.LottieDrawable
 import com.identify.design.R
 import com.identify.design.databinding.FragmentNfcBinding
 import com.identify.design.util.alert
+import com.identify.sdk.ApiResponseStatusListener
 import com.identify.sdk.base.*
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.mrz.BaseNfcFragment

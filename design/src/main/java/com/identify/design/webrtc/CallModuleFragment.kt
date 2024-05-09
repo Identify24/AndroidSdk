@@ -26,13 +26,13 @@ class CallModuleFragment : BaseCallModuleFragment() {
 
     override fun getStartedCallFragmentInstance()  : Fragment? = StartedCallFragment.newInstance()
 
-    override fun getMissedCallFragmentInstance(): Fragment? = MissedCallFragment.newInstance()
-
     override fun getCallingFragmentInstance() : Fragment? = CallingFragment.newInstance()
 
     override fun getNfcWhenCallingBottomDialogFragment(): BottomSheetDialogFragment? = NfcWhenCallingBottomDialogFragmentBottomDialogFragment.newInstance()
 
     override fun getCheckIdentityInformationFragmentInstance(): DialogFragment? = CheckIdentityInformationFragment.newInstance()
+
+    override fun getMissedCallFragmentInstance(): Fragment? = MissedCallFragment.newInstance()
 
     override fun getCallInformationFragment(): Fragment?  = InformationDialogFragment.newInstance(identifyInformationTypes = IdentifyInformationTypes.AGENT_CALL_INFORMATION,animResourceId = R.raw.customer_sup,infoTitleText = getString(R.string.call_info_title),infoContentText = getString(R.string.call_info_desc))
 

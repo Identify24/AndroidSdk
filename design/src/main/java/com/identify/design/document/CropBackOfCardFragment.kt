@@ -196,25 +196,25 @@ class CropBackOfCardFragment: BaseCropBackOfFragment() {
         }
     }
 
-    private fun handleError(reason :Reason){
-        when(reason){
-            is ApiError -> {
-                Toasty.error(requireContext(), reason.message?.get(0).toString(), Toasty.LENGTH_SHORT, true).show()
-            }
-            is ResponseError -> {
-                Toasty.error(requireContext(), getResponseErrorMessage(), Toasty.LENGTH_SHORT, true).show()
-            }
-            is SocketConnectionError -> {
-                Toasty.error(requireContext(), getSocketConnectionErrorMessage(), Toasty.LENGTH_SHORT, true).show()
-            }
-            is TimeoutError -> {
-                Toasty.error(requireContext(), getTimeoutErrorMessage(), Toasty.LENGTH_SHORT, true).show()
-            }
-            is ApiComparisonError -> {
-                Toasty.error(requireContext(), reason.message?.get(0).toString(), Toasty.LENGTH_SHORT, true).show()
-            }
-        }
-    }
+   private fun handleError(reason :Reason){
+       when(reason){
+           is ApiError -> {
+               Toasty.error(requireContext(), reason.message?.get(0).toString(), Toasty.LENGTH_SHORT, true).show()
+           }
+           is ResponseError -> {
+               Toasty.error(requireContext(), getResponseErrorMessage(), Toasty.LENGTH_SHORT, true).show()
+           }
+           is SocketConnectionError -> {
+               Toasty.error(requireContext(), getSocketConnectionErrorMessage(), Toasty.LENGTH_SHORT, true).show()
+           }
+           is TimeoutError -> {
+               Toasty.error(requireContext(), getTimeoutErrorMessage(), Toasty.LENGTH_SHORT, true).show()
+           }
+           is ApiComparisonError -> {
+               Toasty.error(requireContext(), reason.message?.get(0).toString(), Toasty.LENGTH_SHORT, true).show()
+           }
+       }
+   }
 
     private fun uploadIdBack(backCardBitmap: Bitmap, backModel: IdBackData) {
 

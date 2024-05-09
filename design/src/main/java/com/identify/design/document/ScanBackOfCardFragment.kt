@@ -153,6 +153,6 @@ class ScanBackOfCardFragment : BaseScanBackOfCardFragment() {
 
         @JvmStatic
         fun newInstance() =
-            ScanBackOfCardFragment()
+                ScanBackOfCardFragment()
     }
 }
