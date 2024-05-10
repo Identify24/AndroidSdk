@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa2f6b5-ad8b-47dc-b815-bb879cbf0e51" name="Default Changelist" comment="- Version upgrade to 1.4.4">
+    <list default="true" id="ffa2f6b5-ad8b-47dc-b815-bb879cbf0e51" name="Default Changelist" comment="-Upgrade webRtc version&#10;-Rules added in consumer-rules.pro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/design/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/CropBackOfCardFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/CropBackOfCardFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/CropFrontOfCardFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/CropFrontOfCardFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/ScanBackOfCardFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/ScanBackOfCardFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/ScanFrontOfCardFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/document/ScanFrontOfCardFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/IdentifyActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/IdentifyActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/liveness/LivenessDetectionFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/liveness/LivenessDetectionFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/src/main/java/com/identify/design/nfc/NfcFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/java/com/identify/design/nfc/NfcFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/drawable/all_grey_border_white_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/drawable/all_grey_border_white_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/drawable/all_white_border_transparent_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/drawable/all_white_border_transparent_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/drawable/all_yellow_border_white_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/drawable/all_yellow_border_white_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/drawable/shape_round_solid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/drawable/shape_round_solid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/layout/fragment_scan_back_of_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/layout/fragment_scan_back_of_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/main/res/layout/fragment_scan_front_of_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/main/res/layout/fragment_scan_front_of_card.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
