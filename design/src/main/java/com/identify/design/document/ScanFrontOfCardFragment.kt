@@ -1,6 +1,10 @@
 package com.identify.design.document
 
+import android.graphics.Bitmap
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
@@ -8,12 +12,15 @@ import android.view.View
 import com.identify.design.R
 import com.identify.design.databinding.FragmentScanFrontOfCardBinding
 import com.identify.sdk.SdkApp
+import com.identify.sdk.base.Reason
 import com.identify.sdk.base.viewBinding.viewBinding
 import com.identify.sdk.document.BaseScanFrontOfCardFragment
 import com.identify.sdk.scanner.TakePhotoListener
 import com.identify.sdk.scanner.data.Corners
 import com.identify.sdk.scanner.data.CornersDetectorListener
 import com.identify.sdk.scanner.enums.EFlashStatus
+import com.identify.sdk.scanner.extensions.outputDirectory
+import com.identify.sdk.scanner.presentation.BaseScannerFragment
 
 class ScanFrontOfCardFragment : BaseScanFrontOfCardFragment() {
 
