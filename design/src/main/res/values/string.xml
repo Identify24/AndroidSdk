@@ -105,6 +105,8 @@
     <string name="finish_vitality_process">Sie haben die Vitalitätsprüfung abgeschlossen. Vielen Dank...</string>
     <string name="german">Deutsche</string>
     <string name="turkish">Türkisch</string>
+    <string name="azerbaijani">Aserbaidschanisch</string>
+    <string name="russian">Russisch</string>
     <string name="choose_language">Sprache wählen</string>
     <string name="call_info_desc">Unser Kundenvertreter wird Sie so schnell wie möglich anrufen und den Identitätsprüfungsprozess durchführen. Stellen Sie während dieser Zeit sicher, dass Sie mit Ihrem Ausweis allein im Raum sind und bereit, ohne diesen Bildschirm zu schließen.</string>
     <string name="take_photo">Foto machen</string>

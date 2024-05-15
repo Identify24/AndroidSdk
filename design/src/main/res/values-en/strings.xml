@@ -29,6 +29,8 @@
     <string name="english">English</string>
     <string name="german">German</string>
     <string name="turkish">Turkish</string>
+    <string name="azerbaijani">Aserbaidschanisch</string>
+    <string name="russian">Russian</string>
     <string name="choose_language">Choose Language</string>
     <string name="selected_language">Selected Language : </string>
     <string name="button_deny">Deny</string>
