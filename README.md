@@ -24,7 +24,7 @@ This code is ;
 
 <pre>include ':design'</pre>
 
-Step 2. Add the Gitlab repository to your build file
+Step 2. Add the Github repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
 
@@ -35,14 +35,11 @@ repositories {
 ...
    maven { url 'https://jitpack.io' }
    maven {
-            url 'https://gitlab.com/api/v4/projects/26590072/packages/maven'
-            name "GitLab"
-            credentials(HttpHeaderCredentials) {
-                name = 'Private-Token'
-                value = 'xxxxxxxxxxxxxxx'
-            }
-            authentication {
-                header(HttpHeaderAuthentication)
+            url = 'https://maven.pkg.github.com/business-service-solution-gmbh/id24.tr-android-sdk'
+            name = "GitHubPackages"
+            credentials {
+                username = "bssserviceacc"
+                password = "xxxxxx"
             }
         }
 }

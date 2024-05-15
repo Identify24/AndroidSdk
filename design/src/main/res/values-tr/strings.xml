@@ -30,6 +30,8 @@
     <string name="english">Ingilizce</string>
     <string name="german">Almanca</string>
     <string name="turkish">Türkçe</string>
+    <string name="azerbaijani">Aserbaidschanisch</string>
+    <string name="russian">Rusça</string>
     <string name="choose_language">Dil Seçiniz</string>
     <string name="selected_language">Seçili Dil : </string>
     <string name="permission_camera_rationale">Video ile görüşmeye başlamak için lütfen kamera ve mikrofona erişim izni veriniz.</string>
