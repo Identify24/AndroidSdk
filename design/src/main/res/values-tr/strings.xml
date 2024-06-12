@@ -172,4 +172,7 @@
     <string name="selfie_verification_error">Yeterli sayıda deneme yaptınız, teşekkürler.</string>
     <string name="nfc_comparison_error">Form ve NFC verileriniz uyuşmamaktadır. Lütfen doğru kimlik fotoğrafını tekrar çekiniz.</string>
     <string name="nfc_verification_error">Kimlik bilgileri ile formdaki veriler uyuşmamaktadır. Yeterli sayıda deneme yaptınız, teşekkürler.</string>
+    <string name="missing_information">Eksik veya yanlış bilgi bulundu!</string>
+    <string name="verify_data_below">Lütfen aşağıdaki verileri doğrulayın</string>
+    <string name="update">Güncelle</string>
 </resources>

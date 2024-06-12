@@ -173,4 +173,7 @@ say the word in the picture</string>
     <string name="selfie_verification_error">You have made enough attempts, thank you.</string>
     <string name="nfc_comparison_error">Your form and NFC data do not match. Please retake the correct identification photo.</string>
     <string name="nfc_verification_error">Ihre Identifikationsdaten stimmen nicht mit den Angaben im Formular überein. Sie haben ausreichend Versuche unternommen, Vielen Dank.</string>
+    <string name="missing_information">Missing or incorrect information found!</string>
+    <string name="verify_data_below">Please verify the data(s) below</string>
+    <string name="update">Update</string>
 </resources>

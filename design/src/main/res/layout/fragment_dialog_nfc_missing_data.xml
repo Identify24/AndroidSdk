@@ -10,7 +10,7 @@
         android:paddingStart="10dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/nexa_slab_bold"
-        android:text="Missing or incorrect information found!" />
+        android:text="@string/missing_information" />
 
     <TextView
         android:id="@+id/tvMissingDataMessage"
@@ -19,7 +19,7 @@
         android:paddingStart="10dp"
         android:fontFamily="@font/nexa_slab_bold"
         android:layout_marginTop="10dp"
-        android:text="Please verify the data(s) below"
+        android:text="@string/verify_data_below"
         android:layout_below="@id/tvMissingDataTitle"/>
 
     <EditText
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        android:hint="Serial Number"
+        android:hint="@string/id_serial_no"
         android:paddingStart="20dp"
         android:imeOptions="actionNext"
         android:singleLine="true"
@@ -41,7 +41,7 @@
         android:id="@+id/tvDateOfBirth"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Date of Birth"
+        android:hint="@string/birth_day"
         android:gravity="center_vertical"
         android:textSize="16sp"
         android:fontFamily="@font/nexa_slab_bold"
@@ -57,7 +57,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:gravity="center_vertical"
-        android:hint="Expiry Date"
+        android:hint="@string/card_expiry_date"
         android:fontFamily="@font/nexa_slab_bold"
         android:textSize="16sp"
         android:paddingStart="20dp"
@@ -81,7 +81,7 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/nexa_slab_bold"
             android:gravity="center"
-            android:text="UPDATE"
+            android:text="@string/update"
             android:textColor="@color/colorDarkBlue" />
 
     </androidx.cardview.widget.CardView>

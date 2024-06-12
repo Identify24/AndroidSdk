@@ -168,4 +168,7 @@
     <string name="selfie_verification_error">Вы сделали достаточное количество попыток, спасибо.</string>
     <string name="nfc_comparison_error">Ваши данные формы и NFC не совпадают. Пожалуйста, сделайте правильную фотографию для идентификации.</string>
     <string name="nfc_verification_error">Ваши данные для идентификации не совпадают с данными в форме. Вы уже сделали достаточное количество попыток, спасибо.</string>
+    <string name="missing_information">Обнаружена недостающая или неверная информация!</string>
+    <string name="verify_data_below">Пожалуйста, проверьте данные ниже</string>
+    <string name="update">обновлять</string>
 </resources>

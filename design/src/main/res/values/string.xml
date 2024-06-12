@@ -173,4 +173,7 @@ sag das Wort auf dem Bild</string>
     <string name="selfie_verification_error">Sie haben ausreichend Versuche unternommen, Vielen Dank.</string>
     <string name="nfc_comparison_error">Ihre Formular und NFC Daten stimmen nicht überein. Bitte nehmen Sie das korrekte Ausweisfoto erneut auf.</string>
     <string name="nfc_verification_error">Ihre Identifikationsdaten stimmen nicht mit den Angaben im Formular überein. Sie haben ausreichend Versuche unternommen, Vielen Dank.</string>
+    <string name="missing_information">Fehlende oder falsche Informationen gefunden!</string>
+    <string name="verify_data_below">Bitte überprüfen Sie die unten aufgeführten Daten</string>
+    <string name="update">Aktualisieren</string>
 </resources>

@@ -168,4 +168,7 @@
     <string name="selfie_verification_error">Yeterli sayda cəhd etdiniz, təşəkkürlər.</string>
     <string name="nfc_comparison_error">Forma və NFC məlumatlarınız uyğun deyil. Zəhmət olmasa düzgün kimlik şəklini yenidən çəkin.</string>
     <string name="nfc_verification_error">Kimlik məlumatları ilə forma məlumatları uyğun deyil. Yeterli sayda cəhd etdiniz, təşəkkürlər.</string>
+    <string name="missing_information">Çatışmayan və ya səhv məlumat tapıldı!</string>
+    <string name="verify_data_below">Lütfən, aşağıdakı məlumatları yoxlayın</string>
+    <string name="update">yeniləmə</string>
 </resources>
