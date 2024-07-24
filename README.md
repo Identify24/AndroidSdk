@@ -1,3 +1,7 @@
+!!IMPORTANT!!
+
+This repository is deprecated. Please use new one: https://github.com/business-service-solution-gmbh/id24.tr-android-sdk-sample
+
 # AndroidSdk
 
 Step 1. You must manually include "design lib" in your project in order to you need to change the design completely. For this you can download the project from
